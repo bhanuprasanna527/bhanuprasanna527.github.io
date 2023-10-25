@@ -1,0 +1,62 @@
+/* css styles */
+/* League Spartan Google Fonts is used for this theme */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body, #quarto-appendix.default {
+    font-family: 'League Spartan';
+    background-color: #000;
+    color: #ddd;
+}
+
+h2#toc-title {
+    font-size: x-large;
+}
+
+li {
+    font-size: 0.92rem;
+}
+
+div.sourceCode {
+    background-color: #000;
+    border: 1px solid #ddd;
+}
+
+.navbar-dark {
+    font-size: larger;
+    border-bottom: 1px solid #ddd;
+}
+
+span.navbar-title {
+    font-size: larger;
+    color: #ddd;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-size: large;
+    color: #ddd;
+}
+
+.navbar #quarto-search.type-overlay .aa-Autocomplete svg.aa-SubmitIcon, h1.title, p.subtitle.lead, div.quarto-post a, #title-block-header.quarto-title-block.default .quarto-title-meta-contents a, pre.sourceCode, div.quarto-about-jolla .about-link, .aa-Autocomplete .aa-Form .aa-InputWrapperPrefix .aa-Label svg, .aa-Autocomplete .aa-Form .aa-InputWrapperPrefix .aa-LoadingIndicator svg, .aa-DetachedFormContainer .aa-Form .aa-InputWrapperPrefix .aa-Label svg, .aa-DetachedFormContainer .aa-Form .aa-InputWrapperPrefix .aa-LoadingIndicator svg  {
+    color: #ddd;
+}
+
+.aa-Autocomplete .aa-Form, .aa-DetachedFormContainer .aa-Form {
+    background-color: #222;
+    color: #ddd;
+}
+
+.aa-Autocomplete .aa-Form .aa-InputWrapper .aa-Input, .aa-DetachedFormContainer .aa-Form .aa-InputWrapper .aa-Input {
+    border-left: 1px solid #ddd;
+}
+
+code, .code-with-filename .code-with-filename-file {
+    color: #ddd;
+}
+
+div.nav-footer {
+    border-top: 1px solid #ddd;
+    color: #ddd;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+}

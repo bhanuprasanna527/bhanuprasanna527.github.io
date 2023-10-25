@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Posts",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nFirst Quarto Blog\n\n\n\n\n\n\n\nFirst\n\n\nBlog\n\n\nTest\n\n\n\n\nI am new to Quarto Blog and this is a trial for Latex Equations.\n\n\n\n\n\n\nOct 25, 2023\n\n\nBhanu Prasanna Koppolu\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bhanu Prasanna",
+    "section": "",
+    "text": "M.Sc. Data Science at TU Dortmund\n\n\n\nIt’s Black. 👁️👁️ are Safe"
+  },
+  {
+    "objectID": "posts/2023-10-25-first-quarto-blog/index.html",
+    "href": "posts/2023-10-25-first-quarto-blog/index.html",
+    "title": "First Quarto Blog",
+    "section": "",
+    "text": "\\[c = a + b\\]"
+  },
+  {
+    "objectID": "posts/2023-10-25-first-quarto-blog/index.html#this-is-my-first-blog",
+    "href": "posts/2023-10-25-first-quarto-blog/index.html#this-is-my-first-blog",
+    "title": "First Quarto Blog",
+    "section": "",
+    "text": "\\[c = a + b\\]"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "",
+    "section": "",
+    "text": "CodeShow All CodeHide All Code\n\n\n\n\n\nAbout\n\n\n\n\nCode\nimport numpy as np\nimport pandas as pd"
+  }
+]
