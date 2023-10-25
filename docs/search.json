@@ -30,8 +30,15 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "",
+    "title": "About",
     "section": "",
-    "text": "CodeShow All CodeHide All Code\n\n\n\n\n\nAbout\n\n\n\n\nCode\nimport numpy as np\nimport pandas as pd"
+    "text": "Code\nimport numpy as np\nimport pandas as pd"
+  },
+  {
+    "objectID": "about.html#this-is-a-python-test",
+    "href": "about.html#this-is-a-python-test",
+    "title": "About",
+    "section": "",
+    "text": "Code\nimport numpy as np\nimport pandas as pd"
   }
 ]
