@@ -12,7 +12,7 @@ date: 2023-10-25
 date-modified: last-modified
 # bibliography: references.bib
 citation: 
-  url: https://bhanuprasanna527.github.io/posts/2023-10-25-C++/
+  url: https://bhanuprasanna527.github.io/notes/2023-10-25-C++/
 categories: [Notes, C++, C]
 image: penguins.png
 draft: false
