@@ -12,7 +12,7 @@ date: 2023-10-25
 date-modified: last-modified
 # bibliography: references.bib
 citation: 
-  url: https://bhanuprasanna.github.io/posts/2022-10-24-quarto-blogs/
+  url: https://bhanuprasanna527.github.io/posts/2022-10-24-quarto-blogs/
 categories: [First, Blog, Test]
 image: penguins.png
 draft: false
