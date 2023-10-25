@@ -47,6 +47,7 @@ span.navbar-title {
 
 .aa-Autocomplete .aa-Form .aa-InputWrapper .aa-Input, .aa-DetachedFormContainer .aa-Form .aa-InputWrapper .aa-Input {
     border-left: 1px solid #ddd;
+    color: #ddd;
 }
 
 code, .code-with-filename .code-with-filename-file {
