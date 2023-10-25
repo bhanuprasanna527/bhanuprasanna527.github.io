@@ -20,6 +20,9 @@ website:
       - href: about.qmd
         text: About
       - posts.qmd
+      - notes.qmd
+      - projects.qmd
+      - challenges.qmd
 
 format:
   html:

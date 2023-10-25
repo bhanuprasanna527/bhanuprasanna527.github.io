@@ -7,11 +7,32 @@
     "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nFirst Quarto Blog\n\n\n\n\n\n\n\nFirst\n\n\nBlog\n\n\nTest\n\n\n\n\nI am new to Quarto Blog and this is a trial for Latex Equations.\n\n\n\n\n\n\nOct 25, 2023\n\n\nBhanu Prasanna Koppolu\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Bhanu Prasanna",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "M.Sc. Data Science at TU Dortmund\n\n\n\nIt’s Black. 👁️👁️ are Safe"
+    "text": "Code\nimport numpy as np\nimport pandas as pd"
+  },
+  {
+    "objectID": "about.html#this-is-a-python-test",
+    "href": "about.html#this-is-a-python-test",
+    "title": "About",
+    "section": "",
+    "text": "Code\nimport numpy as np\nimport pandas as pd"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nkbp-nse\n\n\n\n\n\n\n\nProjects\n\n\nPython\n\n\nFinance\n\n\n\n\nMy personal Stock Data Retriever Project kbp-nse.\n\n\n\n\n\n\nOct 25, 2023\n\n\nBhanu Prasanna Koppolu\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/2023-10-25-kbp-nse/index.html",
+    "href": "projects/2023-10-25-kbp-nse/index.html",
+    "title": "kbp-nse",
+    "section": "",
+    "text": "CitationBibTeX citation:@online{prasanna koppolu2023,\n  author = {Prasanna Koppolu, Bhanu},\n  title = {Kbp-Nse},\n  date = {2023-10-25},\n  url = {https://bhanuprasanna527.github.io/posts/2023-10-25-kbp-nse/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nPrasanna Koppolu, Bhanu. 2023. “Kbp-Nse.” October 25, 2023.\nhttps://bhanuprasanna527.github.io/posts/2023-10-25-kbp-nse/."
   },
   {
     "objectID": "posts/2023-10-25-first-quarto-blog/index.html",
@@ -28,17 +49,38 @@
     "text": "\\[c = a + b\\]"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "notes.html",
+    "href": "notes.html",
+    "title": "Notes",
     "section": "",
-    "text": "Code\nimport numpy as np\nimport pandas as pd"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nC++ Notes\n\n\n\n\n\n\n\nNotes\n\n\nC++\n\n\nC\n\n\n\n\nDistilled C++ Notes\n\n\n\n\n\n\nOct 25, 2023\n\n\nBhanu Prasanna Koppolu\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "about.html#this-is-a-python-test",
-    "href": "about.html#this-is-a-python-test",
-    "title": "About",
+    "objectID": "challenges.html",
+    "href": "challenges.html",
+    "title": "Challenges",
     "section": "",
-    "text": "Code\nimport numpy as np\nimport pandas as pd"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\n90 Days DSA Challenge\n\n\n\n\n\n\n\nChallenge\n\n\nDSA\n\n\nCode\n\n\n\n\nLet’s Start\n\n\n\n\n\n\nOct 25, 2023\n\n\nBhanu Prasanna Koppolu\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html",
+    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html",
+    "title": "90 Days DSA Challenge",
+    "section": "",
+    "text": "CitationBibTeX citation:@online{prasanna koppolu2023,\n  author = {Prasanna Koppolu, Bhanu},\n  title = {90 {Days} {DSA} {Challenge}},\n  date = {2023-10-25},\n  url = {https://bhanuprasanna527.github.io/posts/2023-10-25-90_DSA_Challenge/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nPrasanna Koppolu, Bhanu. 2023. “90 Days DSA Challenge.”\nOctober 25, 2023. https://bhanuprasanna527.github.io/posts/2023-10-25-90_DSA_Challenge/."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bhanu Prasanna",
+    "section": "",
+    "text": "M.Sc. Data Science at TU Dortmund\n\n\n\nIt’s Black. 👁️👁️ are Safe"
+  },
+  {
+    "objectID": "notes/2023-10-25-C++/index.html",
+    "href": "notes/2023-10-25-C++/index.html",
+    "title": "C++ Notes",
+    "section": "",
+    "text": "CitationBibTeX citation:@online{prasanna koppolu2023,\n  author = {Prasanna Koppolu, Bhanu},\n  title = {C++ {Notes}},\n  date = {2023-10-25},\n  url = {https://bhanuprasanna527.github.io/posts/2023-10-25-C++/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nPrasanna Koppolu, Bhanu. 2023. “C++ Notes.” October 25,\n2023. https://bhanuprasanna527.github.io/posts/2023-10-25-C++/."
   }
 ]
