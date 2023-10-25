@@ -14,7 +14,7 @@ citation:
 bibliography: biblio.bib
 categories: [distill, R, MEDS]
 image: barney_blog.gif
-draft: true
+draft: false
 ---
 
 I am a total blog newb. 

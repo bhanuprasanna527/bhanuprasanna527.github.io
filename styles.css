@@ -36,7 +36,7 @@ span.navbar-title {
     color: #ddd;
 }
 
-.navbar #quarto-search.type-overlay .aa-Autocomplete svg.aa-SubmitIcon, h1.title, p.subtitle.lead, div.quarto-post a, #title-block-header.quarto-title-block.default .quarto-title-meta-contents a, pre.sourceCode, div.quarto-about-jolla .about-link, .aa-Autocomplete .aa-Form .aa-InputWrapperPrefix .aa-Label svg, .aa-Autocomplete .aa-Form .aa-InputWrapperPrefix .aa-LoadingIndicator svg, .aa-DetachedFormContainer .aa-Form .aa-InputWrapperPrefix .aa-Label svg, .aa-DetachedFormContainer .aa-Form .aa-InputWrapperPrefix .aa-LoadingIndicator svg  {
+.navbar #quarto-search.type-overlay .aa-Autocomplete svg.aa-SubmitIcon, h1.title, p.subtitle.lead, div.quarto-post a, #title-block-header.quarto-title-block.default .quarto-title-meta-contents a, pre.sourceCode, div.quarto-about-jolla .about-link, .aa-Autocomplete .aa-Form .aa-InputWrapperPrefix .aa-Label svg, .aa-Autocomplete .aa-Form .aa-InputWrapperPrefix .aa-LoadingIndicator svg, .aa-DetachedFormContainer .aa-Form .aa-InputWrapperPrefix .aa-Label svg, .aa-DetachedFormContainer .aa-Form .aa-InputWrapperPrefix .aa-LoadingIndicator {
     color: #ddd;
 }
 
@@ -59,4 +59,8 @@ div.nav-footer {
     font-size: larger;
     display: flex;
     align-items: center;
+}
+
+div.listing-actions-group, div.quarto-post.image-right {
+    padding-bottom: 27px;
 }

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Bhanu Prasanna</title>
+<link>https://bhanuprasanna527.github.io/index.html</link>
+<atom:link href="https://bhanuprasanna527.github.io/index.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<image>
+<url>https://bhanuprasanna527.github.io/public/favicons/android-chrome-512x512.png</url>
+<title>Bhanu Prasanna</title>
+<link>https://bhanuprasanna527.github.io/index.html</link>
+<height>144</height>
+<width>144</width>
+</image>
+<generator>quarto-1.3.450</generator>
+<lastBuildDate>Tue, 24 Oct 2023 18:30:00 GMT</lastBuildDate>
+<item>
+  <title>First Quarto Blog</title>
+  <dc:creator>Bhanu Prasanna Koppolu</dc:creator>
+  <link>https://bhanuprasanna527.github.io/posts/2023-10-25-first-quarto-blog/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="this-is-my-first-blog" class="level2">
+<h2 class="anchored" data-anchor-id="this-is-my-first-blog">This is my first blog</h2>
+<p><img src="https://latex.codecogs.com/png.latex?c%20=%20a%20+%20b"></p>
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{prasanna koppolu2023,
+  author = {Prasanna Koppolu, Bhanu},
+  title = {First {Quarto} {Blog}},
+  date = {2023-10-25},
+  url = {https://bhanuprasanna.github.io/posts/2022-10-24-quarto-blogs/},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-prasanna koppolu2023" class="csl-entry quarto-appendix-citeas">
+Prasanna Koppolu, Bhanu. 2023. <span>“First Quarto Blog.”</span> October
+25, 2023. <a href="https://bhanuprasanna.github.io/posts/2022-10-24-quarto-blogs/">https://bhanuprasanna.github.io/posts/2022-10-24-quarto-blogs/</a>.
+</div></div></section></div> ]]></description>
+  <category>First</category>
+  <category>Blog</category>
+  <category>Test</category>
+  <guid>https://bhanuprasanna527.github.io/posts/2023-10-25-first-quarto-blog/index.html</guid>
+  <pubDate>Tue, 24 Oct 2023 18:30:00 GMT</pubDate>
+  <media:content url="https://bhanuprasanna527.github.io/posts/2023-10-25-first-quarto-blog/penguins.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+</channel>
+</rss>

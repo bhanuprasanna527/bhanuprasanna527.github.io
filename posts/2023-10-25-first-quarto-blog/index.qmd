@@ -4,10 +4,10 @@ description: |
   I am new to Quarto Blog and this is a trial for Latex Equations.
 author:
   - name: Bhanu Prasanna Koppolu
-    url: https://bhanuprasanna.github.io/
+    url: https://bhanuprasanna527.github.io/
     orcid: 0000-0001-6050-2414
     affiliation: M.Sc. Data Science at TU Dortmund
-    affiliation-url: https://www.tu-dortmund.de/en/
+    # affiliation-url: https://www.tu-dortmund.de/en/
 date: 2023-10-25
 date-modified: last-modified
 # bibliography: references.bib
