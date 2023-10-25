@@ -1,0 +1,24 @@
+---
+title: "First Quarto Blog"
+description: |
+  I am new to Quarto Blog and this is a trial for Latex Equations.
+author:
+  - name: Bhanu Prasanna Koppolu
+    url: https://bhanuprasanna.github.io/
+    orcid: 0000-0001-6050-2414
+    affiliation: M.Sc. Data Science at TU Dortmund
+    affiliation-url: https://www.tu-dortmund.de/en/
+date: 2023-10-25
+date-modified: last-modified
+# bibliography: references.bib
+citation: 
+  url: https://bhanuprasanna.github.io/posts/2022-10-24-quarto-blogs/
+categories: [First, Blog, Test]
+image: penguins.png
+draft: false
+page-layout: full
+---
+
+## This is my first blog
+
+$$c = a + b$$

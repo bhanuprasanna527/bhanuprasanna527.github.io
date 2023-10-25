@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Samantha Csik">
+<meta name="dcterms.date" content="2021-09-24">
+<meta name="description" content="I started putting together some slides on the whys and hows of blogging using {distill} when I realized…maybe I’ve just found the content for my first blog post??">
+
+<title>Bhanu Prasanna - Why create presentation slides about blogging when you can just blog about it instead?</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../public/favicons/android-chrome-512x512.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Bhanu Prasanna</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts.html" rel="" target="">
+ <span class="menu-text">Posts</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <div class="quarto-title-block"><div><h1 class="title">Why create presentation slides about blogging when you can just blog about it instead?</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li></ul></div></div>
+                  <div>
+        <div class="description">
+          <p>I started putting together some slides on the whys and hows of blogging using {distill} when I realized…maybe I’ve just found the content for my first blog post??</p>
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">distill</div>
+                <div class="quarto-category">R</div>
+                <div class="quarto-category">MEDS</div>
+              </div>
+                  </div>
+  </div>
+    
+  <div class="quarto-title-meta-author">
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Affiliation</div>
+    
+      <div class="quarto-title-meta-contents">
+      <p class="author"><a href="https://samanthacsik.github.io/">Samantha Csik</a> <a href="https://orcid.org/0000-0002-5300-3075" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+    </div>
+      <div class="quarto-title-meta-contents">
+          <p class="affiliation">
+              <a href="https://ucsb-meds.github.io/">
+              Master of Environmental Data Science Program @ The Bren School (UCSB) &amp; The National Center for Ecological Analysis &amp; Synthesis
+              </a>
+            </p>
+        </div>
+      </div>
+
+  <div class="quarto-title-meta">
+
+        
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">September 24, 2021</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#i.-why-blog" id="toc-i.-why-blog" class="nav-link active" data-scroll-target="#i.-why-blog">I. Why blog?</a></li>
+  <li><a href="#ii.-structuring-data-science-blog-posts" id="toc-ii.-structuring-data-science-blog-posts" class="nav-link" data-scroll-target="#ii.-structuring-data-science-blog-posts">II. Structuring data science blog posts</a>
+  <ul class="collapse">
+  <li><a href="#i.-make-a-tutorial-for-yourself-and-others" id="toc-i.-make-a-tutorial-for-yourself-and-others" class="nav-link" data-scroll-target="#i.-make-a-tutorial-for-yourself-and-others">i. Make a tutorial for yourself (and others)</a></li>
+  <li><a href="#ii.-compare-popular-tools-to-new-alternatives" id="toc-ii.-compare-popular-tools-to-new-alternatives" class="nav-link" data-scroll-target="#ii.-compare-popular-tools-to-new-alternatives">ii. Compare popular tools to new alternatives</a></li>
+  <li><a href="#iii.-describe-how-to-use-a-tool-and-when-its-appropriate-to-do-so" id="toc-iii.-describe-how-to-use-a-tool-and-when-its-appropriate-to-do-so" class="nav-link" data-scroll-target="#iii.-describe-how-to-use-a-tool-and-when-its-appropriate-to-do-so">iii. Describe <em>how</em> to use a tool and <em>when</em> it’s appropriate to do so</a></li>
+  <li><a href="#iv.-hold-yourself-accountable-to-a-coding-challenge-and-teach-others-along-the-way" id="toc-iv.-hold-yourself-accountable-to-a-coding-challenge-and-teach-others-along-the-way" class="nav-link" data-scroll-target="#iv.-hold-yourself-accountable-to-a-coding-challenge-and-teach-others-along-the-way">iv. Hold yourself accountable to a coding challenge (and teach others along the way!)</a></li>
+  <li><a href="#v.-share-what-you-learned-at-a-conference" id="toc-v.-share-what-you-learned-at-a-conference" class="nav-link" data-scroll-target="#v.-share-what-you-learned-at-a-conference">v. Share what you learned at a conference</a></li>
+  <li><a href="#vi.-present-a-coding-problem-and-solution" id="toc-vi.-present-a-coding-problem-and-solution" class="nav-link" data-scroll-target="#vi.-present-a-coding-problem-and-solution">vi. Present a coding problem and solution</a></li>
+  <li><a href="#vii.-share-how-you-use-code-as-a-creative-medium" id="toc-vii.-share-how-you-use-code-as-a-creative-medium" class="nav-link" data-scroll-target="#vii.-share-how-you-use-code-as-a-creative-medium">vii. Share how you use code as a creative medium</a></li>
+  <li><a href="#viii.-document-the-evolution-of-your-code-in-multiple-posts" id="toc-viii.-document-the-evolution-of-your-code-in-multiple-posts" class="nav-link" data-scroll-target="#viii.-document-the-evolution-of-your-code-in-multiple-posts">viii. Document the evolution of your code in multiple posts</a></li>
+  </ul></li>
+  <li><a href="#iii.-adding-a-distill-blog-to-your-personal-website" id="toc-iii.-adding-a-distill-blog-to-your-personal-website" class="nav-link" data-scroll-target="#iii.-adding-a-distill-blog-to-your-personal-website">III. Adding a distill blog to your personal website</a></li>
+  <li><a href="#iv.-customizing-your-distill-blog-posts" id="toc-iv.-customizing-your-distill-blog-posts" class="nav-link" data-scroll-target="#iv.-customizing-your-distill-blog-posts">IV. Customizing your distill blog &amp; posts</a>
+  <ul class="collapse">
+  <li><a href="#i.-preview-images" id="toc-i.-preview-images" class="nav-link" data-scroll-target="#i.-preview-images">i. Preview images</a></li>
+  <li><a href="#ii.-categories" id="toc-ii.-categories" class="nav-link" data-scroll-target="#ii.-categories">ii. Categories</a></li>
+  <li><a href="#iii.-table-of-contents" id="toc-iii.-table-of-contents" class="nav-link" data-scroll-target="#iii.-table-of-contents">iii. Table of contents</a></li>
+  <li><a href="#iv.-citations" id="toc-iv.-citations" class="nav-link" data-scroll-target="#iv.-citations">iv. Citations</a></li>
+  <li><a href="#v.-bibliographies" id="toc-v.-bibliographies" class="nav-link" data-scroll-target="#v.-bibliographies">v. Bibliographies</a></li>
+  <li><a href="#vi.-appendices" id="toc-vi.-appendices" class="nav-link" data-scroll-target="#vi.-appendices">vi. Appendices</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block page-columns page-full column-page-left" id="quarto-document-content">
+
+
+
+
+<p>I am a total blog newb.</p>
+<p><em>BUT</em> we all have to start somewhere. And my somewhere is leading a mini-workshop in T-6 days for our first Master of Environmental Data Science (MEDS) cohort (read more about this <em>awesome</em> new program <a href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science">here</a>) on why blogging as data scientists is an important and valuable skill to practice, what a good blog post might look like, and some of the technical aspects of creating blog posts using the <code>{distill}</code> package.</p>
+<p>I originally set off on my self-education journey by digging into other data science-related blogs and throwing together some slides about what I found. I even practiced creating a fake blog post on my own (and very much still under development) <a href="samanthacsik.github.io">personal website</a> in case anyone asked me to walk them through the steps (I can’t look like I don’t know what I’m doing now, right??).</p>
+<p>Ten slides deep and then it struck me – I was creating a presentation on how to blog without ever <em>actually</em> creating my own blog post?? Dammit. Doesn’t quite feel right. So here we are. Baby’s first blog post <em>~about blog posts~</em>. I’d say this first post is half meant to serve our MEDS students as they embark on their fall quarter (and will surely be asked to blog every now and again) and half meant to be the catalyst I so desperately needed to finally put a little bit of writing out there in the data science world.</p>
+<p>So here we go! I’ll start by sharing examples of different blogs that I think demonstrate a few creative ways to format and publish data science content. Then I’ll review some of the cool things you can do with <code>{distill}</code> to customize your own beautiful posts.</p>
+<section id="i.-why-blog" class="level2">
+<h2 class="anchored" data-anchor-id="i.-why-blog">I. Why blog?</h2>
+<p>Data science blogging has become pretty darn popular in recent years, and for good reason. It can help you to build your online professional profile, enhance your communication skills, stay atop the latest and greatest trends and tools, connect with other data scientists, and even solicit feedback from those in the community.</p>
+<p>But arguably one of the most valuable reasons to blog is to get a whole lot better at doing whatever it is you want to write about. You’ve probably heard some version of the saying, <em>“The best way to learn something is to teach it to others”</em> – not only do I find this to be true of myself, but there’s also science<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> to back this up!</p>
+<p>Still, getting started can be a bit intimidating (I’m only doing this for the first time now myself). It an attempt to make it a little less so for the next blogger-to-be, I have tried to gather some ideas, instructions, and inspiration to get things going. If nothing else, I think heeding the advice of this tweet<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> is a pretty good place to start:</p>
+<blockquote class="twitter-tweet blockquote">
+<p lang="en" dir="ltr">
+When you’ve written the same code 3 times, write a function<br><br>When you’ve given the same in-person advice 3 times, write a blog post
+</p>
+— David Robinson (<span class="citation" data-cites="drob">(<a href="#ref-drob" role="doc-biblioref"><strong>drob?</strong></a>)</span>) <a href="https://twitter.com/drob/status/928447584712253440?ref_src=twsrc%5Etfw">November 9, 2017</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</section>
+<section id="ii.-structuring-data-science-blog-posts" class="level2">
+<h2 class="anchored" data-anchor-id="ii.-structuring-data-science-blog-posts">II. Structuring data science blog posts</h2>
+<p>There are <em>lots</em> of creative ways to blog (both for yourself and your target audience) about your data science journey. Here are just a few examples<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> that caught my eye.</p>
+<section id="i.-make-a-tutorial-for-yourself-and-others" class="level3">
+<h3 class="anchored" data-anchor-id="i.-make-a-tutorial-for-yourself-and-others">i. Make a tutorial for yourself (and others)</h3>
+<p><a href="https://www.allisonhorst.com/">Allison Horst</a> shares all the exciting ways you can customize tables using the <code>{gt}</code> package, including code snippets and resulting outputs in her post, <strong>Customizing tables is fun (seriously) with gt</strong> <span class="citation" data-cites="horst2021gt">(<a href="#ref-horst2021gt" role="doc-biblioref">Horst 2021</a>)</span>.</p>
+<div class="cell">
+
+<iframe src="https://www.allisonhorst.com/post/2020-03-02-gt-tables-examples/" width="100%" height="400px" data-external="1">
+</iframe>
+</div>
+</section>
+<section id="ii.-compare-popular-tools-to-new-alternatives" class="level3">
+<h3 class="anchored" data-anchor-id="ii.-compare-popular-tools-to-new-alternatives">ii. Compare popular tools to new alternatives</h3>
+<p>Harry Fisher (<a href="https://www.hfshr.xyz/">Data, Code &amp; Coffee</a>) explores <code>{nakedpipe}</code> a new(er) alternative to <code>{magrittr}</code>’s <code>%&gt;%</code> in his blog post, <strong>Penguins and nakedpipes</strong> <span class="citation" data-cites="fisher2020penguins">(<a href="#ref-fisher2020penguins" role="doc-biblioref">Fisher 2020</a>)</span>.</p>
+<div class="cell">
+<iframe src="https://www.hfshr.xyz/posts/2020-06-21-penguins-and-nakedpipes/" width="100%" height="400px" data-external="1">
+</iframe>
+</div>
+</section>
+<section id="iii.-describe-how-to-use-a-tool-and-when-its-appropriate-to-do-so" class="level3">
+<h3 class="anchored" data-anchor-id="iii.-describe-how-to-use-a-tool-and-when-its-appropriate-to-do-so">iii. Describe <em>how</em> to use a tool and <em>when</em> it’s appropriate to do so</h3>
+<p><a href="https://www.ericekholm.com/">Eric Ekholm</a> covers how to use the <code>{ggtext}</code> package to replace your use of ggplot legends with colored title text in his post, <strong>Improving ggplots with Text Color</strong> (<span class="citation" data-cites="ee2021improving">EE (<a href="#ref-ee2021improving" role="doc-biblioref">2021</a>)</span>). Importantly, he discusses when it might be most appropriate to do so and when you might opt for an alternative method.</p>
+<div class="cell">
+<iframe src="https://www.ericekholm.com/posts/improving-ggplots-with-text-color/" width="100%" height="400px" data-external="1">
+</iframe>
+</div>
+</section>
+<section id="iv.-hold-yourself-accountable-to-a-coding-challenge-and-teach-others-along-the-way" class="level3">
+<h3 class="anchored" data-anchor-id="iv.-hold-yourself-accountable-to-a-coding-challenge-and-teach-others-along-the-way">iv. Hold yourself accountable to a coding challenge (and teach others along the way!)</h3>
+<p><a href="https://ellakaye.rbind.io/">Ella Kaye</a> documents her progress through the 2020 <a href="https://adventofcode.com/">Advent of Code</a>, a series of small coding challenges, released daily through December in her post <strong>Advent of Code, 2020</strong> <span class="citation" data-cites="kaye2020advent">(<a href="#ref-kaye2020advent" role="doc-biblioref">Kaye 2020</a>)</span>.</p>
+<div class="cell">
+<iframe src="https://ellakaye.rbind.io/posts/2020-12-09-advent-of-code-2020/" width="100%" height="400px" data-external="1">
+</iframe>
+</div>
+</section>
+<section id="v.-share-what-you-learned-at-a-conference" class="level3">
+<h3 class="anchored" data-anchor-id="v.-share-what-you-learned-at-a-conference">v. Share what you learned at a conference</h3>
+<p>Danielle Brantley (<a href="https://datascidani.com/">Data Sci Dani</a>) recaps her experiences at R Conference 2020 and provides brief overviews of the R packages she learned about along the way in her post, <strong>Packages I Learned about at R Conference NYC</strong> <span class="citation" data-cites="brantley2020packages">(<a href="#ref-brantley2020packages" role="doc-biblioref">Brantley 2020</a>)</span>.</p>
+<div class="cell">
+<iframe src="https://datascidani.com/posts/2020-08-20-packages-r-conference-nyc/" width="100%" height="400px" data-external="1">
+</iframe>
+</div>
+</section>
+<section id="vi.-present-a-coding-problem-and-solution" class="level3">
+<h3 class="anchored" data-anchor-id="vi.-present-a-coding-problem-and-solution">vi. Present a coding problem and solution</h3>
+<p>Kaija Gahm (<a href="https://kaijagahm.netlify.app/blog.html">woodpeckeR</a>) defines a coding problem, provides some context, and describes her solution along with why it works in her post, <strong>%$%: upping your pipe game</strong> <span class="citation" data-cites="gahm2021">(<a href="#ref-gahm2021" role="doc-biblioref">Gahm 2021</a>)</span>.</p>
+<div class="cell">
+<iframe src="https://kaijagahm.netlify.app/posts/2020-02-10-upping-your-pipe-game/" width="100%" height="400px" data-external="1">
+</iframe>
+</div>
+</section>
+<section id="vii.-share-how-you-use-code-as-a-creative-medium" class="level3">
+<h3 class="anchored" data-anchor-id="vii.-share-how-you-use-code-as-a-creative-medium">vii. Share how you use code as a creative medium</h3>
+<p><a href="https://ijeamaka-anyene.netlify.app/">Ijeamaka Anyene</a> is a computational aRtist who shares her process of creating abstract geometrical rectangular designs (check out her ‘Subdivisions Series’ on her <a href="https://www.etsy.com/shop/ArtSnacksPrints?ref=simple-shop-header-name&amp;listing_id=1088780421">Etsy shop</a>) in her post, <strong>So, you want to subdivide a rectangle</strong> <span class="citation" data-cites="anyene2021so">(<a href="#ref-anyene2021so" role="doc-biblioref">Anyene 2021</a>)</span>.</p>
+<div class="cell">
+<iframe src="https://ijeamaka-anyene.netlify.app/posts/2021-09-07-so-you-want-to-subdivide-a-rectangle" width="100%" height="400px" data-external="1">
+</iframe>
+</div>
+</section>
+<section id="viii.-document-the-evolution-of-your-code-in-multiple-posts" class="level3">
+<h3 class="anchored" data-anchor-id="viii.-document-the-evolution-of-your-code-in-multiple-posts">viii. Document the evolution of your code in multiple posts</h3>
+<p>Matt Kerlogue <a href="https://lapsedgeographer.london/">(The Lapsed Geographer)</a> details his use of the <code>{pdftools}</code> and <code>tidyverse</code> packages in R to web scrape and wrangle COVID-19 data from UK reports in his post, <strong>Scraping Google’s COVID-19 mobility report PDFs</strong> <span class="citation" data-cites="kerlogue2020scraping">(<a href="#ref-kerlogue2020scraping" role="doc-biblioref">Kerlogue 2020b</a>)</span>. He later follows up with instructions on how to automate this process for reports from ~130 countries and all 50 US states in his post, <strong>Automating the COVID-19 PDF scraping</strong> <span class="citation" data-cites="kerlogue2020automating">(<a href="#ref-kerlogue2020automating" role="doc-biblioref">Kerlogue 2020a</a>)</span>.</p>
+<div class="cell">
+<iframe src="https://lapsedgeographer.london/2020-04/covid19-scraping/" width="100%" height="400px" data-external="1">
+</iframe>
+</div>
+<p>Now that we’re all feeling inspired to flex our creative data science muscles, let’s create and customize our own blog posts <svg aria-label="Blog" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#A58893;overflow:visible;position:relative;"><title>Blog</title><path d="M192 32c0 17.7 14.3 32 32 32c123.7 0 224 100.3 224 224c0 17.7 14.3 32 32 32s32-14.3 32-32C512 128.9 383.1 0 224 0c-17.7 0-32 14.3-32 32zm0 96c0 17.7 14.3 32 32 32c70.7 0 128 57.3 128 128c0 17.7 14.3 32 32 32s32-14.3 32-32c0-106-86-192-192-192c-17.7 0-32 14.3-32 32zM96 144c0-26.5-21.5-48-48-48S0 117.5 0 144V368c0 79.5 64.5 144 144 144s144-64.5 144-144s-64.5-144-144-144H128v96h16c26.5 0 48 21.5 48 48s-21.5 48-48 48s-48-21.5-48-48V144z"></path></svg></p>
+</section>
+</section>
+<section id="iii.-adding-a-distill-blog-to-your-personal-website" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="iii.-adding-a-distill-blog-to-your-personal-website">III. Adding a distill blog to your personal website</h2>
+<p><em><strong>Disclaimer:</strong> A lot of the following content (sections III &amp; IV) is just a compilation of excellent existing resources. I learn by repeating things (usually many times), so taking the time to type out code/YAML headers has been helpful, albeit not at all novel. See a list of referenced resources at the bottom of this post.</em></p>
+<p>If you have not yet made a distill site, there are <em>many</em> great tutorials out there. For MEDS students, I recommend following along with these <a href="https://docs.google.com/document/d/1c0SZiVvp32UTJ9sK_yVjI8ou6pVdFRXsY2236tiTA1c/edit">step-by-step instructions</a> by <a href="https://www.allisonhorst.com/">Allison Horst</a> before moving forward. For a very brief intro on customizing your distill site using CSS, check out these <a href="https://ucsb-meds.github.io/customizing-websites-css/#1">slides</a>.</p>
+<aside>
+<em>Note: The following section was adapted from <span class="citation" data-cites="apreshill2020postcards">Hill (<a href="#ref-apreshill2020postcards" role="doc-biblioref">2020</a>)</span></em>
+</aside>
+<p>Now that you have your distill site up and running, you can create your first blog post by running the <code>distill::create_post()</code> function in your console:</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">create_post</span>(<span class="at">title =</span> <span class="st">"My blog post"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>If this is the <strong>first time</strong> you are creating a blog post, <code>{distill}</code> will add a directory called <code>_posts/</code>, which will contain this plus all future blog posts. You will also need to create a <strong>listing page</strong>, which will list all of your posts. Do this by adding a blank <code>.Rmd</code> file to your root directory by running <code>utils::file.edit("blog.Rmd")</code> in your console, then add a YAML header to your new file as follows:</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">"Blog"</span>  <span class="co"># any name you want</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>listing<span class="sc">:</span> posts <span class="co"># do this exactly</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>Finally, link your new listing page to your website’s navbar by editing <strong><code>_site.yml</code></strong>. <em>Note: Since I named my listing <code>.Rmd</code> file as <code>blog.Rmd</code>, the href I need to link to is <code>blog.html</code>.</em></p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>navbar<span class="sc">:</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  right<span class="sc">:</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Home"</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> index.html</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> text<span class="sc">:</span> <span class="st">"Blog"</span>      <span class="co"># add </span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>      href<span class="sc">:</span> blog.html   <span class="co"># add</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section>
+<section id="iv.-customizing-your-distill-blog-posts" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="iv.-customizing-your-distill-blog-posts">IV. Customizing your distill blog &amp; posts</h2>
+<p>A couple simple touches can go a long way in improving the look of your distill blog. Here are some of the steps I followed to customize my first blog post.</p>
+<aside>
+<em>Note: This section’s content was largely adapted from <span class="citation" data-cites="allaire2018distill">Allaire et al. (<a href="#ref-allaire2018distill" role="doc-biblioref">2018</a>)</span></em>
+</aside>
+<section id="i.-preview-images" class="level3">
+<h3 class="anchored" data-anchor-id="i.-preview-images">i. Preview images</h3>
+<p>Preview images are those fun little thumbnails that appear alongside blog posts on your listing page:</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="media/preview_img.png" class="img-fluid" width="1163"></p>
+</div>
+</div>
+<p>Add your image to the folder where your blog post <code>.Rmd</code> lives (e.g.&nbsp;<code>_posts</code> -&gt; <code>YYYY-MM-DD-my-blog-post</code> -&gt; <code>my_preview_image.jpeg</code>). Then, add the <code>preview</code> field to the YAML header of your blog post <code>.Rmd</code> file and set the value to the name of your preview image:</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">"my blog post"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># (additional metadata excluded for brevity)</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>preview<span class="sc">:</span> my_preview_image.jpeg  <span class="co"># your preview image</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section>
+<section id="ii.-categories" class="level3">
+<h3 class="anchored" data-anchor-id="ii.-categories">ii. Categories</h3>
+<p>You can assign each post to one or more “categories,” making it easier for your readers to filter content. Do so by adding the <code>categories</code> field to the YAML header of your blog post <code>.Rmd</code> file, then list whichever self-defined categories you would like your post to be assigned to. For example, I assigned this blog post to two catetories: <code>distill</code> and <code>R</code>:</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">"Why create slides about blogging when you can just blog about it instead?"</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># (additional metadata excluded for brevity)</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>categories<span class="sc">:</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="sc">-</span> distill <span class="co"># list as many categories as you'd like </span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="sc">-</span> R </span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>Take a look at your listing page to see all your categories (and how many articles are assigned to each). Assigned categories will also appear as metadata at the top of each post.</p>
+</section>
+<section id="iii.-table-of-contents" class="level3">
+<h3 class="anchored" data-anchor-id="iii.-table-of-contents">iii. Table of contents</h3>
+<p>Table of contents can be helpful for readers to navigate longer posts. Add the <code>toc</code> (and optionally, <code>toc_float</code>) field to your blog’s YAML header as shown below:</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">"my blog post"</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># (additional metadata excluded for brevity)</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>output<span class="sc">:</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  distill<span class="sc">::</span>distill_article<span class="sc">:</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    self_contained<span class="sc">:</span> false</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    toc<span class="sc">:</span> true              <span class="co"># add a table of contents</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    toc_float<span class="sc">:</span> true        <span class="co"># float it (positioned on the left-hand side, rather at the top)</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section>
+<section id="iv.-citations" class="level3">
+<h3 class="anchored" data-anchor-id="iv.-citations">iv. Citations</h3>
+<p>You can add automatically-generated citations to the bottom of your posts, making it easier for readers to reference your work.</p>
+<p>I did this by first adding the <code>base_url</code> field to my <strong><code>_site.yml</code></strong> and set the value to the landing page URL of my distill site. For example:</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>name<span class="sc">:</span> <span class="st">"samanthacsik.github.io"</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">"Samantha Csik"</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># (additional metadata excluded for brevity)</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>base_url<span class="sc">:</span> samanthacsik.github.io <span class="co"># add your website's landing page url</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>I then specified the <a href="https://developer.mozilla.org/en-US/docs/Glossary/Slug">slug</a> (the unique identifying part of a web address) in the YAML header of my blog post <code>.Rmd</code> file (a slug will be automatically generated if not provided):</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">"Why create slides about blogging when you can just blog about it instead?"</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co"># (additional metadata excluded for brevity)</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>slug<span class="sc">:</span> csik2021firstBlog</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>Your citations will now appear as metadata at the bottom of your post upon knitting.</p>
+</section>
+<section id="v.-bibliographies" class="level3">
+<h3 class="anchored" data-anchor-id="v.-bibliographies">v. Bibliographies</h3>
+<p>You can use standard <a href="https://pandoc.org/MANUAL.html#citations">R Markdown bibliographies</a> to cite works throughout your post and include a corresponding “References” list. You will first need to create a <code>.bib</code> file in the folder containing your blog post. You can do so by running the <code>file.edit()</code> function in your console. For example:</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">file.edit</span>(<span class="st">"_posts/YYYY-MM-DD-my-blog-post/bibliography.bib"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>Next, add the <code>bibliograhy</code> field to the YAML header of your blog post <code>.Rmd</code> file and set the value to the name of your new <code>.bib</code> file:</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">"my blog post"</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co"># (additional metadata excluded for brevity)</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>bibliography<span class="sc">:</span> bibliography.bib</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>Now, add citation information to your <code>.bib</code> file. This is super easy if you are citing a distill article that has citation information already included – just copy and paste! <em>Note: there are different formats (e.g.&nbsp;CSL or BibTeX) for creating bibliography files. I chose to use BibTeX.</em></p>
+<p>For example, <span class="citation" data-cites="allaire2018distill">Allaire et al. (<a href="#ref-allaire2018distill" role="doc-biblioref">2018</a>)</span> includes the following BibTeX citation at the end of their post, which I have copied into my <code>.bib</code> file:</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="sc">@</span>misc{allaire2018distill,</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  author <span class="ot">=</span> {Allaire, JJ and Iannone, Rich and Presmanes Hill, Alison and Xie, Yihui},</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  title <span class="ot">=</span> {Distill <span class="cf">for</span> R Markdown},</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  url <span class="ot">=</span> {https<span class="sc">:</span><span class="er">//</span>rstudio.github.io<span class="sc">/</span>distill},</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  year <span class="ot">=</span> {<span class="dv">2018</span>}</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>Note the format of this citation, where <code>type</code> can be <code>manual</code>, <code>book</code>, <code>article</code>, <code>misc</code>, etc. (all case-insensitive) and <code>key</code> is the citation reference used for inserting in-text citations.</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="sc">@</span>type{key,</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  ...</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>To include an in-text citation for the above reference, type <code>@allaire2018distill</code> (or if you prefer your citation to be inside parentheses, <code>[@allaire2018distill]</code>). Adding the in-text citation will automatically add the full reference to your “References” list at the bottom of your post. To read more about including bibliographies and citations in your blog posts, see <span class="citation" data-cites="bookdown">Xie (<a href="#ref-bookdown" role="doc-biblioref">2021</a>)</span> and <span class="citation" data-cites="cookbook">Xie, Dervieux, and Riederer (<a href="#ref-cookbook" role="doc-biblioref">2021</a>)</span>.</p>
+</section>
+<section id="vi.-appendices" class="level3">
+<h3 class="anchored" data-anchor-id="vi.-appendices">vi. Appendices</h3>
+<p>While citations and references will be automatically added as appendices to your blog post (if you followed along with the steps above), you can add additional content here by adding the <code>.appendix</code> class to any level 1 or level 2 header. For example, I added an additional “Corrections” statement to my appendix below by typing:</p>
+<p><code>## Corrections {.appendix}</code></p>
+<p><code>If you see mistakes or want to suggest changes...</code></p>
+<p><br> <br></p>
+<p>I had a ton of fun playing around with some of these easy-to-implement features that the <code>{distill}</code> package provides for customizing blog posts. And I had even <em>more</em> fun checking out other data science blogs as I looked for inspiration. I hope they inspired you too! Happy blogging <svg aria-label="Face Smile Beam" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#A58893;overflow:visible;position:relative;"><title>Face Smile Beam</title><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm177.6 62.1C192.8 334.5 218.8 352 256 352s63.2-17.5 78.4-33.9c9-9.7 24.2-10.4 33.9-1.4s10.4 24.2 1.4 33.9c-22 23.8-60 49.4-113.6 49.4s-91.7-25.5-113.6-49.4c-9-9.7-8.4-24.9 1.4-33.9s24.9-8.4 33.9 1.4zm40-89.3l0 0 0 0-.2-.2c-.2-.2-.4-.5-.7-.9c-.6-.8-1.6-2-2.8-3.4c-2.5-2.8-6-6.6-10.2-10.3c-8.8-7.8-18.8-14-27.7-14s-18.9 6.2-27.7 14c-4.2 3.7-7.7 7.5-10.2 10.3c-1.2 1.4-2.2 2.6-2.8 3.4c-.3 .4-.6 .7-.7 .9l-.2 .2 0 0 0 0 0 0c-2.1 2.8-5.7 3.9-8.9 2.8s-5.5-4.1-5.5-7.6c0-17.9 6.7-35.6 16.6-48.8c9.8-13 23.9-23.2 39.4-23.2s29.6 10.2 39.4 23.2c9.9 13.2 16.6 30.9 16.6 48.8c0 3.4-2.2 6.5-5.5 7.6s-6.9 0-8.9-2.8l0 0 0 0zm160 0l0 0-.2-.2c-.2-.2-.4-.5-.7-.9c-.6-.8-1.6-2-2.8-3.4c-2.5-2.8-6-6.6-10.2-10.3c-8.8-7.8-18.8-14-27.7-14s-18.9 6.2-27.7 14c-4.2 3.7-7.7 7.5-10.2 10.3c-1.2 1.4-2.2 2.6-2.8 3.4c-.3 .4-.6 .7-.7 .9l-.2 .2 0 0 0 0 0 0c-2.1 2.8-5.7 3.9-8.9 2.8s-5.5-4.1-5.5-7.6c0-17.9 6.7-35.6 16.6-48.8c9.8-13 23.9-23.2 39.4-23.2s29.6 10.2 39.4 23.2c9.9 13.2 16.6 30.9 16.6 48.8c0 3.4-2.2 6.5-5.5 7.6s-6.9 0-8.9-2.8l0 0 0 0 0 0z"></path></svg></p>
+
+
+
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-allaire2018distill" class="csl-entry" role="listitem">
+Allaire, JJ, Rich Iannone, Alison Presmanes Hill, and Yihui Xie. 2018. <span>“Distill for <span>R</span> Markdown.”</span> <a href="https://rstudio.github.io/distill">https://rstudio.github.io/distill</a>.
+</div>
+<div id="ref-Ambio2020Feynman" class="csl-entry" role="listitem">
+Ambion, Ronnel Ian A., Rainier Santi C. De Leon, Alfonso Pio Angelo R. Mendoza, and Reinier M. Navarro. 2020. <span>“The Utilization of the Feynman Technique in Paired Team Teaching Towards Enhancing Grade 10 ANHS Students’ Academic Achievement in Science.”</span> <em>2020 IEEE Integrated STEM Education Conference (ISEC)</em>, 1–13.
+</div>
+<div id="ref-anyene2021so" class="csl-entry" role="listitem">
+Anyene, Ijeamaka. 2021. <span>“Ijeamaka Anyene: So, You Want to Subdivide a Rectangle.”</span> <a href="https://ijeamaka-anyene.netlify.app/posts/2021-09-07-so-you-want-to-subdivide-a-rectangle/">https://ijeamaka-anyene.netlify.app/posts/2021-09-07-so-you-want-to-subdivide-a-rectangle/</a>.
+</div>
+<div id="ref-brantley2020packages" class="csl-entry" role="listitem">
+Brantley, Danielle. 2020. <span>“Data Sci Dani: Packages <span>I</span> Learned about at <span>R</span> Conference NYC.”</span> <a href="https://datascidani.com/posts/2020-08-20-packages-r-conference-nyc/">https://datascidani.com/posts/2020-08-20-packages-r-conference-nyc/</a>.
+</div>
+<div id="ref-ee2021improving" class="csl-entry" role="listitem">
+EE. 2021. <span>“Eric Ekholm: Improving <span class="nocase">ggplots</span> with Text Color.”</span> <a href="https://www.ericekholm.com/posts/2021-03-24-improving-ggplots-with-text-color/">https://www.ericekholm.com/posts/2021-03-24-improving-ggplots-with-text-color/</a>.
+</div>
+<div id="ref-fisher2020penguins" class="csl-entry" role="listitem">
+Fisher, Harry. 2020. <span>“Data, Code &amp; Coffee: Penguins and <span class="nocase">nakedpipes</span>.”</span> <a href="https://hfshr.xyz/posts/2020-06-21-penguins-and-nakedpipes/">https://hfshr.xyz/posts/2020-06-21-penguins-and-nakedpipes/</a>.
+</div>
+<div id="ref-gahm2021" class="csl-entry" role="listitem">
+Gahm, Kaija. 2021. <span>“Kaija Gahm:”</span> <a href="https://kaijagahm.netlify.app/posts/2020-02-10-upping-your-pipe-game/">https://kaijagahm.netlify.app/posts/2020-02-10-upping-your-pipe-game/</a>.
+</div>
+<div id="ref-apreshill2020postcards" class="csl-entry" role="listitem">
+Hill, Alison. 2020. <span>“<span>M-F-E-O</span>: <span class="nocase">postcards</span> + <span class="nocase">distill</span>.”</span> <a href="https://www.apreshill.com/blog/2020-12-postcards-distill/">https://www.apreshill.com/blog/2020-12-postcards-distill/</a>.
+</div>
+<div id="ref-horst2021gt" class="csl-entry" role="listitem">
+Horst, Allison. 2021. <span>“Customizing <span class="nocase">tables</span> <span class="nocase">is</span> <span class="nocase">fun</span> (<span class="nocase">seriously</span>) with <span class="nocase">gt</span>.”</span> <a href="https://www.allisonhorst.com/post/2020-03-02-gt-tables-examples/">https://www.allisonhorst.com/post/2020-03-02-gt-tables-examples/</a>.
+</div>
+<div id="ref-kaye2020advent" class="csl-entry" role="listitem">
+Kaye, Ella. 2020. <span>“ELLA KAYE: Advent of Code 2020.”</span> <a href="https://ellakaye.rbind.io/posts/2020-12-09-advent-of-code-2020/">https://ellakaye.rbind.io/posts/2020-12-09-advent-of-code-2020/</a>.
+</div>
+<div id="ref-kerlogue2020automating" class="csl-entry" role="listitem">
+Kerlogue, Matt. 2020a. <span>“The Lapsed Geographer: Automating the COVID19 PDF Scraping.”</span> <a href="https://lapsedgeographer.london/2020-04/automating-pdf-scraping/">https://lapsedgeographer.london/2020-04/automating-pdf-scraping/</a>.
+</div>
+<div id="ref-kerlogue2020scraping" class="csl-entry" role="listitem">
+———. 2020b. <span>“The Lapsed Geographer: Scraping Google’s COVID-19 Mobility Report PDFs.”</span> <a href="https://lapsedgeographer.london/2020-04/covid19-scraping/">https://lapsedgeographer.london/2020-04/covid19-scraping/</a>.
+</div>
+<div id="ref-Nestojko2014protege" class="csl-entry" role="listitem">
+Nestojko, John F., Dung C. Bui, Kornell Nate, and Elizabeth Ligon Bjork. 2014. <span>“Expecting to Teach Enhances Learning and Organization of Knowledge in Free Recall of Text Passages.”</span> <em>Memory &amp; Cognition</em>, 1038–48.
+</div>
+<div id="ref-bookdown" class="csl-entry" role="listitem">
+Xie, Yihui. 2021. <span>“Bookdown: Authoring Books and Technical Documents with <span>R</span> Markdown, Section 2.8 Citations.”</span> <a href="https://bookdown.org/yihui/bookdown/citations.html">https://bookdown.org/yihui/bookdown/citations.html</a>.
+</div>
+<div id="ref-cookbook" class="csl-entry" role="listitem">
+Xie, Yihui, Christophe Dervieux, and Emily Riederer. 2021. <span>“<span>R</span> Markdown Cookbook, Section 4.5 Bibliographies and Citations.”</span> <a href="https://bookdown.org/yihui/rmarkdown-cookbook/bibliography.html">https://bookdown.org/yihui/rmarkdown-cookbook/bibliography.html</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>This is sometimes referred to as the Protégé Effect or the Feynman Learning Technique. You can learn a bit more from <span class="citation" data-cites="Nestojko2014protege">(<a href="#ref-Nestojko2014protege" role="doc-biblioref">Nestojko et al. 2014</a>)</span> and <span class="citation" data-cites="Ambio2020Feynman">(<a href="#ref-Ambio2020Feynman" role="doc-biblioref">Ambion et al. 2020</a>)</span><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>I might also add that having to look up something 3x <em>for yourself</em> might be a good reason to blog about it. Read David Robinson’s full post about starting a data science blog <a href="http://varianceexplained.org/r/start-blog/">here</a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Many of the following blogs can be found on the <a href="https://distillery.rbind.io/">distillery</a>, a blog about building distill websites and blogs. Check it out!<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{csik2021,
+  author = {Csik, Samantha},
+  title = {Why Create Presentation Slides about Blogging When You Can
+    Just Blog about It Instead?},
+  date = {2021-09-24},
+  url = {https://samanthacsik.github.io/posts/2021-09-21-distill-blogs/},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-csik2021" class="csl-entry quarto-appendix-citeas" role="listitem">
+Csik, Samantha. 2021. <span>“Why Create Presentation Slides about
+Blogging When You Can Just Blog about It Instead?”</span> September 24,
+2021. <a href="https://samanthacsik.github.io/posts/2021-09-21-distill-blogs/">https://samanthacsik.github.io/posts/2021-09-21-distill-blogs/</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Bhanu Prasanna</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">This website is built by 👨🏻‍💻 using <a href="https://quarto.org/">Quarto</a></div>
+  </div>
+</footer>
+
+
+
+</body></html>

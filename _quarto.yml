@@ -1,0 +1,35 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Bhanu Prasanna"
+  favicon: "public/favicons/android-chrome-512x512.png"
+  page-navigation: true
+  # reader-mode: true
+  # back-to-top-navigation: true
+  page-footer:
+    background: black 
+    left: Bhanu Prasanna
+    right: This website is built by 👨🏻‍💻 using [Quarto](https://quarto.org/)
+  navbar:
+    background: black
+    right:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - posts.qmd
+
+format:
+  html:
+    page-layout: full
+    theme: darkly
+    code-fold: true
+    code-tools:
+      source: false
+      toggle: true
+    code-summary: "Show the code"
+    highlight-style: dracula
+    css: styles.css
+    toc: true
