@@ -53,7 +53,7 @@
     "href": "notes.html",
     "title": "Notes",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nC++ Notes\n\n\n\n\n\n\n\nNotes\n\n\nC++\n\n\nC\n\n\n\n\nDistilled C++ Notes\n\n\n\n\n\n\nOct 25, 2023\n\n\nBhanu Prasanna Koppolu\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nC++ Notes\n\n\n\n\n\n\n\nNotes\n\n\nC++\n\n\nChallenge\n\n\n\n\nDistilled C++ Notes\n\n\n\n\n\n\nOct 25, 2023\n\n\nBhanu Prasanna Koppolu\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "challenges.html",
@@ -91,6 +91,13 @@
     "text": "Shall we Start Now Already? 🤨\nFrom 26th October, 2023 the challenge will officially start.\nLet’s go Step-by-Step.\n\nChoosing the Programming Language \n\n\nI. Choosing the Programming Language\nAs I want to become a Quant Developer. The most used programming language is C++.\n\nNote: Most firms in the world use the latest C++ version. The current version of C++ is 20 as of the time of this challenge.\n\nThe resources that I used for Learning C++ are provided below:\n\nYouTube - C++ 20 - FreeCodeCamp Course\nYouTube - Time and Space Complexity\nHackerrank -"
   },
   {
+    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-1---time-and-space-complexity",
+    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-1---time-and-space-complexity",
+    "title": "90 Days DSA Challenge",
+    "section": "Day 1 - Time and Space Complexity",
+    "text": "Day 1 - Time and Space Complexity\nFor Day 1 - I don’t want to start coding but instead understand the more theoretical parts.\nI have started with Time and Space Complexity from the YouTube Video. Click Here!."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Bhanu Prasanna",
@@ -102,6 +109,41 @@
     "href": "notes/2023-10-25-C++/index.html",
     "title": "C++ Notes",
     "section": "",
-    "text": "CitationBibTeX citation:@online{prasanna koppolu2023,\n  author = {Prasanna Koppolu, Bhanu},\n  title = {C++ {Notes}},\n  date = {2023-10-25},\n  url = {https://bhanuprasanna527.github.io/notes/2023-10-25-C++/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nPrasanna Koppolu, Bhanu. 2023. “C++ Notes.” October 25,\n2023. https://bhanuprasanna527.github.io/notes/2023-10-25-C++/."
+    "text": "Definition - Time Complexity is the relationship about how the time will grow as the input grows.\nTime Complexity != Total Time Taken by a Machine to execute.\nThere are mainly 4 points for Time Complexity:\n\nAlways look for the Worst Case Time Complexity.\nAlways look at the Complexity for Large Data.\nAlways Ignore Constants.\nAlways Ignore Less Dominant Terms. From Point 2\n\n\n\n\n\n\nIf the recurrence become more complex then finding the time complexity will become harder. So, Akra-Bazzi method is the easy and simple method to find the Time Complexity.\nThe method goes as follows:\nLet \\(p\\) be the unique real number for which \\[\\sum_{i=1}^{k} a_ib_i^p = 1\\]\nThen,\n\\[T(x) = \\Theta\\biggl(x^p + x^p \\int_1^x \\frac{g(u)}{u^{p+1}} du\\biggl)\\]\n\n\n\nThe usage of Asymptotic Notation is for specifying and for the identification of the upper and lower bounds.\n\\[\\lim_{x \\to \\infty} \\frac{f(n)}{g(n)}\\]\nBelow are the Asymptotic Notations:\n\n\nThis is the Upper Bound and the complexity cannot go beyond this Upper Bound.\n\\[\\lim_{x \\to \\infty} \\frac{f(n)}{g(n)} &lt; \\infty\\]\n\n\n\nThis is the opposite of Big - \\(O\\) Notation. This is the Lower Bound and the function complexity will atleast require Lower Bound complexity.\n\\[\\lim_{x \\to \\infty} \\frac{f(n)}{g(n)} &gt; 0\\]\n\n\n\nThe Big - \\(\\Theta\\) Notation was created when a function lies in both Upper Bound (Big - \\(O\\)) and Lower Bound (Big - \\(\\Omega\\)).\n\\[0 &lt; \\lim_{x \\to \\infty} \\frac{f(n)}{g(n)} &lt; \\infty\\]\n\n\n\nThe Little - \\(o\\) is same as Big - \\(O\\) but it is slightly loose and strictly lesser than.\n\\[\\lim_{x \\to \\infty} \\frac{f(n)}{g(n)} = 0\\]\n\n\n\nThe Little - \\(\\omega\\) is same as Big - \\(\\Omega\\) but it is slightly loose and strictly greater than.\n\\[\\lim_{x \\to \\infty} \\frac{f(n)}{g(n)} = \\infty\\]\n\n\n\n\n\nSpace Complexity is measured by combining the Input Space and the Auxilary Space. The same Asymptotic Notations discussed above are the ones used for Space Complexity.\n\n\n\n\nThis concept cannot be explained here but look in the video for more reference, the video details each type very clearly. Click Here!\nThis is the end of Day - 1."
+  },
+  {
+    "objectID": "notes/2023-10-25-C++/index.html#time-complexity",
+    "href": "notes/2023-10-25-C++/index.html#time-complexity",
+    "title": "C++ Notes",
+    "section": "",
+    "text": "Definition - Time Complexity is the relationship about how the time will grow as the input grows.\nTime Complexity != Total Time Taken by a Machine to execute.\nThere are mainly 4 points for Time Complexity:\n\nAlways look for the Worst Case Time Complexity.\nAlways look at the Complexity for Large Data.\nAlways Ignore Constants.\nAlways Ignore Less Dominant Terms. From Point 2"
+  },
+  {
+    "objectID": "notes/2023-10-25-C++/index.html#akra-bazzi-time-complexity-method",
+    "href": "notes/2023-10-25-C++/index.html#akra-bazzi-time-complexity-method",
+    "title": "C++ Notes",
+    "section": "",
+    "text": "If the recurrence become more complex then finding the time complexity will become harder. So, Akra-Bazzi method is the easy and simple method to find the Time Complexity.\nThe method goes as follows:\nLet \\(p\\) be the unique real number for which \\[\\sum_{i=1}^{k} a_ib_i^p = 1\\]\nThen,\n\\[T(x) = \\Theta\\biggl(x^p + x^p \\int_1^x \\frac{g(u)}{u^{p+1}} du\\biggl)\\]"
+  },
+  {
+    "objectID": "notes/2023-10-25-C++/index.html#asymptotic-notation",
+    "href": "notes/2023-10-25-C++/index.html#asymptotic-notation",
+    "title": "C++ Notes",
+    "section": "",
+    "text": "The usage of Asymptotic Notation is for specifying and for the identification of the upper and lower bounds.\n\\[\\lim_{x \\to \\infty} \\frac{f(n)}{g(n)}\\]\nBelow are the Asymptotic Notations:\n\n\nThis is the Upper Bound and the complexity cannot go beyond this Upper Bound.\n\\[\\lim_{x \\to \\infty} \\frac{f(n)}{g(n)} &lt; \\infty\\]\n\n\n\nThis is the opposite of Big - \\(O\\) Notation. This is the Lower Bound and the function complexity will atleast require Lower Bound complexity.\n\\[\\lim_{x \\to \\infty} \\frac{f(n)}{g(n)} &gt; 0\\]\n\n\n\nThe Big - \\(\\Theta\\) Notation was created when a function lies in both Upper Bound (Big - \\(O\\)) and Lower Bound (Big - \\(\\Omega\\)).\n\\[0 &lt; \\lim_{x \\to \\infty} \\frac{f(n)}{g(n)} &lt; \\infty\\]\n\n\n\nThe Little - \\(o\\) is same as Big - \\(O\\) but it is slightly loose and strictly lesser than.\n\\[\\lim_{x \\to \\infty} \\frac{f(n)}{g(n)} = 0\\]\n\n\n\nThe Little - \\(\\omega\\) is same as Big - \\(\\Omega\\) but it is slightly loose and strictly greater than.\n\\[\\lim_{x \\to \\infty} \\frac{f(n)}{g(n)} = \\infty\\]"
+  },
+  {
+    "objectID": "notes/2023-10-25-C++/index.html#space-complexity",
+    "href": "notes/2023-10-25-C++/index.html#space-complexity",
+    "title": "C++ Notes",
+    "section": "",
+    "text": "Space Complexity is measured by combining the Input Space and the Auxilary Space. The same Asymptotic Notations discussed above are the ones used for Space Complexity."
+  },
+  {
+    "objectID": "notes/2023-10-25-C++/index.html#linear-recurrence-homogenous-and-non-homogenous",
+    "href": "notes/2023-10-25-C++/index.html#linear-recurrence-homogenous-and-non-homogenous",
+    "title": "C++ Notes",
+    "section": "",
+    "text": "This concept cannot be explained here but look in the video for more reference, the video details each type very clearly. Click Here!\nThis is the end of Day - 1."
   }
 ]

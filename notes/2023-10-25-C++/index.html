@@ -64,6 +64,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -119,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
+    <div class="quarto-title column-page-left">
       <h1 class="title">C++ Notes</h1>
                   <div>
         <div class="description">
@@ -129,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
                           <div class="quarto-categories">
                 <div class="quarto-category">Notes</div>
                 <div class="quarto-category">C++</div>
-                <div class="quarto-category">C</div>
+                <div class="quarto-category">Challenge</div>
               </div>
                   </div>
   </div>
@@ -161,7 +163,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">October 25, 2023</p>
+        <p class="date-modified">October 26, 2023</p>
       </div>
     </div>
       
@@ -171,17 +173,111 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#day---1" id="toc-day---1" class="nav-link active" data-scroll-target="#day---1">Day - 1</a>
+  <ul class="collapse">
+  <li><a href="#time-complexity" id="toc-time-complexity" class="nav-link" data-scroll-target="#time-complexity">Time Complexity</a>
+  <ul class="collapse">
+  <li><a href="#important-points" id="toc-important-points" class="nav-link" data-scroll-target="#important-points">Important Points</a></li>
+  </ul></li>
+  <li><a href="#akra-bazzi-time-complexity-method" id="toc-akra-bazzi-time-complexity-method" class="nav-link" data-scroll-target="#akra-bazzi-time-complexity-method">Akra-Bazzi Time Complexity Method</a></li>
+  <li><a href="#asymptotic-notation" id="toc-asymptotic-notation" class="nav-link" data-scroll-target="#asymptotic-notation">Asymptotic Notation</a>
+  <ul class="collapse">
+  <li><a href="#big---o-notation-leq-upper-bound" id="toc-big---o-notation-leq-upper-bound" class="nav-link" data-scroll-target="#big---o-notation-leq-upper-bound">Big - <span class="math inline">\(O\)</span> Notation (<span class="math inline">\(\leq\)</span> Upper Bound)</a></li>
+  <li><a href="#big---omega-notation-geq-lower-bound" id="toc-big---omega-notation-geq-lower-bound" class="nav-link" data-scroll-target="#big---omega-notation-geq-lower-bound">Big - <span class="math inline">\(\Omega\)</span> Notation (<span class="math inline">\(\geq\)</span> Lower Bound)</a></li>
+  <li><a href="#big---theta-notation-average" id="toc-big---theta-notation-average" class="nav-link" data-scroll-target="#big---theta-notation-average">Big - <span class="math inline">\(\Theta\)</span> Notation (Average)</a></li>
+  <li><a href="#little---o-notation-upper-bound" id="toc-little---o-notation-upper-bound" class="nav-link" data-scroll-target="#little---o-notation-upper-bound">Little - <span class="math inline">\(o\)</span> Notation (<span class="math inline">\(&lt;\)</span> Upper Bound)</a></li>
+  <li><a href="#little---omega-notation-lower-bound" id="toc-little---omega-notation-lower-bound" class="nav-link" data-scroll-target="#little---omega-notation-lower-bound">Little - <span class="math inline">\(\omega\)</span> Notation (<span class="math inline">\(&gt;\)</span> Lower Bound)</a></li>
+  </ul></li>
+  <li><a href="#space-complexity" id="toc-space-complexity" class="nav-link" data-scroll-target="#space-complexity">Space Complexity</a></li>
+  <li><a href="#linear-recurrence-homogenous-and-non-homogenous" id="toc-linear-recurrence-homogenous-and-non-homogenous" class="nav-link" data-scroll-target="#linear-recurrence-homogenous-and-non-homogenous">Linear Recurrence (Homogenous and Non-Homogenous)</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
 
+<section id="day---1" class="level1">
+<h1>Day - 1</h1>
+<hr>
+<section id="time-complexity" class="level2">
+<h2 class="anchored" data-anchor-id="time-complexity">Time Complexity</h2>
+<section id="important-points" class="level3">
+<h3 class="anchored" data-anchor-id="important-points">Important Points</h3>
+<ul>
+<li><u><strong><em>Definition</em></strong></u> - Time Complexity is the relationship about how the time will grow as the input grows.</li>
+<li>Time Complexity != Total Time Taken by a Machine to execute.</li>
+<li>There are mainly 4 points for Time Complexity:
+<ol type="1">
+<li>Always look for the <strong>Worst Case Time Complexity</strong>.</li>
+<li>Always look at the <strong>Complexity for Large Data</strong>.</li>
+<li>Always <strong>Ignore Constants</strong>.</li>
+<li>Always <strong>Ignore Less Dominant Terms</strong>. <em>From Point 2</em></li>
+</ol></li>
+</ul>
+</section>
+</section>
+<section id="akra-bazzi-time-complexity-method" class="level2">
+<h2 class="anchored" data-anchor-id="akra-bazzi-time-complexity-method">Akra-Bazzi Time Complexity Method</h2>
+<p>If the recurrence become more complex then finding the time complexity will become harder. So, Akra-Bazzi method is the easy and simple method to find the Time Complexity.</p>
+<p>The method goes as follows:</p>
+<p>Let <span class="math inline">\(p\)</span> be the unique real number for which <span class="math display">\[\sum_{i=1}^{k} a_ib_i^p = 1\]</span></p>
+<p>Then,</p>
+<p><span class="math display">\[T(x) = \Theta\biggl(x^p + x^p \int_1^x \frac{g(u)}{u^{p+1}} du\biggl)\]</span></p>
+</section>
+<section id="asymptotic-notation" class="level2">
+<h2 class="anchored" data-anchor-id="asymptotic-notation">Asymptotic Notation</h2>
+<p>The usage of Asymptotic Notation is for specifying and for the identification of the upper and lower bounds.</p>
+<p><span class="math display">\[\lim_{x \to \infty} \frac{f(n)}{g(n)}\]</span></p>
+<p>Below are the Asymptotic Notations:</p>
+<section id="big---o-notation-leq-upper-bound" class="level3">
+<h3 class="anchored" data-anchor-id="big---o-notation-leq-upper-bound">Big - <span class="math inline">\(O\)</span> Notation (<span class="math inline">\(\leq\)</span> Upper Bound)</h3>
+<p>This is the Upper Bound and the complexity cannot go beyond this Upper Bound.</p>
+<p><span class="math display">\[\lim_{x \to \infty} \frac{f(n)}{g(n)} &lt; \infty\]</span></p>
+</section>
+<section id="big---omega-notation-geq-lower-bound" class="level3">
+<h3 class="anchored" data-anchor-id="big---omega-notation-geq-lower-bound">Big - <span class="math inline">\(\Omega\)</span> Notation (<span class="math inline">\(\geq\)</span> Lower Bound)</h3>
+<p>This is the opposite of Big - <span class="math inline">\(O\)</span> Notation. This is the Lower Bound and the function complexity will atleast require Lower Bound complexity.</p>
+<p><span class="math display">\[\lim_{x \to \infty} \frac{f(n)}{g(n)} &gt; 0\]</span></p>
+</section>
+<section id="big---theta-notation-average" class="level3">
+<h3 class="anchored" data-anchor-id="big---theta-notation-average">Big - <span class="math inline">\(\Theta\)</span> Notation (Average)</h3>
+<p>The Big - <span class="math inline">\(\Theta\)</span> Notation was created when a function lies in both Upper Bound (Big - <span class="math inline">\(O\)</span>) and Lower Bound (Big - <span class="math inline">\(\Omega\)</span>).</p>
+<p><span class="math display">\[0 &lt; \lim_{x \to \infty} \frac{f(n)}{g(n)} &lt; \infty\]</span></p>
+</section>
+<section id="little---o-notation-upper-bound" class="level3">
+<h3 class="anchored" data-anchor-id="little---o-notation-upper-bound">Little - <span class="math inline">\(o\)</span> Notation (<span class="math inline">\(&lt;\)</span> Upper Bound)</h3>
+<p>The Little - <span class="math inline">\(o\)</span> is same as Big - <span class="math inline">\(O\)</span> but it is slightly loose and strictly lesser than.</p>
+<p><span class="math display">\[\lim_{x \to \infty} \frac{f(n)}{g(n)} = 0\]</span></p>
+</section>
+<section id="little---omega-notation-lower-bound" class="level3">
+<h3 class="anchored" data-anchor-id="little---omega-notation-lower-bound">Little - <span class="math inline">\(\omega\)</span> Notation (<span class="math inline">\(&gt;\)</span> Lower Bound)</h3>
+<p>The Little - <span class="math inline">\(\omega\)</span> is same as Big - <span class="math inline">\(\Omega\)</span> but it is slightly loose and strictly greater than.</p>
+<p><span class="math display">\[\lim_{x \to \infty} \frac{f(n)}{g(n)} = \infty\]</span></p>
+</section>
+</section>
+<section id="space-complexity" class="level2">
+<h2 class="anchored" data-anchor-id="space-complexity">Space Complexity</h2>
+<ul>
+<li>Space Complexity is measured by combining the Input Space and the Auxilary Space. The same Asymptotic Notations discussed above are the ones used for Space Complexity.</li>
+</ul>
+</section>
+<section id="linear-recurrence-homogenous-and-non-homogenous" class="level2">
+<h2 class="anchored" data-anchor-id="linear-recurrence-homogenous-and-non-homogenous">Linear Recurrence (Homogenous and Non-Homogenous)</h2>
+<p>This concept cannot be explained here but look in the video for more reference, the video details each type very clearly. <a href="https://www.youtube.com/watch?v=mV3wrLBbuuE" target="blank">Click Here!</a></p>
+<p>This is the end of <u><strong><em>Day - 1</em></strong></u>.</p>
 
 
+</section>
+</section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{prasanna koppolu2023,
   author = {Prasanna Koppolu, Bhanu},
