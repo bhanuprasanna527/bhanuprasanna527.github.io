@@ -13,9 +13,84 @@ date-modified: last-modified
 # bibliography: references.bib
 citation: 
   url: https://bhanuprasanna527.github.io/notes/2023-10-25-C++/
-categories: [Notes, C++, C]
-image: penguins.png
+categories: [Notes, C++, Challenge]
+image: cpp.gif
 draft: false
 page-layout: full
 ---
 
+# Day - 1
+___
+
+## Time Complexity
+
+### Important Points
+
+- <u>***Definition***</u> - Time Complexity is the relationship about how the time will grow as the input grows.
+- Time Complexity != Total Time Taken by a Machine to execute.
+- There are mainly 4 points for Time Complexity:
+  1. Always look for the **Worst Case Time Complexity**.
+  2. Always look at the **Complexity for Large Data**.
+  3. Always **Ignore Constants**.
+  4. Always **Ignore Less Dominant Terms**. *From Point 2*
+
+## Akra-Bazzi Time Complexity Method
+
+If the recurrence become more complex then finding the time complexity will become harder. So, Akra-Bazzi method is the easy and simple method to find the Time Complexity.
+
+The method goes as follows:
+
+Let $p$ be the unique real number for which 
+$$\sum_{i=1}^{k} a_ib_i^p = 1$$
+
+Then,
+
+$$T(x) = \Theta\biggl(x^p + x^p \int_1^x \frac{g(u)}{u^{p+1}} du\biggl)$$
+
+## Asymptotic Notation
+
+The usage of Asymptotic Notation is for specifying and for the identification of the upper and lower bounds.
+
+$$\lim_{x \to \infty} \frac{f(n)}{g(n)}$$
+
+Below are the Asymptotic Notations:
+
+### Big - $O$ Notation ($\leq$  Upper Bound)
+
+This is the Upper Bound and the complexity cannot go beyond this Upper Bound.
+
+$$\lim_{x \to \infty} \frac{f(n)}{g(n)} < \infty$$
+
+### Big - $\Omega$ Notation ($\geq$  Lower Bound)
+
+This is the opposite of Big - $O$ Notation. This is the Lower Bound and the function complexity will atleast require Lower Bound complexity.
+
+$$\lim_{x \to \infty} \frac{f(n)}{g(n)} > 0$$
+
+### Big - $\Theta$ Notation (Average)
+
+The Big - $\Theta$ Notation was created when a function lies in both Upper Bound (Big - $O$) and Lower Bound (Big - $\Omega$).
+
+$$0 < \lim_{x \to \infty} \frac{f(n)}{g(n)} < \infty$$
+
+### Little - $o$ Notation ($<$ Upper Bound)
+
+The Little - $o$ is same as Big - $O$ but it is slightly loose and strictly lesser than.
+
+$$\lim_{x \to \infty} \frac{f(n)}{g(n)} = 0$$
+
+### Little - $\omega$ Notation ($>$  Lower Bound)
+
+The Little - $\omega$ is same as Big - $\Omega$ but it is slightly loose and strictly greater than.
+
+$$\lim_{x \to \infty} \frac{f(n)}{g(n)} = \infty$$
+
+## Space Complexity
+
+- Space Complexity is measured by combining the Input Space and the Auxilary Space. The same Asymptotic Notations discussed above are the ones used for Space Complexity.
+
+## Linear Recurrence (Homogenous and Non-Homogenous)
+
+This concept cannot be explained here but look in the video for more reference, the video details each type very clearly. <a href="https://www.youtube.com/watch?v=mV3wrLBbuuE" target="blank">Click Here!</a>
+
+This is the end of <u>***Day - 1***</u>.

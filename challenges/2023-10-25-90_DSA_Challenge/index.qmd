@@ -55,3 +55,14 @@ The resources that I used for Learning C++ are provided below:
 2. YouTube - [Time and Space Complexity](https://www.youtube.com/watch?v=mV3wrLBbuuE&pp=ygUadGltZSBhbmQgc3BhY2UgY29tcGxleGl0eSA%3D)
 2. Hackerrank - 
 
+___
+
+## Day 1 - Time and Space Complexity
+
+For Day 1 - I don't want to start coding but instead understand the more theoretical parts.
+
+I have started with <u>***Time and Space Complexity***</u> from the YouTube Video. <a href="https://www.youtube.com/watch?v=mV3wrLBbuuE&pp=ygUadGltZSBhbmQgc3BhY2UgY29tcGxleGl0eSA%3D" target="blank">Click Here!</a>.
+
+
+
+
