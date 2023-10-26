@@ -5,7 +5,7 @@
 body, #quarto-appendix.default {
     font-family: 'League Spartan';
     background-color: #000;
-    color: #ddd;
+    color: #969696;
 }
 
 h2#toc-title {
@@ -18,45 +18,45 @@ li {
 
 div.sourceCode {
     background-color: #000;
-    border: 1px solid #ddd;
+    border: 1px solid #969696;
 }
 
 .navbar-dark {
     font-size: larger;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #969696;
 }
 
 span.navbar-title {
     font-size: larger;
-    color: #ddd;
+    color: #969696;
 }
 
 .navbar-dark .navbar-nav .nav-link {
     font-size: large;
-    color: #ddd;
+    color: #969696;
 }
 
-.navbar #quarto-search.type-overlay .aa-Autocomplete svg.aa-SubmitIcon, h1.title, p.subtitle.lead, div.quarto-post a, #title-block-header.quarto-title-block.default .quarto-title-meta-contents a, pre.sourceCode, div.quarto-about-jolla .about-link, .aa-Autocomplete .aa-Form .aa-InputWrapperPrefix .aa-Label svg, .aa-Autocomplete .aa-Form .aa-InputWrapperPrefix .aa-LoadingIndicator svg, .aa-DetachedFormContainer .aa-Form .aa-InputWrapperPrefix .aa-Label svg, .aa-DetachedFormContainer .aa-Form .aa-InputWrapperPrefix .aa-LoadingIndicator {
-    color: #ddd;
+.navbar #quarto-search.type-overlay .aa-Autocomplete svg.aa-SubmitIcon, h1.title, p.subtitle.lead, div.quarto-post a, #title-block-header.quarto-title-block.default .quarto-title-meta-contents a, pre.sourceCode, div.quarto-about-jolla .about-link, .aa-Autocomplete .aa-Form .aa-InputWrapperPrefix .aa-Label svg, .aa-Autocomplete .aa-Form .aa-InputWrapperPrefix .aa-LoadingIndicator svg, .aa-DetachedFormContainer .aa-Form .aa-InputWrapperPrefix .aa-Label svg, .aa-DetachedFormContainer .aa-Form .aa-InputWrapperPrefix .aa-LoadingIndicator, div.description, .listing-actions-group .form-select, .listing-actions-group .form-control {
+    color: #969696;
 }
 
 .aa-Autocomplete .aa-Form, .aa-DetachedFormContainer .aa-Form {
     background-color: #222;
-    color: #ddd;
+    color: #969696;
 }
 
 .aa-Autocomplete .aa-Form .aa-InputWrapper .aa-Input, .aa-DetachedFormContainer .aa-Form .aa-InputWrapper .aa-Input {
-    border-left: 1px solid #ddd;
-    color: #ddd;
+    border-left: 1px solid #969696;
+    color: #969696;
 }
 
 code, .code-with-filename .code-with-filename-file {
-    color: #ddd;
+    color: #969696;
 }
 
 div.nav-footer {
-    border-top: 1px solid #ddd;
-    color: #ddd;
+    border-top: 1px solid #969696;
+    color: #969696;
     font-size: larger;
     display: flex;
     align-items: center;
