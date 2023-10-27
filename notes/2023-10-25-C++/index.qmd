@@ -17,10 +17,26 @@ categories: [Notes, C++, Challenge]
 image: cpp.gif
 draft: false
 page-layout: full
+format:
+  html:
+    page-layout: full
+    theme: darkly
+    code-fold: true
+    code-tools:
+      source: false
+      toggle: true
+    code-summary: "Show the code"
+    highlight-style: dracula
+    css: styles.css
+    toc: true
+  pdf:
+    pdf-engine: xelatex
+    toc: true
+    documentclass: scrreprt
+    colorlinks: true
 ---
 
 # Day - 1
-___
 
 ## Time Complexity
 
@@ -91,6 +107,47 @@ $$\lim_{x \to \infty} \frac{f(n)}{g(n)} = \infty$$
 
 ## Linear Recurrence (Homogenous and Non-Homogenous)
 
-This concept cannot be explained here but look in the video for more reference, the video details each type very clearly. <a href="https://www.youtube.com/watch?v=mV3wrLBbuuE" target="blank">Click Here!</a>
+This concept cannot be explained here but look in the video for more reference, the video details each type very clearly. [Click Here!](https://www.youtube.com/watch?v=mV3wrLBbuuE)
 
 This is the end of <u>***Day - 1***</u>.
+
+# Day - 2
+
+## Recursion
+
+### Important Points
+
+- Recursion helps in solving bigger/complex problems into smaller problems which can be solved in a simple way.
+- You can convert a Recursion solution into Iterative and Vice Versa.
+- Space Complexity is not constant due to Recursive Calls.
+
+### Types of Recurrence Relations
+
+1. Linear Recurrence Relation
+2. Divide & Conquer Recurrence Relation
+
+### How to understand & approach a problem?
+
+- Identify if you can break down problem into smaller problems.
+- Write the Recurrence Relations if needed.
+- Draw the Recursive Tree.
+- About the Tree:
+  - See the flow of functions, how they are getting into the stack.
+  - Identify and Focus on Left Tree Calls and Right Tree Calls.
+  - Draw the tree and pointers using Pen & Paper for better understanding. *
+  - Use a debugger to see the flow.
+- See how the values and what type of values are returned at each step. See where the function will come out. In the end you will come out of the main function.
+- Three Variables to concentrate on:
+  - Arguments
+  - Return Type
+  - Body of Function
+- Resources used:
+  - [Click Here!](https://www.youtube.com/watch?v=M2uO2nMT0Bk&list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ&index=23)
+
+## Math for DSA
+
+- Resources used:
+  - Math for DSA 1 - [Click Here!](https://www.youtube.com/watch?v=fzip9Aml6og&list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ&index=25)
+  - Math for DSA 2 - [Click Here!](https://www.youtube.com/watch?v=lmSpZ0bjCyQ&list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ&index=27)
+
+This is the end of <u>***Day - 2***</u>.

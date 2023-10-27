@@ -38,6 +38,8 @@ The missing piece is <u>***DSA***</u>.
 
 From 26th October, 2023 the challenge will officially start.
 
+- Notes Available. <a href="https://bhanuprasanna527.github.io/notes/2023-10-25-C++/" target="blank">Click Here!</a>
+
 Let's go <u>***Step-by-Step***</u>.
 
 1. [Choosing the Programming Language](/challenges/2023-10-25-90_DSA_Challenge/#i.-choosing-the-programming-language)
@@ -52,8 +54,10 @@ As I want to become a Quant Developer. The most used programming language is <u>
 The resources that I used for Learning C++ are provided below:
 
 1. YouTube - [C++ 20 - FreeCodeCamp Course](https://www.youtube.com/watch?v=8jLOx1hD3_o&pp=ygUKYysrIGNvdXJzZQ%3D%3D)
-2. YouTube - [Time and Space Complexity](https://www.youtube.com/watch?v=mV3wrLBbuuE&pp=ygUadGltZSBhbmQgc3BhY2UgY29tcGxleGl0eSA%3D)
-2. Hackerrank - 
+2. YouTube - [Time and Space Complexity](https://www.youtube.com/watch?v=mV3wrLBbuuE&pp=ygUadGltZSBhbmQgc3BhY2UgY29tcGxleGl0eSA%3D) - ✅ 26-10-2023
+3. YouTube - [Introduction to Recursion](https://www.youtube.com/watch?v=M2uO2nMT0Bk&list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ&index=24)
+4. YouTube - [Maths for DSA - 1](https://www.youtube.com/watch?v=fzip9Aml6og&list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ&index=26)
+5. YouTube - [Math for DSA - 2](https://www.youtube.com/watch?v=lmSpZ0bjCyQ&list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ&index=27)
 
 ___
 
@@ -61,8 +65,16 @@ ___
 
 For Day 1 - I don't want to start coding but instead understand the more theoretical parts.
 
-I have started with <u>***Time and Space Complexity***</u> from the YouTube Video. <a href="https://www.youtube.com/watch?v=mV3wrLBbuuE&pp=ygUadGltZSBhbmQgc3BhY2UgY29tcGxleGl0eSA%3D" target="blank">Click Here!</a>.
+I have completed <u>***Time and Space Complexity***</u> from the YouTube Video. <a href="https://www.youtube.com/watch?v=mV3wrLBbuuE&pp=ygUadGltZSBhbmQgc3BhY2UgY29tcGxleGl0eSA%3D" target="blank">Click Here!</a>.
 
+___
 
+## Day 2 - Recursion and Math for DSA
 
+For Day 2 - I will be going through Recursion concept and Math for DSA.
 
+I have completed <u>***Recursion***</u> from the YouTube Video. <a href="https://www.youtube.com/watch?v=M2uO2nMT0Bk&list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ&index=23" target="blank">Click Here!</a>.
+
+I have completed <u>***Math for DSA - 1***</u> from the YouTube Video. <a href="https://www.youtube.com/watch?v=fzip9Aml6og&list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ&index=25" target="blank">Click Here!</a>.
+
+I have completed <u>***Math for DSA - 2***</u> from the YouTube Video. <a href="https://www.youtube.com/watch?v=lmSpZ0bjCyQ&list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ&index=27" target="blank">Click Here!</a>.

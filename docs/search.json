@@ -88,14 +88,21 @@
     "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#shall-we-start-now-already",
     "title": "90 Days DSA Challenge",
     "section": "Shall we Start Now Already? 🤨",
-    "text": "Shall we Start Now Already? 🤨\nFrom 26th October, 2023 the challenge will officially start.\nLet’s go Step-by-Step.\n\nChoosing the Programming Language \n\n\nI. Choosing the Programming Language\nAs I want to become a Quant Developer. The most used programming language is C++.\n\nNote: Most firms in the world use the latest C++ version. The current version of C++ is 20 as of the time of this challenge.\n\nThe resources that I used for Learning C++ are provided below:\n\nYouTube - C++ 20 - FreeCodeCamp Course\nYouTube - Time and Space Complexity\nHackerrank -"
+    "text": "Shall we Start Now Already? 🤨\nFrom 26th October, 2023 the challenge will officially start.\n\nNotes Available. Click Here!\n\nLet’s go Step-by-Step.\n\nChoosing the Programming Language \n\n\nI. Choosing the Programming Language\nAs I want to become a Quant Developer. The most used programming language is C++.\n\nNote: Most firms in the world use the latest C++ version. The current version of C++ is 20 as of the time of this challenge.\n\nThe resources that I used for Learning C++ are provided below:\n\nYouTube - C++ 20 - FreeCodeCamp Course\nYouTube - Time and Space Complexity - ✅ 26-10-2023\nYouTube - Introduction to Recursion\nYouTube - Maths for DSA - 1\nYouTube - Math for DSA - 2"
   },
   {
     "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-1---time-and-space-complexity",
     "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-1---time-and-space-complexity",
     "title": "90 Days DSA Challenge",
     "section": "Day 1 - Time and Space Complexity",
-    "text": "Day 1 - Time and Space Complexity\nFor Day 1 - I don’t want to start coding but instead understand the more theoretical parts.\nI have started with Time and Space Complexity from the YouTube Video. Click Here!."
+    "text": "Day 1 - Time and Space Complexity\nFor Day 1 - I don’t want to start coding but instead understand the more theoretical parts.\nI have completed Time and Space Complexity from the YouTube Video. Click Here!."
+  },
+  {
+    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-2---recursion-and-math-for-dsa",
+    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-2---recursion-and-math-for-dsa",
+    "title": "90 Days DSA Challenge",
+    "section": "Day 2 - Recursion and Math for DSA",
+    "text": "Day 2 - Recursion and Math for DSA\nFor Day 2 - I will be going through Recursion concept and Math for DSA.\nI have completed Recursion from the YouTube Video. Click Here!.\nI have completed Math for DSA - 1 from the YouTube Video. Click Here!.\nI have completed Math for DSA - 2 from the YouTube Video. Click Here!."
   },
   {
     "objectID": "index.html",
@@ -145,5 +152,19 @@
     "title": "C++ Notes",
     "section": "",
     "text": "This concept cannot be explained here but look in the video for more reference, the video details each type very clearly. Click Here!\nThis is the end of Day - 1."
+  },
+  {
+    "objectID": "notes/2023-10-25-C++/index.html#recursion",
+    "href": "notes/2023-10-25-C++/index.html#recursion",
+    "title": "C++ Notes",
+    "section": "Recursion",
+    "text": "Recursion\n\nImportant Points\n\nRecursion helps in solving bigger/complex problems into smaller problems which can be solved in a simple way.\nYou can convert a Recursion solution into Iterative and Vice Versa.\nSpace Complexity is not constant due to Recursive Calls.\n\n\n\nTypes of Recurrence Relations\n\nLinear Recurrence Relation\nDivide & Conquer Recurrence Relation\n\n\n\nHow to understand & approach a problem?\n\nIdentify if you can break down problem into smaller problems.\nWrite the Recurrence Relations if needed.\nDraw the Recursive Tree.\nAbout the Tree:\n\nSee the flow of functions, how they are getting into the stack.\nIdentify and Focus on Left Tree Calls and Right Tree Calls.\nDraw the tree and pointers using Pen & Paper for better understanding. *\nUse a debugger to see the flow.\n\nSee how the values and what type of values are returned at each step. See where the function will come out. In the end you will come out of the main function.\nThree Variables to concentrate on:\n\nArguments\nReturn Type\nBody of Function\n\nResources used:\n\nClick Here!"
+  },
+  {
+    "objectID": "notes/2023-10-25-C++/index.html#math-for-dsa",
+    "href": "notes/2023-10-25-C++/index.html#math-for-dsa",
+    "title": "C++ Notes",
+    "section": "Math for DSA",
+    "text": "Math for DSA\n\nResources used:\n\nMath for DSA 1 - Click Here!\nMath for DSA 2 - Click Here!\n\n\nThis is the end of Day - 2."
   }
 ]
