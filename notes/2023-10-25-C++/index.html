@@ -68,6 +68,7 @@ ul.task-list li input[type="checkbox"] {
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -163,7 +164,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">October 26, 2023</p>
+        <p class="date-modified">October 27, 2023</p>
       </div>
     </div>
       
@@ -196,8 +197,18 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#space-complexity" id="toc-space-complexity" class="nav-link" data-scroll-target="#space-complexity">Space Complexity</a></li>
   <li><a href="#linear-recurrence-homogenous-and-non-homogenous" id="toc-linear-recurrence-homogenous-and-non-homogenous" class="nav-link" data-scroll-target="#linear-recurrence-homogenous-and-non-homogenous">Linear Recurrence (Homogenous and Non-Homogenous)</a></li>
   </ul></li>
+  <li><a href="#day---2" id="toc-day---2" class="nav-link" data-scroll-target="#day---2">Day - 2</a>
+  <ul class="collapse">
+  <li><a href="#recursion" id="toc-recursion" class="nav-link" data-scroll-target="#recursion">Recursion</a>
+  <ul class="collapse">
+  <li><a href="#important-points-1" id="toc-important-points-1" class="nav-link" data-scroll-target="#important-points-1">Important Points</a></li>
+  <li><a href="#types-of-recurrence-relations" id="toc-types-of-recurrence-relations" class="nav-link" data-scroll-target="#types-of-recurrence-relations">Types of Recurrence Relations</a></li>
+  <li><a href="#how-to-understand-approach-a-problem" id="toc-how-to-understand-approach-a-problem" class="nav-link" data-scroll-target="#how-to-understand-approach-a-problem">How to understand &amp; approach a problem?</a></li>
+  </ul></li>
+  <li><a href="#math-for-dsa" id="toc-math-for-dsa" class="nav-link" data-scroll-target="#math-for-dsa">Math for DSA</a></li>
+  </ul></li>
   </ul>
-</nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
@@ -207,7 +218,6 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="day---1" class="level1">
 <h1>Day - 1</h1>
-<hr>
 <section id="time-complexity" class="level2">
 <h2 class="anchored" data-anchor-id="time-complexity">Time Complexity</h2>
 <section id="important-points" class="level3">
@@ -272,8 +282,66 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="linear-recurrence-homogenous-and-non-homogenous" class="level2">
 <h2 class="anchored" data-anchor-id="linear-recurrence-homogenous-and-non-homogenous">Linear Recurrence (Homogenous and Non-Homogenous)</h2>
-<p>This concept cannot be explained here but look in the video for more reference, the video details each type very clearly. <a href="https://www.youtube.com/watch?v=mV3wrLBbuuE" target="blank">Click Here!</a></p>
+<p>This concept cannot be explained here but look in the video for more reference, the video details each type very clearly. <a href="https://www.youtube.com/watch?v=mV3wrLBbuuE">Click Here!</a></p>
 <p>This is the end of <u><strong><em>Day - 1</em></strong></u>.</p>
+</section>
+</section>
+<section id="day---2" class="level1">
+<h1>Day - 2</h1>
+<section id="recursion" class="level2">
+<h2 class="anchored" data-anchor-id="recursion">Recursion</h2>
+<section id="important-points-1" class="level3">
+<h3 class="anchored" data-anchor-id="important-points-1">Important Points</h3>
+<ul>
+<li>Recursion helps in solving bigger/complex problems into smaller problems which can be solved in a simple way.</li>
+<li>You can convert a Recursion solution into Iterative and Vice Versa.</li>
+<li>Space Complexity is not constant due to Recursive Calls.</li>
+</ul>
+</section>
+<section id="types-of-recurrence-relations" class="level3">
+<h3 class="anchored" data-anchor-id="types-of-recurrence-relations">Types of Recurrence Relations</h3>
+<ol type="1">
+<li>Linear Recurrence Relation</li>
+<li>Divide &amp; Conquer Recurrence Relation</li>
+</ol>
+</section>
+<section id="how-to-understand-approach-a-problem" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-understand-approach-a-problem">How to understand &amp; approach a problem?</h3>
+<ul>
+<li>Identify if you can break down problem into smaller problems.</li>
+<li>Write the Recurrence Relations if needed.</li>
+<li>Draw the Recursive Tree.</li>
+<li>About the Tree:
+<ul>
+<li>See the flow of functions, how they are getting into the stack.</li>
+<li>Identify and Focus on Left Tree Calls and Right Tree Calls.</li>
+<li>Draw the tree and pointers using Pen &amp; Paper for better understanding. *</li>
+<li>Use a debugger to see the flow.</li>
+</ul></li>
+<li>See how the values and what type of values are returned at each step. See where the function will come out. In the end you will come out of the main function.</li>
+<li>Three Variables to concentrate on:
+<ul>
+<li>Arguments</li>
+<li>Return Type</li>
+<li>Body of Function</li>
+</ul></li>
+<li>Resources used:
+<ul>
+<li><a href="https://www.youtube.com/watch?v=M2uO2nMT0Bk&amp;list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ&amp;index=23">Click Here!</a></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="math-for-dsa" class="level2">
+<h2 class="anchored" data-anchor-id="math-for-dsa">Math for DSA</h2>
+<ul>
+<li>Resources used:
+<ul>
+<li>Math for DSA 1 - <a href="https://www.youtube.com/watch?v=fzip9Aml6og&amp;list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ&amp;index=25">Click Here!</a></li>
+<li>Math for DSA 2 - <a href="https://www.youtube.com/watch?v=lmSpZ0bjCyQ&amp;list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ&amp;index=27">Click Here!</a></li>
+</ul></li>
+</ul>
+<p>This is the end of <u><strong><em>Day - 2</em></strong></u>.</p>
 
 
 </section>
