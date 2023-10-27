@@ -24,7 +24,7 @@ page-layout: full
 ### Short Intro 👌
 
 - My Name is Bhanu Prasanna, Started M.Sc. Data Science at TU Dortmund.
-- Want to become a <u>***Quant Developer***</u>
+<!-- - Want to become a <u>***Quant Developer***</u> -->
 
 That is all there is to know about me. <u>***Let's Start with the challenge***</u>.
 
