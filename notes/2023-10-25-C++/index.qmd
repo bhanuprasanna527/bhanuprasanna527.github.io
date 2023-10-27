@@ -107,7 +107,8 @@ $$\lim_{x \to \infty} \frac{f(n)}{g(n)} = \infty$$
 
 ## Linear Recurrence (Homogenous and Non-Homogenous)
 
-This concept cannot be explained here but look in the video for more reference, the video details each type very clearly. [Click Here!](https://www.youtube.com/watch?v=mV3wrLBbuuE)
+- Resources Used:
+  - [Click Here!](https://www.youtube.com/watch?v=mV3wrLBbuuE)
 
 This is the end of <u>***Day - 1***</u>.
 
