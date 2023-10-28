@@ -76,3 +76,12 @@ I have completed <u>***Recursion***</u> from the YouTube Video. <a href="https:/
 I have completed <u>***Math for DSA - 1***</u> from the YouTube Video. <a href="https://www.youtube.com/watch?v=fzip9Aml6og&list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ&index=25" target="blank">Click Here!</a>.
 
 I have completed <u>***Math for DSA - 2***</u> from the YouTube Video. <a href="https://www.youtube.com/watch?v=lmSpZ0bjCyQ&list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ&index=27" target="blank">Click Here!</a>.
+
+## Day 3 - C++ Start ❄️
+
+For Day 3 - I am going to start C++ learning from start. I have a foundation but need to improve this a lot.
+
+I have completed 5 hours <u>***C++***</u> from this YouTube Video. <a href="https://www.youtube.com/watch?v=FpfHmAkRVK4&list=LL&index=9" target="blank">Click Here!</a>.
+
+I have solved 18 problems in C++ Hackerrank. - [Click Here!](https://www.hackerrank.com/profile/bhanuprasanna81).
+

@@ -152,3 +152,9 @@ This is the end of <u>***Day - 1***</u>.
   - Math for DSA 2 - [Click Here!](https://www.youtube.com/watch?v=lmSpZ0bjCyQ&list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ&index=27)
 
 This is the end of <u>***Day - 2***</u>.
+
+# Day - 3
+
+## C++ Start
+
+- I have solved 18 Hackerrank Problems in the C++ section. - [Click Here!](https://www.hackerrank.com/profile/bhanuprasanna81).
