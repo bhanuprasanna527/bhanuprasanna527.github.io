@@ -34,6 +34,8 @@ format:
     toc: true
     documentclass: scrreprt
     colorlinks: true
+    cite-method: biblatex
+    fig-align: center
 ---
 
 # Day - 1
