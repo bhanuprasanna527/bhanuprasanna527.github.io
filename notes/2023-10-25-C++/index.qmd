@@ -158,3 +158,30 @@ This is the end of <u>***Day - 2***</u>.
 ## C++ Start
 
 - I have solved 18 Hackerrank Problems in the C++ section. - [Click Here!](https://www.hackerrank.com/profile/bhanuprasanna81).
+
+# Day - 4
+
+- I have solved total of 28 Hackerrank Problems in the C++ section. (Still 16 Left) - [Click Here!](https://www.hackerrank.com/profile/bhanuprasanna81).
+
+## C++ from Book
+
+- C++ developed by Bjarne Stroustroup at Bell Labs (1979).
+
+### Learning Language Tradition - Hello, World! Program
+
+```cpp
+// Preprocessor Directive
+#include <iostream>
+
+// Start of the Program
+int main() {
+  // Tell the compiler what namespace to search in
+  using namespace std;
+
+  // Write to the screen using std::cout
+  cout << "Hello, World!" << endl;
+
+  // Return a value to the OS
+  return 0;
+}
+```

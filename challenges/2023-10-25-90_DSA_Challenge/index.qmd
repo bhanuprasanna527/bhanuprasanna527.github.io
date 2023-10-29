@@ -85,3 +85,11 @@ I have completed 5 hours <u>***C++***</u> from this YouTube Video. <a href="http
 
 I have solved 18 problems in C++ Hackerrank. - [Click Here!](https://www.hackerrank.com/profile/bhanuprasanna81).
 
+## Day 4 - C++ Book
+
+For Day 4 - I am going to solve more problems in Hackerrank and read the Sams C++ book.
+
+I have solved total of 28 Hackerrank Problems in the C++ section. (Still 16 Left) - [Click Here!](https://www.hackerrank.com/profile/bhanuprasanna81).
+
+Read 2 Lessons form Sams C++ Book.
+
