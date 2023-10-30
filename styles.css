@@ -65,3 +65,25 @@ div.nav-footer {
 div.listing-actions-group, div.quarto-post.image-right {
     padding-bottom: 27px;
 }
+
+/* Cookies */
+div.cc-nb-main-container {
+    background-color: #000;
+}
+
+p#cc-nb-title.cc-nb-title, p#cc-nb-text.cc-nb-text {
+    color: #969696;
+}
+
+.termsfeed-com---palette-light .cc-nb-changep {
+    background-color: #969696;
+    color: #000;
+}
+
+.termsfeed-com---palette-light .cc-nb-okagree {
+    color: #000;
+}
+
+.termsfeed-com---palette-light .cc-pc-head-lang select {
+    background-color: #fff;
+}
