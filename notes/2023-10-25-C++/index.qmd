@@ -163,7 +163,7 @@ This is the end of <u>***Day - 2***</u>.
 
 # Day - 4
 
-- I have solved total of 28 Hackerrank Problems in the C++ section. (Still 16 Left) - [Click Here!](https://www.hackerrank.com/profile/bhanuprasanna81).
+- I have solved total of 28 Hackerrank Problems in the C++ section. <u>***I feel confident in C++.***</u> - [Click Here!](https://www.hackerrank.com/profile/bhanuprasanna81).
 
 ## C++ from Book
 
@@ -186,4 +186,145 @@ int main() {
   // Return a value to the OS
   return 0;
 }
+```
+
+# Day - 5
+
+- I have solved 5 LeetCode Questions using C++ in the Arrays Section. - [Click Here!](https://leetcode.com/bhanuprasanna527/).
+
+## LeetCode Questions & Answers
+
+### [Two Sum](https://leetcode.com/problems/two-sum/)
+
+```cpp
+//  Two_Sum.cpp
+//  LeetCode - C++
+//  Created by Bhanu Prasanna
+
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        int l = nums.size();
+        
+        for (int i = 0; i < l; i++) {
+            for (int j = 0; j < l && i != j; j ++) {
+                if (nums[i] + nums[j] == target) {
+                    return {i, j};
+                }
+            }
+        }
+
+        return {};
+    }
+};
+```
+
+## [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)
+
+```cpp
+//  Remove_Duplicates_from_Sorted_Array.cpp
+//  LeetCode - C++
+//  Created by Bhanu Prasanna
+
+class Solution {
+public:
+    int removeDuplicates(vector<int>& v) {
+        int j = 1;
+
+        for (auto i = v.begin() + 1; i != v.end(); i++) {
+            if (*i != *(i - 1)) {
+                v[j] = *i;
+                j++;
+            }
+        }
+
+        return j;
+    }
+};
+```
+
+## [Remove Element](https://leetcode.com/problems/remove-element/description/)
+
+```cpp
+//  Remove_Element.cpp
+//  LeetCode - C++
+//  Created by Bhanu Prasanna
+
+class Solution {
+public:
+    int removeElement(vector<int>& v, int val) {
+        int j = 0;
+
+        for (auto i = v.begin(); i != v.end(); i++) {
+            if (*i != val) {
+                v[j] = *i;
+                j++;
+            }
+        }
+
+        return j;
+    }
+};
+```
+
+## [Search Insert Position](https://leetcode.com/problems/search-insert-position/description/)
+
+```cpp
+//  Search_Insert_Position.cpp
+//  LeetCode - C++
+//  Created by Bhanu Prasanna
+
+class Solution {
+public:
+    int searchInsert(vector<int>& nums, int target) {
+        auto x = std::lower_bound(nums.begin(), nums.end(), target);
+
+        cout << (x - nums.begin()) << endl;
+
+        return x - nums.begin();
+    }
+};
+```
+
+## [Plus One](https://leetcode.com/problems/plus-one/description/)
+
+```cpp
+//  Plus_One.cpp
+//  LeetCode - C++
+//  Created by Bhanu Prasanna
+//  Not the Best Solution - Must Learn How to Optimize a Solution.
+
+
+class Solution {
+public:
+    vector<int> plusOne(vector<int>& v) {
+        int c = 0, l = v.size();
+
+        for (int i = l-1; i >= 0; i--) {
+            if (i == l-1) {
+                if (v[i] == 9) {
+                    v[i] = 0;
+                    c = 1;
+                } else {
+                    v[i] += 1;
+                    return v;
+                }
+            } else {
+                if (v[i] == 9) {
+                    v[i] = 0;
+                    c = 1;
+                } else {
+                    v[i] += c;
+                    return v;
+                }
+            }
+        }
+
+        if (*v.begin() == 0) {
+            v.insert(v.begin(), 1);
+        }
+
+        return v;
+    }
+};
 ```
