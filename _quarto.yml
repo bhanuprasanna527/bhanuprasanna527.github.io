@@ -3,6 +3,12 @@ project:
   output-dir: docs
 
 website:
+  site-url: https://bhanuprasanna527.github.io/
+  google-analytics: 
+    tracking-id: "G-MBMMMZY5SV"
+    anonymize-ip: true
+    storage: cookies
+  cookie-consent: true
   title: "Bhanu Prasanna"
   favicon: "public/favicons/android-chrome-512x512.png"
   page-navigation: true
