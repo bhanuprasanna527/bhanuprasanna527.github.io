@@ -116,7 +116,14 @@
     "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-4---c-book",
     "title": "90 Days DSA Challenge",
     "section": "Day 4 - C++ Book",
-    "text": "Day 4 - C++ Book\nFor Day 4 - I am going to solve more problems in Hackerrank and read the Sams C++ book.\nI have solved total of 28 Hackerrank Problems in the C++ section. (Still 16 Left) - Click Here!.\nRead 2 Lessons form Sams C++ Book."
+    "text": "Day 4 - C++ Book\nFor Day 4 - I am going to solve more problems in Hackerrank and read the Sams C++ book.\nI have solved total of 28 Hackerrank Problems in the C++ section. I feel confident in C++. - Click Here!.\nRead 2 Lessons form Sams C++ Book."
+  },
+  {
+    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-5---c-problems",
+    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-5---c-problems",
+    "title": "90 Days DSA Challenge",
+    "section": "Day 5 - C++ Problems",
+    "text": "Day 5 - C++ Problems\nFor Day 5 - I am going to start solving LeetCode while simultaneously start learning DSA.\nI have solved 5 LeetCode problems in the Array Section. - Click Here!."
   },
   {
     "objectID": "index.html",
@@ -194,5 +201,40 @@
     "title": "C++ Notes",
     "section": "C++ from Book",
     "text": "C++ from Book\n\nC++ developed by Bjarne Stroustroup at Bell Labs (1979).\n\n\nLearning Language Tradition - Hello, World! Program\n// Preprocessor Directive\n#include &lt;iostream&gt;\n\n// Start of the Program\nint main() {\n  // Tell the compiler what namespace to search in\n  using namespace std;\n\n  // Write to the screen using std::cout\n  cout &lt;&lt; \"Hello, World!\" &lt;&lt; endl;\n\n  // Return a value to the OS\n  return 0;\n}"
+  },
+  {
+    "objectID": "notes/2023-10-25-C++/index.html#leetcode-questions-answers",
+    "href": "notes/2023-10-25-C++/index.html#leetcode-questions-answers",
+    "title": "C++ Notes",
+    "section": "LeetCode Questions & Answers",
+    "text": "LeetCode Questions & Answers\n\nTwo Sum\n//  Two_Sum.cpp\n//  LeetCode - C++\n//  Created by Bhanu Prasanna\n\nclass Solution {\npublic:\n    vector&lt;int&gt; twoSum(vector&lt;int&gt;& nums, int target) {\n        int l = nums.size();\n        \n        for (int i = 0; i &lt; l; i++) {\n            for (int j = 0; j &lt; l && i != j; j ++) {\n                if (nums[i] + nums[j] == target) {\n                    return {i, j};\n                }\n            }\n        }\n\n        return {};\n    }\n};"
+  },
+  {
+    "objectID": "notes/2023-10-25-C++/index.html#remove-duplicates-from-sorted-array",
+    "href": "notes/2023-10-25-C++/index.html#remove-duplicates-from-sorted-array",
+    "title": "C++ Notes",
+    "section": "Remove Duplicates from Sorted Array",
+    "text": "Remove Duplicates from Sorted Array\n//  Remove_Duplicates_from_Sorted_Array.cpp\n//  LeetCode - C++\n//  Created by Bhanu Prasanna\n\nclass Solution {\npublic:\n    int removeDuplicates(vector&lt;int&gt;& v) {\n        int j = 1;\n\n        for (auto i = v.begin() + 1; i != v.end(); i++) {\n            if (*i != *(i - 1)) {\n                v[j] = *i;\n                j++;\n            }\n        }\n\n        return j;\n    }\n};"
+  },
+  {
+    "objectID": "notes/2023-10-25-C++/index.html#remove-element",
+    "href": "notes/2023-10-25-C++/index.html#remove-element",
+    "title": "C++ Notes",
+    "section": "Remove Element",
+    "text": "Remove Element\n//  Remove_Element.cpp\n//  LeetCode - C++\n//  Created by Bhanu Prasanna\n\nclass Solution {\npublic:\n    int removeElement(vector&lt;int&gt;& v, int val) {\n        int j = 0;\n\n        for (auto i = v.begin(); i != v.end(); i++) {\n            if (*i != val) {\n                v[j] = *i;\n                j++;\n            }\n        }\n\n        return j;\n    }\n};"
+  },
+  {
+    "objectID": "notes/2023-10-25-C++/index.html#search-insert-position",
+    "href": "notes/2023-10-25-C++/index.html#search-insert-position",
+    "title": "C++ Notes",
+    "section": "Search Insert Position",
+    "text": "Search Insert Position\n//  Search_Insert_Position.cpp\n//  LeetCode - C++\n//  Created by Bhanu Prasanna\n\nclass Solution {\npublic:\n    int searchInsert(vector&lt;int&gt;& nums, int target) {\n        auto x = std::lower_bound(nums.begin(), nums.end(), target);\n\n        cout &lt;&lt; (x - nums.begin()) &lt;&lt; endl;\n\n        return x - nums.begin();\n    }\n};"
+  },
+  {
+    "objectID": "notes/2023-10-25-C++/index.html#plus-one",
+    "href": "notes/2023-10-25-C++/index.html#plus-one",
+    "title": "C++ Notes",
+    "section": "Plus One",
+    "text": "Plus One\n//  Plus_One.cpp\n//  LeetCode - C++\n//  Created by Bhanu Prasanna\n//  Not the Best Solution - Must Learn How to Optimize a Solution.\n\n\nclass Solution {\npublic:\n    vector&lt;int&gt; plusOne(vector&lt;int&gt;& v) {\n        int c = 0, l = v.size();\n\n        for (int i = l-1; i &gt;= 0; i--) {\n            if (i == l-1) {\n                if (v[i] == 9) {\n                    v[i] = 0;\n                    c = 1;\n                } else {\n                    v[i] += 1;\n                    return v;\n                }\n            } else {\n                if (v[i] == 9) {\n                    v[i] = 0;\n                    c = 1;\n                } else {\n                    v[i] += c;\n                    return v;\n                }\n            }\n        }\n\n        if (*v.begin() == 0) {\n            v.insert(v.begin(), 1);\n        }\n\n        return v;\n    }\n};"
   }
 ]
