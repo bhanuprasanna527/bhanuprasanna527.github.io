@@ -219,7 +219,7 @@ public:
 };
 ```
 
-## [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)
+### [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)
 
 ```cpp
 //  Remove_Duplicates_from_Sorted_Array.cpp
@@ -243,7 +243,7 @@ public:
 };
 ```
 
-## [Remove Element](https://leetcode.com/problems/remove-element/description/)
+### [Remove Element](https://leetcode.com/problems/remove-element/description/)
 
 ```cpp
 //  Remove_Element.cpp
@@ -267,7 +267,7 @@ public:
 };
 ```
 
-## [Search Insert Position](https://leetcode.com/problems/search-insert-position/description/)
+### [Search Insert Position](https://leetcode.com/problems/search-insert-position/description/)
 
 ```cpp
 //  Search_Insert_Position.cpp
@@ -286,7 +286,7 @@ public:
 };
 ```
 
-## [Plus One](https://leetcode.com/problems/plus-one/description/)
+### [Plus One](https://leetcode.com/problems/plus-one/description/)
 
 ```cpp
 //  Plus_One.cpp
