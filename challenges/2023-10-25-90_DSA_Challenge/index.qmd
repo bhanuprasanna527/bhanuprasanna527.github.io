@@ -98,3 +98,10 @@ For Day 5 - I am going to start solving LeetCode while simultaneously start lear
 
 I have solved 5 LeetCode problems in the Array Section. - [Click Here!](https://leetcode.com/bhanuprasanna527/).
 
+## Day 6 - C++ Problems
+
+For Day 6 - I am going to solve more problems in LeetCode and read a Lesson from Sams C++ Book.
+
+I have completed solving 5 LeetCode Problems in the Array Section. - [Click Here!](https://leetcode.com/bhanuprasanna527/).
+
+I have completed reading Lesson 4 from Sams C++ Book.

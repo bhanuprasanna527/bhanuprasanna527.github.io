@@ -328,3 +328,141 @@ public:
     }
 };
 ```
+
+# Day - 6
+
+- I have solved 5 LeetCode Questions using C++ in the Arrays Section. - [Click Here!](https://leetcode.com/bhanuprasanna527/).
+
+## LeetCode Questions & Answers
+
+### Merge Sorted Array
+
+```cpp
+//  Merge_Sorted_Array.cpp
+//  LeetCode - C++
+//  Created by Bhanu Prasanna
+
+class Solution {
+public:
+    void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
+        int i = m - 1;
+        int j = n - 1;
+        int k = m + n - 1;
+
+        while (j >= 0) {
+            if (i >= 0 && nums1[i] > nums2[j]) {
+                nums1[k] = nums1[i];
+                i--;
+            } else {
+                nums1[k] = nums2[j];
+                j--;
+            }
+            k--;
+        }
+    }
+};
+```
+
+### Pascal's Triangle
+
+```cpp
+//  Pascal's_Triangle.cpp
+//  LeetCode - C++
+//  Created by Bhanu Prasanna
+
+class Solution {
+public:
+    vector<vector<int>> generate(int numRows) {
+        vector<vector<int>> v;
+
+        for (int i = 0; i < numRows; i++) {
+            vector<int> x(i+1, 1);
+            for (int j = 1; j < i; j++) {
+                x[j] = v[i-1][j] + v[i-1][j-1];
+            }
+            v.push_back(x);
+        }
+        return v;
+    }
+};
+```
+
+### Pascal's Triangle 2
+
+```cpp
+//  Pascal's_Triange_2.cpp
+//  LeetCode - C++
+//  Created by Bhanu Prasanna
+
+class Solution {
+public:
+    vector<int> getRow(int rowIndex) {
+        vector<vector<int>> v;
+        vector<int> xv;
+
+        for (int i = 0; i <= rowIndex; i++) {
+            vector<int> x(i+1, 1);
+
+            for (int j = 1; j < i; j++) {
+                x[j] = v[i-1][j] + v[i-1][j-1];
+            }
+            if (i == rowIndex) {
+                return x;
+            }
+
+            v.push_back(x);
+        }
+
+        return xv;
+    }
+};
+```
+
+### Best Time to Buy and Sell Stock
+
+```cpp
+// Best_Time_to_Buy_and_Sell_Stock.cpp
+// LeetCode - C++
+// Created by Bhanu Prasanna
+
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int lsf = INT_MAX;
+        int op = 0;
+        int pist = 0;
+
+        for (int i = 0; i < prices.size(); i++) {
+            if (prices[i] < lsf) {
+                lsf = prices[i];
+            }
+            pist = prices[i] - lsf;
+            if (pist > op) {
+                op = pist;
+            }
+        }
+        return op;
+    }
+};
+```
+
+### Single Number
+
+```cpp
+// Single_Number.cpp
+// LeetCode - C++
+// Created by Bhanu Prasanna
+
+class Solution {
+public:
+    int singleNumber(vector<int>& nums) {
+        int ans = 0;
+
+        for (auto x:nums) {
+            ans ^= x;
+        }
+
+        return ans;
+    }
+};
+```
