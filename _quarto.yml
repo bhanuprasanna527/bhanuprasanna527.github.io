@@ -3,7 +3,8 @@ project:
   output-dir: docs
 
 website:
-  site-url: https://bhanuprasanna527.github.io/
+  site-url: 'https://bhanuprasanna527.github.io'
+  site-path: '/'
   google-analytics: 
     tracking-id: "G-MBMMMZY5SV"
     anonymize-ip: true
