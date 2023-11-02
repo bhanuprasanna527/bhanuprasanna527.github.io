@@ -122,3 +122,14 @@ Implemented Operations for Variants of Linked List's are:
 6. Delete Middle
 7. Length
 8. Print Linked List
+
+I have completed Stack.
+
+Implemented Operations for Stack are:
+
+1. Push
+2. Pop
+3. Peek
+4. Stack is Empty
+5. Stack is Full
+6. Print Stack

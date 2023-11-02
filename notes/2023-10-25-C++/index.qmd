@@ -1166,3 +1166,165 @@ int main () {
     return 0;
 }
 ```
+
+## Stack
+
+```cpp
+//  Stack.cpp
+//  DS - C++
+//  Created by Bhanu Prasanna
+
+#include <iostream>
+using namespace std;
+
+class Node {
+public:
+    int data;
+    Node* next;
+    
+    Node () {
+        data = 0;
+        next = nullptr;
+    }
+    
+    Node (int d) {
+        data = d;
+        next = nullptr;
+    }
+};
+
+class Stack : public Node {
+    Node* head;
+    int MAX;
+    
+public:
+    
+    Stack (int m) {
+        head = nullptr;
+        MAX = m;
+    }
+    
+    // Push an element to the Stack
+    void push (int d);
+    
+    // Pop an element from the Stack
+    int pop ();
+    
+    // Check if Stack is Empty
+    bool isEmpty ();
+    
+    // Check if Stack is Full
+    bool isFull ();
+    
+    // Get the Top element from the Stack
+    int peek ();
+    
+    // Print the Stack
+    void print ();
+};
+
+/* Push an element to the Stack */
+void Stack::push (int d) {
+    if (Stack::isFull()) {
+        cout << "The Stack is Full. " << d << " element cannot be Inserted." << endl;
+        return;
+    }
+    
+    Node *t = new Node(d);
+    
+    if (head == nullptr) {
+        t->next = nullptr;
+        head = t;
+        return;
+    }
+    
+    t->next = head;
+    head = t;
+}
+
+/* Pop an element from the Stack */
+int Stack::pop () {
+    if (Stack::isEmpty()) {
+        cout << "The Stack is Empty. No Element is Present." << endl;
+        return -1;
+    }
+    
+    Node *t = head;
+    
+    head = head->next;
+    
+    return t->data;
+}
+
+/* Check if the Stack is Empty */
+bool Stack::isEmpty () {
+    Node *t = head;
+    
+    if (head == nullptr) {
+        return true;
+    }
+    
+    return false;
+}
+
+/* Check if the Stack is Full */
+bool Stack::isFull () {
+    Node *t = head;
+    int c = 0;
+    
+    while (t != nullptr) {
+        c++;
+        t = t->next;
+    }
+    
+    if (c == MAX) {
+        return true;
+    }
+    
+    return false;
+}
+
+/* Get the Top element from the Stack */
+int Stack::peek () {
+    Node *t = head;
+    
+    return t->data;
+}
+
+/* Print the Stack */
+void Stack::print () {
+    Node *t = head;
+    
+    while (t != nullptr) {
+        if (t->next == nullptr) {
+            cout << t->data << endl;
+        }
+        else {
+            cout << t->data << " -> ";
+        }
+        t = t->next;
+    }
+}
+
+int main () {
+    Stack s(5);
+    
+    s.push(1);
+    s.push(2);
+    s.push(3);
+    s.push(4);
+    s.push(5);
+    s.push(6);
+    
+    cout << s.isEmpty() << endl;
+    cout << s.isFull() << endl;
+    
+    cout << "Element Pop is : " << s.pop() << endl;
+    
+    cout << s.peek() << endl;
+    
+    s.print();
+    
+    return 0;
+}
+```
