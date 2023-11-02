@@ -110,4 +110,15 @@ I have completed reading Lesson 4 from Sams C++ Book.
 
 For Day 7 - I am going to start Data Structures. In DS, I will be starting with Linked List types and it's operations.
 
-I have completed Single Linked List, Double Linked List.
+I have completed Single Linked List, Double Linked List, and Circular Linked List.
+
+Implemented Operations for Variants of Linked List's are:
+
+1. Insert Front
+2. Insert Back
+3. Insert Middle
+4. Delete Front
+5. Delete Back
+6. Delete Middle
+7. Length
+8. Print Linked List
