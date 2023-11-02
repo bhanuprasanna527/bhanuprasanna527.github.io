@@ -466,3 +466,454 @@ public:
     }
 };
 ```
+
+# Day - 7
+
+- I am going to implement Data Structures in C++.
+
+## Single Linked List
+
+```cpp
+//  Single_Linked_List.cpp
+//  DS - C++
+//  Created by Bhanu Prasanna
+
+#include <iostream>
+using namespace std;
+
+class Node {
+public:
+    int data;
+    Node* next;
+    
+    Node () {
+        data = 0;
+        next = nullptr;
+    }
+    
+    Node (int d) {
+        data = d;
+        next = nullptr;
+    }
+};
+
+class SLL : public Node {
+    Node* head;
+    
+public:
+    SLL () {
+        head = nullptr;
+    }
+    
+    // Insert Data at the Front of SLL - completed
+    void insert_front(int);
+    
+    // Insert Data at the Back of SLL - completed
+    void insert_back(int);
+    
+    // Insert Data in the Middle of SLL - completed
+    void insert(int, int);
+    
+    // Delete Data from the Front of SLL
+    void delete_front();
+    
+    // Delete Data from the Back of SLL
+    void delete_back();
+    
+    // Delete Data from the Middle of SLL
+    void del(int);
+    
+    // Length of the SLL
+    int length();
+    
+    // Print SLL
+    void printll();
+    
+};
+
+/* Delete Functions for Single Linked List */
+
+void SLL::delete_front () {
+    Node *t = head;
+    
+    if (t == nullptr) {
+        cout << "There are no element in the SLL to delete!" << endl;
+        return;
+    }
+    
+    head = head->next;
+}
+
+void SLL::delete_back () {
+    Node *t = head;
+    
+    if (t == nullptr) {
+        cout << "There are no element in the SLL to delete!" << endl;
+        return;
+    }
+    
+    while (t->next->next != nullptr) {
+        t = t->next;
+    }
+    t->next = nullptr;
+}
+
+void SLL::del(int pos) {
+    Node *x = head;
+    Node *y = head->next;
+    
+    if (x == nullptr) {
+        cout << "There are no element in the SLL to delete!" << endl;
+        return;
+    }
+    
+    for (int i = 0; i < pos - 2; i++) {
+        x = x->next;
+        y = y->next;
+    }
+    x->next = y->next;
+}
+
+/* Insertion Functions for Single Linked List */
+
+void SLL::insert_front (int d) {
+    Node *t = new Node(d);
+    
+    if (head == nullptr) {
+        head = t;
+        return;
+    }
+    
+    t->next = head;
+    
+    head = t;
+    
+}
+
+void SLL::insert_back (int d) {
+    Node *t = new Node(d);
+    
+    if (head == nullptr) {
+        head = t;
+        return;
+    }
+    
+    Node *x = head;
+    
+    while (x->next != nullptr) {
+        x = x->next;
+    }
+    x->next = t;
+}
+
+void SLL::insert (int d, int pos) {
+    
+    if (pos > SLL::length()) {
+        SLL::insert_back(d);
+        return;
+    }
+    
+    if (pos == 1) {
+        SLL::insert_front(d);
+        return;
+    }
+    
+    Node *t = new Node(d);
+    Node *x = head;
+    Node *y = head->next;
+    
+    for (int i = 0; i < pos - 2; i++) {
+        x = x->next;
+        y = y->next;
+    }
+    
+    t->next = y;
+    x->next = t;
+}
+
+/* Length of Single Linked List */
+int SLL::length () {
+    Node *t = head;
+    int c = 0;
+    
+    while (t != nullptr) {
+        t = t->next;
+        c++;
+    }
+    
+    return c;
+}
+
+/* Print Single Linked List */
+
+void SLL::printll () {
+    Node *t = head;
+    
+    if (t == nullptr) {
+        cout << "Linked List is Empty" << endl;
+        return;
+    }
+    
+    while (t != nullptr) {
+        if (t->next == nullptr) {
+            cout << t->data << endl;
+        } else {
+            cout << t->data << " -> ";
+        }
+        t = t->next;
+    }
+}
+
+
+int main () {
+    SLL l;
+    
+    l.insert_front(10);
+    l.insert_back(20);
+    l.insert_back(40);
+    l.insert_back(50);
+    l.insert_back(60);
+    
+    l.insert(30, 3);
+    
+    l.insert(30,3);
+    
+    l.del(3);
+    
+    cout << "Elements of Linked List are:" << endl;
+    
+    l.printll();
+    
+    cout << endl << "Count: " << l.length() << endl;
+    
+    return 0;
+}
+```
+
+## Double Linked List
+
+```cpp
+//  Double_Linked_List.cpp
+//  DS - C++
+//  Created by Bhanu Prasanna
+
+#include <iostream>
+using namespace std;
+
+class Node {
+public:
+    int data;
+    Node* next;
+    Node* prev;
+    
+    Node () {
+        data = 0;
+        next = nullptr;
+        prev = nullptr;
+    }
+    
+    Node (int d) {
+        data = d;
+        next = nullptr;
+        prev = nullptr;
+    }
+};
+
+class DLL : public Node {
+    Node* head;
+    
+public:
+    DLL () {
+        head = nullptr;
+    }
+    
+    // Insert Data at the Front of DLL - completed
+    void insert_front(int);
+    
+    // Insert Data at the Back of DLL - completed
+    void insert_back(int);
+    
+    // Insert Data in the Middle of DLL - completed
+    void insert(int, int);
+    
+    // Delete Data from the Front of DLL
+    void delete_front();
+    
+    // Delete Data from the Back of DLL
+    void delete_back();
+    
+    // Delete Data from the Middle of DLL
+    void del(int);
+    
+    // Length of the DLL
+    int length();
+    
+    // Print DLL
+    void printll();
+    
+};
+
+/* Delete Functions for Double Linked List */
+
+void DLL::delete_front () {
+    Node *t = head;
+    
+    if (t == nullptr) {
+        cout << "There are no element in the DLL to delete!" << endl;
+        return;
+    }
+    
+    head = head->next;
+    head->prev = nullptr;
+}
+
+void DLL::delete_back () {
+    Node *t = head;
+    
+    if (t == nullptr) {
+        cout << "There are no element in the DLL to delete!" << endl;
+        return;
+    }
+    
+    while (t->next->next != nullptr) {
+        t = t->next;
+    }
+    t->next = nullptr;
+}
+
+void DLL::del(int pos) {
+    Node *x = head;
+    Node *y = head->next;
+    
+    if (x == nullptr) {
+        cout << "There are no element in the DLL to delete!" << endl;
+        return;
+    }
+    
+    for (int i = 0; i < pos - 2; i++) {
+        x = x->next;
+        y = y->next;
+    }
+    y->next->prev = x;
+    x->next = y->next;
+}
+
+/* Insertion Functions for Double Linked List */
+
+void DLL::insert_front (int d) {
+    Node *t = new Node(d);
+    
+    if (head == nullptr) {
+        head = t;
+        return;
+    }
+    
+    t->next = head;
+    head->prev = t;
+    
+    head = t;
+    
+}
+
+void DLL::insert_back (int d) {
+    Node *t = new Node(d);
+    
+    if (head == nullptr) {
+        head = t;
+        return;
+    }
+    
+    Node *x = head;
+    
+    while (x->next != nullptr) {
+        x = x->next;
+    }
+    x->next = t;
+    t->prev = x;
+}
+
+void DLL::insert (int d, int pos) {
+    
+    if (pos > DLL::length()) {
+        DLL::insert_back(d);
+        return;
+    }
+    
+    if (pos == 1) {
+        DLL::insert_front(d);
+        return;
+    }
+    
+    Node *t = new Node(d);
+    Node *x = head;
+    Node *y = head->next;
+    
+    for (int i = 0; i < pos - 2; i++) {
+        x = x->next;
+        y = y->next;
+    }
+    
+    t->next = y;
+    y->prev = t;
+    t->prev = x;
+    x->next = t;
+}
+
+/* Length of Double Linked List */
+int DLL::length () {
+    Node *t = head;
+    int c = 0;
+    
+    while (t != nullptr) {
+        t = t->next;
+        c++;
+    }
+    
+    return c;
+}
+
+/* Print Double Linked List */
+
+void DLL::printll () {
+    Node *t = head;
+    
+    if (t == nullptr) {
+        cout << "Linked List is Empty" << endl;
+        return;
+    }
+    
+    while (t != nullptr) {
+        if (t->next == nullptr) {
+            cout << t->data << endl;
+        } else {
+            cout << t->data << " -> ";
+        }
+        t = t->next;
+    }
+}
+
+
+int main () {
+    DLL l;
+    
+    l.insert_front(10);
+    l.insert_back(20);
+    l.insert_back(40);
+    l.insert_back(50);
+    l.insert_back(60);
+    
+    l.insert(30, 3);
+    
+    l.insert(30,3);
+    
+    l.del(3);
+    
+    cout << "Elements of Linked List are:" << endl;
+    
+    l.printll();
+    
+    cout << endl << "Count: " << l.length() << endl;
+    
+    return 0;
+}
+```

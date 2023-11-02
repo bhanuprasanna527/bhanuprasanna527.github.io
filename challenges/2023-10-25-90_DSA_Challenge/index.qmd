@@ -105,3 +105,9 @@ For Day 6 - I am going to solve more problems in LeetCode and read a Lesson from
 I have completed solving 5 LeetCode Problems in the Array Section. - [Click Here!](https://leetcode.com/bhanuprasanna527/).
 
 I have completed reading Lesson 4 from Sams C++ Book.
+
+## Day 7 - Data Structures in C++
+
+For Day 7 - I am going to start Data Structures. In DS, I will be starting with Linked List types and it's operations.
+
+I have completed Single Linked List, Double Linked List.
