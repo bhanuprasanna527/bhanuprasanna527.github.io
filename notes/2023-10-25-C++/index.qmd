@@ -1328,3 +1328,214 @@ int main () {
     return 0;
 }
 ```
+
+# Day - 8
+
+- I am going to further implement Data Structures.
+
+### Simple Queue
+
+```cpp
+//  Queue.cpp
+//  DS - C++
+//  Created by Bhanu Prasanna
+
+#include <iostream>
+using namespace std;
+
+class Node {
+public:
+    int data;
+    Node* next;
+    
+    Node () {
+        data = 0;
+        next = nullptr;
+    }
+    
+    Node (int d) {
+        data = d;
+        next = nullptr;
+    }
+};
+
+class Simple_Queue : public Node {
+    Node* front;
+    Node* rear;
+    int MAX;
+    
+public:
+    Simple_Queue (int m) {
+        front = nullptr;
+        rear = nullptr;
+        MAX = m;
+    }
+    
+    /* Enqueue an Element */
+    void Enqueue (int);
+    
+    /* Dequeue an Element */
+    int Dequeue ();
+    
+    /* Check if Queue is Empty */
+    bool isEmpty ();
+    
+    /* Check if Queue is Full */
+    bool isFull ();
+    
+    /* Peek Queue */
+    int peek ();
+    
+    /* Print Queue */
+    void print ();
+    
+    /* Number of Elements in Simple Queue */
+    int size ();
+};
+
+/* Enqueue an Element */
+void Simple_Queue::Enqueue (int d) {
+    if (isFull()) {
+        cout << "The Simple Queue is Full. " << d << " cannot be inserted." << endl;
+        return;
+    }
+    
+    Node* t = new Node(d);
+    t->next = nullptr;
+    
+    if (front == nullptr && rear == nullptr) {
+        front = t;
+        rear = t;
+        return;
+    }
+    
+    if (front->next == nullptr && rear->next == nullptr) {
+        front->next = t;
+        rear = t;
+        return;
+    }
+    
+    rear->next = t;
+    rear = rear->next;
+}
+
+/* Dequeue an Element */
+int Simple_Queue::Dequeue () {
+    if (isEmpty()) {
+        cout << "There are no Elements in the Simple Queue." << endl;
+        return -1;
+    }
+    
+    Node *t = front;
+    
+    cout << t->data << " is Dequeued from the Simple Queue." << endl;
+    
+    if (front == rear) {
+        front = nullptr;
+        rear = nullptr;
+    }
+    else {
+        front = front->next;
+    }
+    
+    return t->data;
+}
+
+/* Check if Queue is Empty */
+bool Simple_Queue::isEmpty () {
+    if (front == nullptr && rear == nullptr) {
+        return true;
+    }
+    
+    return false;
+}
+
+/* Check if Queue is Full */
+bool Simple_Queue::isFull () {
+    Node *t = front;
+    int c = 0;
+    
+    while (t != nullptr) {
+        t = t->next;
+        c++;
+    }
+    
+    if (c == MAX) {
+        return true;
+    }
+    return false;
+}
+
+/* Peek Queue */
+int Simple_Queue::peek () {
+    return front->data;
+}
+
+/* Print Queue */
+void Simple_Queue::print () {
+    Node *t = front;
+    
+    while (t != nullptr) {
+        if (t->next == nullptr) {
+            cout << t->data << endl;
+        }
+        else {
+            cout << t->data << " -> ";
+        }
+        t = t->next;
+    }
+}
+
+/* Number of Elements in Simple Queue */
+int Simple_Queue::size () {
+    Node *t = front;
+    int c = 0;
+    
+    while (t != nullptr) {
+        c++;
+        t = t->next;
+    }
+    
+    return c;
+}
+
+int main (void) {
+    Simple_Queue sq(5);
+    
+    sq.Enqueue(1);
+    sq.Enqueue(1);
+    sq.Enqueue(1);
+    sq.Enqueue(1);
+    sq.Enqueue(1);
+    sq.Enqueue(1);
+    sq.Enqueue(1);
+    
+    sq.print();
+    
+    sq.Dequeue();
+    sq.Dequeue();
+    
+    sq.print();
+    
+    cout << sq.size() << endl;
+    
+    return 0;
+}
+```
+
+## Reverse a Single Linked List using Iteration
+
+```cpp
+/* Reverse a SLL using Iteration */
+void SLL::rev_iter () {
+    Node *cur = head, *prev = nullptr;
+    
+    while (cur != nullptr) {
+        Node *t = cur->next;
+        cur->next = prev;
+        prev = cur;
+        cur = t;
+    }
+    head = prev;
+}
+```

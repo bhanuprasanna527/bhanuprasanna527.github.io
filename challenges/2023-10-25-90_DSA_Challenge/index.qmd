@@ -133,3 +133,9 @@ Implemented Operations for Stack are:
 4. Stack is Empty
 5. Stack is Full
 6. Print Stack
+
+## Day 8 - Data Structures in C++
+
+For Day 8 - I am going to do Queue Data Structures and start using NeetCode website to prepare DSA.
+
+I have completed Simple Queue using Linked List and Reverse a SLL using Iteration.

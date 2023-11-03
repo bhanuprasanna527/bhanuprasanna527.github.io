@@ -140,6 +140,13 @@
     "text": "Day 7 - Data Structures in C++\nFor Day 7 - I am going to start Data Structures. In DS, I will be starting with Linked List types and it’s operations.\nI have completed Single Linked List, Double Linked List, and Circular Linked List.\nImplemented Operations for Variants of Linked List’s are:\n\nInsert Front\nInsert Back\nInsert Middle\nDelete Front\nDelete Back\nDelete Middle\nLength\nPrint Linked List\n\nI have completed Stack.\nImplemented Operations for Stack are:\n\nPush\nPop\nPeek\nStack is Empty\nStack is Full\nPrint Stack"
   },
   {
+    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-8---data-structures-in-c",
+    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-8---data-structures-in-c",
+    "title": "90 Days DSA Challenge",
+    "section": "Day 8 - Data Structures in C++",
+    "text": "Day 8 - Data Structures in C++\nFor Day 8 - I am going to do Queue Data Structures and start using NeetCode website to prepare DSA.\nI have completed Simple Queue using Linked List and Reverse a SLL using Iteration."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Bhanu Prasanna",
@@ -257,5 +264,12 @@
     "title": "C++ Notes",
     "section": "Stack",
     "text": "Stack\n//  Stack.cpp\n//  DS - C++\n//  Created by Bhanu Prasanna\n\n#include &lt;iostream&gt;\nusing namespace std;\n\nclass Node {\npublic:\n    int data;\n    Node* next;\n    \n    Node () {\n        data = 0;\n        next = nullptr;\n    }\n    \n    Node (int d) {\n        data = d;\n        next = nullptr;\n    }\n};\n\nclass Stack : public Node {\n    Node* head;\n    int MAX;\n    \npublic:\n    \n    Stack (int m) {\n        head = nullptr;\n        MAX = m;\n    }\n    \n    // Push an element to the Stack\n    void push (int d);\n    \n    // Pop an element from the Stack\n    int pop ();\n    \n    // Check if Stack is Empty\n    bool isEmpty ();\n    \n    // Check if Stack is Full\n    bool isFull ();\n    \n    // Get the Top element from the Stack\n    int peek ();\n    \n    // Print the Stack\n    void print ();\n};\n\n/* Push an element to the Stack */\nvoid Stack::push (int d) {\n    if (Stack::isFull()) {\n        cout &lt;&lt; \"The Stack is Full. \" &lt;&lt; d &lt;&lt; \" element cannot be Inserted.\" &lt;&lt; endl;\n        return;\n    }\n    \n    Node *t = new Node(d);\n    \n    if (head == nullptr) {\n        t-&gt;next = nullptr;\n        head = t;\n        return;\n    }\n    \n    t-&gt;next = head;\n    head = t;\n}\n\n/* Pop an element from the Stack */\nint Stack::pop () {\n    if (Stack::isEmpty()) {\n        cout &lt;&lt; \"The Stack is Empty. No Element is Present.\" &lt;&lt; endl;\n        return -1;\n    }\n    \n    Node *t = head;\n    \n    head = head-&gt;next;\n    \n    return t-&gt;data;\n}\n\n/* Check if the Stack is Empty */\nbool Stack::isEmpty () {\n    Node *t = head;\n    \n    if (head == nullptr) {\n        return true;\n    }\n    \n    return false;\n}\n\n/* Check if the Stack is Full */\nbool Stack::isFull () {\n    Node *t = head;\n    int c = 0;\n    \n    while (t != nullptr) {\n        c++;\n        t = t-&gt;next;\n    }\n    \n    if (c == MAX) {\n        return true;\n    }\n    \n    return false;\n}\n\n/* Get the Top element from the Stack */\nint Stack::peek () {\n    Node *t = head;\n    \n    return t-&gt;data;\n}\n\n/* Print the Stack */\nvoid Stack::print () {\n    Node *t = head;\n    \n    while (t != nullptr) {\n        if (t-&gt;next == nullptr) {\n            cout &lt;&lt; t-&gt;data &lt;&lt; endl;\n        }\n        else {\n            cout &lt;&lt; t-&gt;data &lt;&lt; \" -&gt; \";\n        }\n        t = t-&gt;next;\n    }\n}\n\nint main () {\n    Stack s(5);\n    \n    s.push(1);\n    s.push(2);\n    s.push(3);\n    s.push(4);\n    s.push(5);\n    s.push(6);\n    \n    cout &lt;&lt; s.isEmpty() &lt;&lt; endl;\n    cout &lt;&lt; s.isFull() &lt;&lt; endl;\n    \n    cout &lt;&lt; \"Element Pop is : \" &lt;&lt; s.pop() &lt;&lt; endl;\n    \n    cout &lt;&lt; s.peek() &lt;&lt; endl;\n    \n    s.print();\n    \n    return 0;\n}"
+  },
+  {
+    "objectID": "notes/2023-10-25-C++/index.html#reverse-a-single-linked-list-using-iteration",
+    "href": "notes/2023-10-25-C++/index.html#reverse-a-single-linked-list-using-iteration",
+    "title": "C++ Notes",
+    "section": "Reverse a Single Linked List using Iteration",
+    "text": "Reverse a Single Linked List using Iteration\n/* Reverse a SLL using Iteration */\nvoid SLL::rev_iter () {\n    Node *cur = head, *prev = nullptr;\n    \n    while (cur != nullptr) {\n        Node *t = cur-&gt;next;\n        cur-&gt;next = prev;\n        prev = cur;\n        cur = t;\n    }\n    head = prev;\n}"
   }
 ]
