@@ -7,153 +7,6 @@
     "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nFirst Quarto Blog\n\n\n\n\n\n\n\nFirst\n\n\nBlog\n\n\nTest\n\n\n\n\nI am new to Quarto Blog and this is a trial for Latex Equations.\n\n\n\n\n\n\nOct 25, 2023\n\n\nBhanu Prasanna Koppolu\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Code\nimport numpy as np\nimport pandas as pd"
-  },
-  {
-    "objectID": "about.html#this-is-a-python-test",
-    "href": "about.html#this-is-a-python-test",
-    "title": "About",
-    "section": "",
-    "text": "Code\nimport numpy as np\nimport pandas as pd"
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nkbp-nse\n\n\n\n\n\n\n\nProjects\n\n\nPython\n\n\nFinance\n\n\n\n\nMy personal Stock Data Retriever Project kbp-nse.\n\n\n\n\n\n\nOct 25, 2023\n\n\nBhanu Prasanna Koppolu\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/2023-10-25-kbp-nse/index.html",
-    "href": "projects/2023-10-25-kbp-nse/index.html",
-    "title": "kbp-nse",
-    "section": "",
-    "text": "CitationBibTeX citation:@online{prasanna koppolu2023,\n  author = {Prasanna Koppolu, Bhanu},\n  title = {Kbp-Nse},\n  date = {2023-10-25},\n  url = {https://bhanuprasanna527.github.io/projects/2023-10-25-kbp-nse/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nPrasanna Koppolu, Bhanu. 2023. “Kbp-Nse.” October 25, 2023.\nhttps://bhanuprasanna527.github.io/projects/2023-10-25-kbp-nse/."
-  },
-  {
-    "objectID": "posts/2023-10-25-first-quarto-blog/index.html",
-    "href": "posts/2023-10-25-first-quarto-blog/index.html",
-    "title": "First Quarto Blog",
-    "section": "",
-    "text": "\\[c = a + b\\]"
-  },
-  {
-    "objectID": "posts/2023-10-25-first-quarto-blog/index.html#this-is-my-first-blog",
-    "href": "posts/2023-10-25-first-quarto-blog/index.html#this-is-my-first-blog",
-    "title": "First Quarto Blog",
-    "section": "",
-    "text": "\\[c = a + b\\]"
-  },
-  {
-    "objectID": "notes.html",
-    "href": "notes.html",
-    "title": "Notes",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nC++ Notes\n\n\n\n\n\n\n\nNotes\n\n\nC++\n\n\nChallenge\n\n\n\n\nDistilled C++ Notes\n\n\n\n\n\n\nOct 25, 2023\n\n\nBhanu Prasanna Koppolu\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "challenges.html",
-    "href": "challenges.html",
-    "title": "Challenges",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\n90 Days DSA Challenge\n\n\n\n\n\n\n\nChallenge\n\n\nDSA\n\n\nCode\n\n\n\n\nLet’s Start\n\n\n\n\n\n\nOct 25, 2023\n\n\nBhanu Prasanna Koppolu\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html",
-    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html",
-    "title": "90 Days DSA Challenge",
-    "section": "",
-    "text": "My Name is Bhanu Prasanna, Started M.Sc. Data Science at TU Dortmund. \n\nThat is all there is to know about me. Let’s Start with the challenge."
-  },
-  {
-    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html#hi-there-lets-start",
-    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#hi-there-lets-start",
-    "title": "90 Days DSA Challenge",
-    "section": "",
-    "text": "My Name is Bhanu Prasanna, Started M.Sc. Data Science at TU Dortmund. \n\nThat is all there is to know about me. Let’s Start with the challenge."
-  },
-  {
-    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html#days-dsa-challenge",
-    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#days-dsa-challenge",
-    "title": "90 Days DSA Challenge",
-    "section": "90 Days DSA Challenge",
-    "text": "90 Days DSA Challenge\nWhy am I doing this? I have created a python library, learnt how to use Tensorflow and other ML Libraries. There was always a missing piece needed to be filled.\nThe missing piece is DSA."
-  },
-  {
-    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html#shall-we-start-now-already",
-    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#shall-we-start-now-already",
-    "title": "90 Days DSA Challenge",
-    "section": "Shall we Start Now Already? 🤨",
-    "text": "Shall we Start Now Already? 🤨\nFrom 26th October, 2023 the challenge will officially start.\n\nNotes Available. Click Here!\n\nLet’s go Step-by-Step.\n\nChoosing the Programming Language \n\n\nI. Choosing the Programming Language\nAs I want to become a Quant Developer. The most used programming language is C++.\n\nNote: Most firms in the world use the latest C++ version. The current version of C++ is 20 as of the time of this challenge.\n\nThe resources that I used for Learning C++ are provided below:\n\nYouTube - Time and Space Complexity - ✅ 26-10-2023\nYouTube - Introduction to Recursion - ✅ 27-10-2023\nYouTube - Maths for DSA - 1 - ✅ 27-10-2023\nYouTube - Math for DSA - 2 - ✅ 27-10-2023"
-  },
-  {
-    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-1---time-and-space-complexity",
-    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-1---time-and-space-complexity",
-    "title": "90 Days DSA Challenge",
-    "section": "Day 1 - Time and Space Complexity",
-    "text": "Day 1 - Time and Space Complexity\nFor Day 1 - I don’t want to start coding but instead understand the more theoretical parts.\nI have completed Time and Space Complexity from the YouTube Video. Click Here!."
-  },
-  {
-    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-2---recursion-and-math-for-dsa",
-    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-2---recursion-and-math-for-dsa",
-    "title": "90 Days DSA Challenge",
-    "section": "Day 2 - Recursion and Math for DSA",
-    "text": "Day 2 - Recursion and Math for DSA\nFor Day 2 - I will be going through Recursion concept and Math for DSA.\nI have completed Recursion from the YouTube Video. Click Here!.\nI have completed Math for DSA - 1 from the YouTube Video. Click Here!.\nI have completed Math for DSA - 2 from the YouTube Video. Click Here!."
-  },
-  {
-    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-3---c-start",
-    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-3---c-start",
-    "title": "90 Days DSA Challenge",
-    "section": "Day 3 - C++ Start ❄️",
-    "text": "Day 3 - C++ Start ❄️\nFor Day 3 - I am going to start C++ learning from start. I have a foundation but need to improve this a lot.\nI have completed 5 hours C++ from this YouTube Video. Click Here!.\nI have solved 18 problems in C++ Hackerrank. - Click Here!."
-  },
-  {
-    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-4---c-book",
-    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-4---c-book",
-    "title": "90 Days DSA Challenge",
-    "section": "Day 4 - C++ Book",
-    "text": "Day 4 - C++ Book\nFor Day 4 - I am going to solve more problems in Hackerrank and read the Sams C++ book.\nI have solved total of 28 Hackerrank Problems in the C++ section. I feel confident in C++. - Click Here!.\nRead 2 Lessons form Sams C++ Book."
-  },
-  {
-    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-5---c-problems",
-    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-5---c-problems",
-    "title": "90 Days DSA Challenge",
-    "section": "Day 5 - C++ Problems",
-    "text": "Day 5 - C++ Problems\nFor Day 5 - I am going to start solving LeetCode while simultaneously start learning DSA.\nI have solved 5 LeetCode problems in the Array Section. - Click Here!."
-  },
-  {
-    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-6---c-problems",
-    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-6---c-problems",
-    "title": "90 Days DSA Challenge",
-    "section": "Day 6 - C++ Problems",
-    "text": "Day 6 - C++ Problems\nFor Day 6 - I am going to solve more problems in LeetCode and read a Lesson from Sams C++ Book.\nI have completed solving 5 LeetCode Problems in the Array Section. - Click Here!.\nI have completed reading Lesson 4 from Sams C++ Book."
-  },
-  {
-    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-7---data-structures-in-c",
-    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-7---data-structures-in-c",
-    "title": "90 Days DSA Challenge",
-    "section": "Day 7 - Data Structures in C++",
-    "text": "Day 7 - Data Structures in C++\nFor Day 7 - I am going to start Data Structures. In DS, I will be starting with Linked List types and it’s operations.\nI have completed Single Linked List, Double Linked List, and Circular Linked List.\nImplemented Operations for Variants of Linked List’s are:\n\nInsert Front\nInsert Back\nInsert Middle\nDelete Front\nDelete Back\nDelete Middle\nLength\nPrint Linked List\n\nI have completed Stack.\nImplemented Operations for Stack are:\n\nPush\nPop\nPeek\nStack is Empty\nStack is Full\nPrint Stack"
-  },
-  {
-    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-8---data-structures-in-c",
-    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-8---data-structures-in-c",
-    "title": "90 Days DSA Challenge",
-    "section": "Day 8 - Data Structures in C++",
-    "text": "Day 8 - Data Structures in C++\nFor Day 8 - I am going to do Queue Data Structures and start using NeetCode website to prepare DSA.\nI have completed Simple Queue using Linked List and Reverse a SLL using Iteration."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Bhanu Prasanna",
-    "section": "",
-    "text": "M.Sc. Data Science at TU Dortmund\n\n\n\nIt’s Black. 👁️👁️ are Safe"
-  },
-  {
     "objectID": "notes/2023-10-25-C++/index.html",
     "href": "notes/2023-10-25-C++/index.html",
     "title": "C++ Notes",
@@ -271,5 +124,173 @@
     "title": "C++ Notes",
     "section": "Reverse a Single Linked List using Iteration",
     "text": "Reverse a Single Linked List using Iteration\n/* Reverse a SLL using Iteration */\nvoid SLL::rev_iter () {\n    Node *cur = head, *prev = nullptr;\n    \n    while (cur != nullptr) {\n        Node *t = cur-&gt;next;\n        cur-&gt;next = prev;\n        prev = cur;\n        cur = t;\n    }\n    head = prev;\n}"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bhanu Prasanna",
+    "section": "",
+    "text": "M.Sc. Data Science at TU Dortmund\n\n\n\nIt’s Black. 👁️👁️ are Safe"
+  },
+  {
+    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html",
+    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html",
+    "title": "90 Days DSA Challenge",
+    "section": "",
+    "text": "My Name is Bhanu Prasanna, Started M.Sc. Data Science at TU Dortmund. \n\nThat is all there is to know about me. Let’s Start with the challenge."
+  },
+  {
+    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html#hi-there-lets-start",
+    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#hi-there-lets-start",
+    "title": "90 Days DSA Challenge",
+    "section": "",
+    "text": "My Name is Bhanu Prasanna, Started M.Sc. Data Science at TU Dortmund. \n\nThat is all there is to know about me. Let’s Start with the challenge."
+  },
+  {
+    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html#days-dsa-challenge",
+    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#days-dsa-challenge",
+    "title": "90 Days DSA Challenge",
+    "section": "90 Days DSA Challenge",
+    "text": "90 Days DSA Challenge\nWhy am I doing this? I have created a python library, learnt how to use Tensorflow and other ML Libraries. There was always a missing piece needed to be filled.\nThe missing piece is DSA."
+  },
+  {
+    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html#shall-we-start-now-already",
+    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#shall-we-start-now-already",
+    "title": "90 Days DSA Challenge",
+    "section": "Shall we Start Now Already? 🤨",
+    "text": "Shall we Start Now Already? 🤨\nFrom 26th October, 2023 the challenge will officially start.\n\nNotes Available. Click Here!\n\nLet’s go Step-by-Step.\n\nChoosing the Programming Language \n\n\nI. Choosing the Programming Language\nAs I want to become a Quant Developer. The most used programming language is C++.\n\nNote: Most firms in the world use the latest C++ version. The current version of C++ is 20 as of the time of this challenge.\n\nThe resources that I used for Learning C++ are provided below:\n\nYouTube - Time and Space Complexity - ✅ 26-10-2023\nYouTube - Introduction to Recursion - ✅ 27-10-2023\nYouTube - Maths for DSA - 1 - ✅ 27-10-2023\nYouTube - Math for DSA - 2 - ✅ 27-10-2023"
+  },
+  {
+    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-1---time-and-space-complexity",
+    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-1---time-and-space-complexity",
+    "title": "90 Days DSA Challenge",
+    "section": "Day 1 - Time and Space Complexity",
+    "text": "Day 1 - Time and Space Complexity\nFor Day 1 - I don’t want to start coding but instead understand the more theoretical parts.\nI have completed Time and Space Complexity from the YouTube Video. Click Here!."
+  },
+  {
+    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-2---recursion-and-math-for-dsa",
+    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-2---recursion-and-math-for-dsa",
+    "title": "90 Days DSA Challenge",
+    "section": "Day 2 - Recursion and Math for DSA",
+    "text": "Day 2 - Recursion and Math for DSA\nFor Day 2 - I will be going through Recursion concept and Math for DSA.\nI have completed Recursion from the YouTube Video. Click Here!.\nI have completed Math for DSA - 1 from the YouTube Video. Click Here!.\nI have completed Math for DSA - 2 from the YouTube Video. Click Here!."
+  },
+  {
+    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-3---c-start",
+    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-3---c-start",
+    "title": "90 Days DSA Challenge",
+    "section": "Day 3 - C++ Start ❄️",
+    "text": "Day 3 - C++ Start ❄️\nFor Day 3 - I am going to start C++ learning from start. I have a foundation but need to improve this a lot.\nI have completed 5 hours C++ from this YouTube Video. Click Here!.\nI have solved 18 problems in C++ Hackerrank. - Click Here!."
+  },
+  {
+    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-4---c-book",
+    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-4---c-book",
+    "title": "90 Days DSA Challenge",
+    "section": "Day 4 - C++ Book",
+    "text": "Day 4 - C++ Book\nFor Day 4 - I am going to solve more problems in Hackerrank and read the Sams C++ book.\nI have solved total of 28 Hackerrank Problems in the C++ section. I feel confident in C++. - Click Here!.\nRead 2 Lessons form Sams C++ Book."
+  },
+  {
+    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-5---c-problems",
+    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-5---c-problems",
+    "title": "90 Days DSA Challenge",
+    "section": "Day 5 - C++ Problems",
+    "text": "Day 5 - C++ Problems\nFor Day 5 - I am going to start solving LeetCode while simultaneously start learning DSA.\nI have solved 5 LeetCode problems in the Array Section. - Click Here!."
+  },
+  {
+    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-6---c-problems",
+    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-6---c-problems",
+    "title": "90 Days DSA Challenge",
+    "section": "Day 6 - C++ Problems",
+    "text": "Day 6 - C++ Problems\nFor Day 6 - I am going to solve more problems in LeetCode and read a Lesson from Sams C++ Book.\nI have completed solving 5 LeetCode Problems in the Array Section. - Click Here!.\nI have completed reading Lesson 4 from Sams C++ Book."
+  },
+  {
+    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-7---data-structures-in-c",
+    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-7---data-structures-in-c",
+    "title": "90 Days DSA Challenge",
+    "section": "Day 7 - Data Structures in C++",
+    "text": "Day 7 - Data Structures in C++\nFor Day 7 - I am going to start Data Structures. In DS, I will be starting with Linked List types and it’s operations.\nI have completed Single Linked List, Double Linked List, and Circular Linked List.\nImplemented Operations for Variants of Linked List’s are:\n\nInsert Front\nInsert Back\nInsert Middle\nDelete Front\nDelete Back\nDelete Middle\nLength\nPrint Linked List\n\nI have completed Stack.\nImplemented Operations for Stack are:\n\nPush\nPop\nPeek\nStack is Empty\nStack is Full\nPrint Stack"
+  },
+  {
+    "objectID": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-8---data-structures-in-c",
+    "href": "challenges/2023-10-25-90_DSA_Challenge/index.html#day-8---data-structures-in-c",
+    "title": "90 Days DSA Challenge",
+    "section": "Day 8 - Data Structures in C++",
+    "text": "Day 8 - Data Structures in C++\nFor Day 8 - I am going to do Queue Data Structures and start using NeetCode website to prepare DSA.\nI have completed Simple Queue using Linked List and Reverse a SLL using Iteration."
+  },
+  {
+    "objectID": "challenges.html",
+    "href": "challenges.html",
+    "title": "Challenges",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\n90 Days DSA Challenge\n\n\n\n\n\n\n\nChallenge\n\n\nDSA\n\n\nCode\n\n\n\n\nLet’s Start\n\n\n\n\n\n\nOct 25, 2023\n\n\nBhanu Prasanna Koppolu\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "notes.html",
+    "href": "notes.html",
+    "title": "Notes",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nNeetCode 150\n\n\n\n\n\n\n\nNotes\n\n\nC++\n\n\nChallenge\n\n\n\n\nLearning by Solving NeetCode 150\n\n\n\n\n\n\nNov 4, 2023\n\n\nBhanu Prasanna Koppolu\n\n\n\n\n\n\n  \n\n\n\n\nC++ Notes\n\n\n\n\n\n\n\nNotes\n\n\nC++\n\n\nChallenge\n\n\n\n\nDistilled C++ Notes\n\n\n\n\n\n\nOct 25, 2023\n\n\nBhanu Prasanna Koppolu\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2023-10-25-first-quarto-blog/index.html",
+    "href": "posts/2023-10-25-first-quarto-blog/index.html",
+    "title": "First Quarto Blog",
+    "section": "",
+    "text": "\\[c = a + b\\]"
+  },
+  {
+    "objectID": "posts/2023-10-25-first-quarto-blog/index.html#this-is-my-first-blog",
+    "href": "posts/2023-10-25-first-quarto-blog/index.html#this-is-my-first-blog",
+    "title": "First Quarto Blog",
+    "section": "",
+    "text": "\\[c = a + b\\]"
+  },
+  {
+    "objectID": "projects/2023-10-25-kbp-nse/index.html",
+    "href": "projects/2023-10-25-kbp-nse/index.html",
+    "title": "kbp-nse",
+    "section": "",
+    "text": "CitationBibTeX citation:@online{prasanna koppolu2023,\n  author = {Prasanna Koppolu, Bhanu},\n  title = {Kbp-Nse},\n  date = {2023-10-25},\n  url = {https://bhanuprasanna527.github.io/projects/2023-10-25-kbp-nse/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nPrasanna Koppolu, Bhanu. 2023. “Kbp-Nse.” October 25, 2023.\nhttps://bhanuprasanna527.github.io/projects/2023-10-25-kbp-nse/."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nkbp-nse\n\n\n\n\n\n\n\nProjects\n\n\nPython\n\n\nFinance\n\n\n\n\nMy personal Stock Data Retriever Project kbp-nse.\n\n\n\n\n\n\nOct 25, 2023\n\n\nBhanu Prasanna Koppolu\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Code\nimport numpy as np\nimport pandas as pd"
+  },
+  {
+    "objectID": "about.html#this-is-a-python-test",
+    "href": "about.html#this-is-a-python-test",
+    "title": "About",
+    "section": "",
+    "text": "Code\nimport numpy as np\nimport pandas as pd"
+  },
+  {
+    "objectID": "notes/2023-11-04-NeetCode_150/index.html",
+    "href": "notes/2023-11-04-NeetCode_150/index.html",
+    "title": "NeetCode 150",
+    "section": "",
+    "text": "After going through lot of things I have come across NeetCode. I have decided to solve all the 150 questions provided by NeetCode.\n\n\n\n\nThe First Approach that came to my mind was to write a Nested For Loop to check if it Contains Duplicate.\nclass Solution {\npublic:\n    bool containsDuplicate(vector&lt;int&gt;& nums) {\n        for (auto i = nums.begin(); i != nums.end(); i++) {\n            for (auto j = i + 1; j != nums.end(); j++) {\n                if (*i == *j) return true;\n            }\n        }\n\n        return false;\n    }\n};\n\n\nThe First Approach has Time Complexity of O(\\(N^{2}\\)) and Space Complexity of O(1).\nTime Limit Exceeded\n70 / 75 testcases passed\n\n\n\n\nAnother Approach to this problem is using Sorting then Checking if it Contains Duplicate.\nclass Solution {\npublic:\n    bool containsDuplicate(vector&lt;int&gt;& nums) {\n        sort(nums.begin(), nums.end());\n\n        for (int i = 0; i &lt; nums.size() - 1; i++) {\n            if (nums[i] == nums[i+1]) {\n                return true;\n            }\n        }\n        return false;\n    }\n};\n\n\nThe Second Approach has Time Complexity of O(N log(N)) and Space Complexity of O(1).\nAccepted\n\n\n\n\nUsing unordered_set to check if it Contains Duplicate. The Time Complexity for Basic operations in unordered_set is O(1) and for set it is O(log(N)).\nclass Solution {\npublic:\n    bool containsDuplicate(vector&lt;int&gt;& nums) {\n        unordered_set&lt;int&gt; us;\n\n        for (auto i = nums.begin(); i != nums.end(); i++) {\n            if (us.find(*i) != us.end()) {\n                return true;\n            }\n            us.insert(*i);\n        }\n\n        return false;\n    }\n};\n\n\nThe Third Approach has Time Complexity of O(N) and Space Complexity of O(N). The optimal solution.\nAccepted\n\n\n\n\n\n\n\nSort the characters of the string of t and s then check if both are same or not.\nclass Solution {\npublic:\n    bool isAnagram(string s, string t) {\n        sort(s.begin(), s.end());\n        sort(t.begin(), t.end());\n\n        if (s == t) {\n            return true;\n        }\n        return false;\n    }\n};\n\n\nThe First Approach has Time Complexity O(N log(N)) and Space Complexity O(1).\nAccepted\n\n\n\n\nUsing unordered_map which has principles derived from Hash Map. So basic operations are O(1).\nclass Solution {\npublic:\n    bool isAnagram(string s, string t) {\n        \n        if (s.size() != t.size()) {\n            return false;\n        }\n\n        unordered_map&lt;char, int&gt; ums;\n        unordered_map&lt;char, int&gt; umt;\n\n        for (int i = 0; i &lt; s.size(); i++) {\n            ums[s[i]]++;\n            umt[t[i]]++;\n        }\n\n        for (int i = 0; i &lt; s.size(); i++) {\n            if (ums[s[i]] != umt[s[i]]) {\n                return false;\n            }\n        }\n\n        return true;\n    }\n};\n\n\nThe Second Approach has Time Complexity O(S + T) and Space Complexity O(S + T).\nAccepted"
+  },
+  {
+    "objectID": "notes/2023-11-04-NeetCode_150/index.html#contains-duplicate---217---leetcode---easy---array-hashing",
+    "href": "notes/2023-11-04-NeetCode_150/index.html#contains-duplicate---217---leetcode---easy---array-hashing",
+    "title": "NeetCode 150",
+    "section": "",
+    "text": "The First Approach that came to my mind was to write a Nested For Loop to check if it Contains Duplicate.\nclass Solution {\npublic:\n    bool containsDuplicate(vector&lt;int&gt;& nums) {\n        for (auto i = nums.begin(); i != nums.end(); i++) {\n            for (auto j = i + 1; j != nums.end(); j++) {\n                if (*i == *j) return true;\n            }\n        }\n\n        return false;\n    }\n};\n\n\nThe First Approach has Time Complexity of O(\\(N^{2}\\)) and Space Complexity of O(1).\nTime Limit Exceeded\n70 / 75 testcases passed\n\n\n\n\nAnother Approach to this problem is using Sorting then Checking if it Contains Duplicate.\nclass Solution {\npublic:\n    bool containsDuplicate(vector&lt;int&gt;& nums) {\n        sort(nums.begin(), nums.end());\n\n        for (int i = 0; i &lt; nums.size() - 1; i++) {\n            if (nums[i] == nums[i+1]) {\n                return true;\n            }\n        }\n        return false;\n    }\n};\n\n\nThe Second Approach has Time Complexity of O(N log(N)) and Space Complexity of O(1).\nAccepted\n\n\n\n\nUsing unordered_set to check if it Contains Duplicate. The Time Complexity for Basic operations in unordered_set is O(1) and for set it is O(log(N)).\nclass Solution {\npublic:\n    bool containsDuplicate(vector&lt;int&gt;& nums) {\n        unordered_set&lt;int&gt; us;\n\n        for (auto i = nums.begin(); i != nums.end(); i++) {\n            if (us.find(*i) != us.end()) {\n                return true;\n            }\n            us.insert(*i);\n        }\n\n        return false;\n    }\n};\n\n\nThe Third Approach has Time Complexity of O(N) and Space Complexity of O(N). The optimal solution.\nAccepted"
+  },
+  {
+    "objectID": "notes/2023-11-04-NeetCode_150/index.html#valid-anagram---242---leetcode---easy---array-hashing",
+    "href": "notes/2023-11-04-NeetCode_150/index.html#valid-anagram---242---leetcode---easy---array-hashing",
+    "title": "NeetCode 150",
+    "section": "",
+    "text": "Sort the characters of the string of t and s then check if both are same or not.\nclass Solution {\npublic:\n    bool isAnagram(string s, string t) {\n        sort(s.begin(), s.end());\n        sort(t.begin(), t.end());\n\n        if (s == t) {\n            return true;\n        }\n        return false;\n    }\n};\n\n\nThe First Approach has Time Complexity O(N log(N)) and Space Complexity O(1).\nAccepted\n\n\n\n\nUsing unordered_map which has principles derived from Hash Map. So basic operations are O(1).\nclass Solution {\npublic:\n    bool isAnagram(string s, string t) {\n        \n        if (s.size() != t.size()) {\n            return false;\n        }\n\n        unordered_map&lt;char, int&gt; ums;\n        unordered_map&lt;char, int&gt; umt;\n\n        for (int i = 0; i &lt; s.size(); i++) {\n            ums[s[i]]++;\n            umt[t[i]]++;\n        }\n\n        for (int i = 0; i &lt; s.size(); i++) {\n            if (ums[s[i]] != umt[s[i]]) {\n                return false;\n            }\n        }\n\n        return true;\n    }\n};\n\n\nThe Second Approach has Time Complexity O(S + T) and Space Complexity O(S + T).\nAccepted"
   }
 ]
