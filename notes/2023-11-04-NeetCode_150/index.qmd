@@ -38,6 +38,14 @@ format:
     fig-align: center
 ---
 
+\newpage
+
+# Notations
+
+- The first approach is the idea popped from my mind when I looked at the problem.
+
+\newpage
+
 # Day - 9
 
 After going through lot of things I have come across NeetCode. I have decided to solve all the 150 questions provided by [NeetCode](https://neetcode.io/roadmap).
@@ -159,7 +167,7 @@ public:
 
 #### Output
 
-The First Approach has Time Complexity O(N log(N)) and Space Complexity O(1).
+The First Approach has Time Complexity of O(N log(N)) and Space Complexity of O(1).
 
 ```cpp
 Accepted
@@ -201,7 +209,75 @@ public:
 
 #### Output
 
-The Second Approach has Time Complexity O(S + T) and Space Complexity O(S + T).
+The Second Approach has Time Complexity of O(S + T) and Space Complexity of O(S + T).
+
+```cpp
+Accepted
+```
+
+\newpage
+
+## Two Sum - 1 - LeetCode - Easy - Array & Hashing
+
+### Approach - 1
+
+The general approach to this problem is Brute Force Approach.
+
+```cpp
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        int l = nums.size();
+        
+        for (int i = 0; i < l; i++) {
+            for (int j = 0; j < l && i != j; j ++) {
+                if (nums[i] + nums[j] == target) {
+                    return {i, j};
+                }
+            }
+        }
+
+        return {};
+    }
+};
+```
+
+#### Output
+
+The First Approach has Time Complexity of O($N^{2}$) and Space Complexity of O(1).
+
+```cpp
+Accepted
+```
+
+\newpage
+
+### Approach - 2
+
+Using unordered_map which has principles derived from Hash Map. So basic operations are O(1).
+
+```cpp
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        unordered_map<int, int> um;
+
+        for (int i = 0; i < nums.size(); i++) {
+            if (auto search = um.find(target - nums[i]); search != um.end()) {
+                return {search->second, i};
+            }
+
+            um[nums[i]] = i;
+        }
+
+        return {};
+    }
+};
+```
+
+#### Output
+
+The Second Approach has Time Complexity of O(N) and Space Complexity of O(N).
 
 ```cpp
 Accepted
