@@ -284,3 +284,101 @@ Accepted
 ```
 
 \newpage
+
+# Day - 10
+
+## Group Anagrams - 49 - LeetCode - Medium - Array & Hashing
+
+### Approach - 1
+
+Sorting and Matching Strings.
+
+```cpp
+class Solution {
+public:
+    vector<vector<string>> groupAnagrams(vector<string>& strs) {
+        vector<string> st = strs;
+        vector<vector<string>> fs;
+        unordered_set<int> us;
+        
+        for (int i = 0; i < st.size(); i++) {
+            sort(st[i].begin(), st[i].end());
+        }
+
+        for (int i = 0; i < st.size(); i++) {
+            vector<string> vs;
+
+            for (int j = i; j < st.size(); j++) {
+                if (us.find(j) == us.end()) {
+                    if (st[i] == st[j]) {
+                        vs.push_back(strs[j]);
+                        us.insert(j);
+                    }
+                }
+            }
+            if (vs.size() != 0) {
+                fs.push_back(vs);
+            }
+        }
+
+        return fs;
+    }
+};
+```
+
+#### Output
+
+The First Approach has Time Complexity of O(mn log(n)) and Space Complexity of O(n).
+
+```cpp
+Accepted
+```
+
+### Approach - 2
+
+Used Hash Map to reduce the Time Complexity.
+
+```cpp
+class Solution {
+public:
+    vector<vector<string>> groupAnagrams(vector<string>& strs) {
+        unordered_map<string, vector<string>> m;
+
+        for (int i = 0; i < strs.size(); i++) {
+            string key = getkey(strs[i]);
+            m[key].push_back(strs[i]);
+        }
+
+        vector<vector<string>> fs;
+
+        for (auto i = m.begin(); i != m.end(); i++) {
+            fs.push_back(i->second);
+        }
+
+        return fs;
+    }
+private:
+    string getkey (string val) {
+        string s = "";
+        vector<int> c(26);
+
+        for (int i = 0; i < val.size(); i++) {
+            c[val[i] - 'a'] += 1;
+        }
+
+        for (int i = 0; i < 26; i++) {
+            s = s + to_string(c[i]) + '#';
+        }
+
+        return s;
+    }
+};
+```
+
+#### Output
+
+The Second Approach has Time Complexity of O(mn) and Space Complexity of O(mn).
+
+```cpp
+Accepted
+```

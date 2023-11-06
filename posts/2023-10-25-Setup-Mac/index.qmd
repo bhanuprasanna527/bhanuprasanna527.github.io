@@ -1,0 +1,74 @@
+---
+title: "Setup TensorFlow, PyTorch, and Hugging Face Transformer on Mac in 5 Minutes"
+description: |
+  Installing TensorFlow, PyTorch, and other Libraries on Mac
+author:
+  - name: Bhanu Prasanna Koppolu
+    url: https://bhanuprasanna527.github.io/
+    orcid: 0000-0001-6050-2414
+    affiliation: M.Sc. Data Science at TU Dortmund
+    # affiliation-url: https://www.tu-dortmund.de/en/
+date: 2023-10-25
+date-modified: last-modified
+# bibliography: references.bib
+citation: 
+  url: https://bhanuprasanna527.github.io/posts/2023-10-25-Setup-Mac/
+categories: [First, Blog, Test]
+image: penguins.png
+draft: false
+page-layout: full
+---
+
+Let's prepare your Apple Silicon Mac, whether it's an M1 or M2 variant, for machine learning and data science.
+
+## Who will benefit from this blog post?
+
+If you have recently acquired an Apple Silicon Mac, specifically one of the M1 or M2 models, and you're eager to embark on machine learning and data science endeavors, this post is tailored for you.
+
+## What to expect from this post:
+
+This post is designed to guide you through the process of installing essential machine learning and data science packages, including TensorFlow, PyTorch, Hugging Face Transformer, pandas, NumPy, Jupyter, matplotlib, and scikit-learn, on your Apple Silicon Mac. It also ensures that these packages run smoothly by providing sample code.
+
+## Are you a novice or an expert?
+
+If you're new to the setup of environments and software packages, consider watching the video version in conjunction with the comprehensive written instructions below.
+
+For those experienced in setting up environments, the concise text-based instructions should suffice.
+
+## Video guide available:
+You can access a detailed step-by-step video guide of the content covered in this article on YouTube.
+
+## Let's Start 🏁
+
+I will detail each step so a beginner can also be transition their journey to data science smoothly.
+
+### 1 - Install Homebrew
+
+Visit - [Homebrew](https://brew.sh/)
+
+Copy and Paste the command present on the website or use the below command in the **Terminal**:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+### 2 - Install Anaconda or MiniConda
+
+I prefer Anaconda and I will be using it for further process.
+
+Visit - [Anaconda Downloads](https://www.anaconda.com/download)
+
+Visit - [Installation Guide](https://docs.anaconda.com/free/anaconda/install/mac-os/)
+
+For Command Line -
+
+```bash
+bash ~/Downloads/Anaconda\ 2023.09\ MacOSX-arm64.sh
+```
+
+Set Conda Base to Activate by default - 
+
+```bash
+conda config --set auto_activate_base True
+```
+

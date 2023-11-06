@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Bhanu Prasanna Koppolu">
+<meta name="dcterms.date" content="2023-10-25">
+<meta name="description" content="Installing TensorFlow, PyTorch, and other Libraries on Mac">
 
-<title>Bhanu Prasanna - Notes</title>
+<title>Bhanu Prasanna - Setup TensorFlow, PyTorch, and Hugging Face Transformer on Mac in 5 Minutes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,30 +23,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./public/favicons/android-chrome-512x512.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/cookie-consent/cookie-consent.js"></script>
-<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../public/favicons/android-chrome-512x512.png" rel="icon" type="image/png">
+<script src="../../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -64,35 +99,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-MBMMMZY5SV"></script>
 
 <script type="text/plain" cookie-consent="tracking">
@@ -119,10 +125,8 @@ cookieconsent.run({
 </script> 
   
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -132,7 +136,7 @@ cookieconsent.run({
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Bhanu Prasanna</span>
     </a>
   </div>
@@ -143,27 +147,27 @@ cookieconsent.run({
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
+    <a class="nav-link" href="../../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
+    <a class="nav-link" href="../../about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./posts.html" rel="" target="">
+    <a class="nav-link" href="../../posts.html" rel="" target="">
  <span class="menu-text">Posts</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./notes.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../../notes.html" rel="" target="">
  <span class="menu-text">Notes</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html" rel="" target="">
+    <a class="nav-link" href="../../projects.html" rel="" target="">
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./challenges.html" rel="" target="">
+    <a class="nav-link" href="../../challenges.html" rel="" target="">
  <span class="menu-text">Challenges</span></a>
   </li>  
 </ul>
@@ -177,16 +181,50 @@ cookieconsent.run({
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">Notes</h1>
-            <p class="subtitle lead">Reference</p>
-                      </div>
+      <h1 class="title">Setup TensorFlow, PyTorch, and Hugging Face Transformer on Mac in 5 Minutes</h1>
+                  <div>
+        <div class="description">
+          <p>Installing TensorFlow, PyTorch, and other Libraries on Mac</p>
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">First</div>
+                <div class="quarto-category">Blog</div>
+                <div class="quarto-category">Test</div>
+              </div>
+                  </div>
   </div>
     
-  
+  <div class="quarto-title-meta-author">
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Affiliation</div>
+    
+      <div class="quarto-title-meta-contents">
+      <p class="author"><a href="https://bhanuprasanna527.github.io/">Bhanu Prasanna Koppolu</a> <a href="https://orcid.org/0000-0001-6050-2414" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+    </div>
+      <div class="quarto-title-meta-contents">
+          <p class="affiliation">
+              M.Sc. Data Science at TU Dortmund
+            </p>
+        </div>
+      </div>
+
   <div class="quarto-title-meta">
 
-      
+        
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">October 25, 2023</p>
+      </div>
+    </div>
     
+      <div>
+      <div class="quarto-title-meta-heading">Modified</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">November 6, 2023</p>
+      </div>
+    </div>
       
     </div>
     
@@ -195,132 +233,82 @@ cookieconsent.run({
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="C++">C++ <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Challenge">Challenge <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Notes">Notes <span class="quarto-category-count">(2)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#who-will-benefit-from-this-blog-post" id="toc-who-will-benefit-from-this-blog-post" class="nav-link active" data-scroll-target="#who-will-benefit-from-this-blog-post">Who will benefit from this blog post?</a></li>
+  <li><a href="#what-to-expect-from-this-post" id="toc-what-to-expect-from-this-post" class="nav-link" data-scroll-target="#what-to-expect-from-this-post">What to expect from this post:</a></li>
+  <li><a href="#are-you-a-novice-or-an-expert" id="toc-are-you-a-novice-or-an-expert" class="nav-link" data-scroll-target="#are-you-a-novice-or-an-expert">Are you a novice or an expert?</a></li>
+  <li><a href="#video-guide-available" id="toc-video-guide-available" class="nav-link" data-scroll-target="#video-guide-available">Video guide available:</a></li>
+  <li><a href="#lets-start" id="toc-lets-start" class="nav-link" data-scroll-target="#lets-start">Let’s Start 🏁</a>
+  <ul class="collapse">
+  <li><a href="#install-homebrew" id="toc-install-homebrew" class="nav-link" data-scroll-target="#install-homebrew">1 - Install Homebrew</a></li>
+  <li><a href="#install-anaconda-or-miniconda" id="toc-install-anaconda-or-miniconda" class="nav-link" data-scroll-target="#install-anaconda-or-miniconda">2 - Install Anaconda or MiniConda</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
 
+<p>Let’s prepare your Apple Silicon Mac, whether it’s an M1 or M2 variant, for machine learning and data science.</p>
+<section id="who-will-benefit-from-this-blog-post" class="level2">
+<h2 class="anchored" data-anchor-id="who-will-benefit-from-this-blog-post">Who will benefit from this blog post?</h2>
+<p>If you have recently acquired an Apple Silicon Mac, specifically one of the M1 or M2 models, and you’re eager to embark on machine learning and data science endeavors, this post is tailored for you.</p>
+</section>
+<section id="what-to-expect-from-this-post" class="level2">
+<h2 class="anchored" data-anchor-id="what-to-expect-from-this-post">What to expect from this post:</h2>
+<p>This post is designed to guide you through the process of installing essential machine learning and data science packages, including TensorFlow, PyTorch, Hugging Face Transformer, pandas, NumPy, Jupyter, matplotlib, and scikit-learn, on your Apple Silicon Mac. It also ensures that these packages run smoothly by providing sample code.</p>
+</section>
+<section id="are-you-a-novice-or-an-expert" class="level2">
+<h2 class="anchored" data-anchor-id="are-you-a-novice-or-an-expert">Are you a novice or an expert?</h2>
+<p>If you’re new to the setup of environments and software packages, consider watching the video version in conjunction with the comprehensive written instructions below.</p>
+<p>For those experienced in setting up environments, the concise text-based instructions should suffice.</p>
+</section>
+<section id="video-guide-available" class="level2">
+<h2 class="anchored" data-anchor-id="video-guide-available">Video guide available:</h2>
+<p>You can access a detailed step-by-step video guide of the content covered in this article on YouTube.</p>
+</section>
+<section id="lets-start" class="level2">
+<h2 class="anchored" data-anchor-id="lets-start">Let’s Start 🏁</h2>
+<p>I will detail each step so a beginner can also be transition their journey to data science smoothly.</p>
+<section id="install-homebrew" class="level3">
+<h3 class="anchored" data-anchor-id="install-homebrew">1 - Install Homebrew</h3>
+<p>Visit - <a href="https://brew.sh/">Homebrew</a></p>
+<p>Copy and Paste the command present on the website or use the below command in the <strong>Terminal</strong>:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">/bin/bash</span> <span class="at">-c</span> <span class="st">"</span><span class="va">$(</span><span class="ex">curl</span> <span class="at">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="va">)</span><span class="st">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="install-anaconda-or-miniconda" class="level3">
+<h3 class="anchored" data-anchor-id="install-anaconda-or-miniconda">2 - Install Anaconda or MiniConda</h3>
+<p>I prefer Anaconda and I will be using it for further process.</p>
+<p>Visit - <a href="https://www.anaconda.com/download">Anaconda Downloads</a></p>
+<p>Visit - <a href="https://docs.anaconda.com/free/anaconda/install/mac-os/">Installation Guide</a></p>
+<p>For Command Line -</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bash</span> ~/Downloads/Anaconda\ 2023.09\ MacOSX-arm64.sh</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Set Conda Base to Activate by default -</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> config <span class="at">--set</span> auto_activate_base True</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
+</section>
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-title" data-direction="asc">
-          Title
-        </option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
-         <option value="listing-author" data-direction="asc">
-          Author
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Notes,C++,Challenge" data-listing-date-sort="1699036200000" data-listing-file-modified-sort="1699295635558" data-listing-date-modified-sort="1699295635000" data-listing-reading-time-sort="10">
-<div class="thumbnail">
-<p><a href="./notes/2023-11-04-NeetCode_150/index.html"> <img src="./notes/2023-11-04-NeetCode_150/cpp.gif" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./notes/2023-11-04-NeetCode_150/index.html">
-<h3 class="no-anchor listing-title">
-NeetCode 150
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Notes'); return false;">
-Notes
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('C++'); return false;">
-C++
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Challenge'); return false;">
-Challenge
-</div>
-</div>
-<a href="./notes/2023-11-04-NeetCode_150/index.html">
-<div class="listing-description">
-<p>Learning by Solving NeetCode 150</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./notes/2023-11-04-NeetCode_150/index.html">
-<div class="listing-date">
-Nov 4, 2023
-</div>
-<div class="listing-author">
-Bhanu Prasanna Koppolu
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Notes,C++,Challenge" data-listing-date-sort="1698172200000" data-listing-file-modified-sort="1699136752505" data-listing-date-modified-sort="1699136752000" data-listing-reading-time-sort="42">
-<div class="thumbnail">
-<p><a href="./notes/2023-10-25-C++/index.html"> <img src="./notes/2023-10-25-C++/cpp.gif" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./notes/2023-10-25-C++/index.html">
-<h3 class="no-anchor listing-title">
-C++ Notes
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Notes'); return false;">
-Notes
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('C++'); return false;">
-C++
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Challenge'); return false;">
-Challenge
-</div>
-</div>
-<a href="./notes/2023-10-25-C++/index.html">
-<div class="listing-description">
-<p>Distilled C++ Notes</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./notes/2023-10-25-C++/index.html">
-<div class="listing-date">
-Oct 25, 2023
-</div>
-<div class="listing-author">
-Bhanu Prasanna Koppolu
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{prasanna koppolu2023,
+  author = {Prasanna Koppolu, Bhanu},
+  title = {Setup {TensorFlow,} {PyTorch,} and {Hugging} {Face}
+    {Transformer} on {Mac} in 5 {Minutes}},
+  date = {2023-10-25},
+  url = {https://bhanuprasanna527.github.io/posts/2023-10-25-Setup-Mac/},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-prasanna koppolu2023" class="csl-entry quarto-appendix-citeas" role="listitem">
+Prasanna Koppolu, Bhanu. 2023. <span>“Setup TensorFlow, PyTorch, and
+Hugging Face Transformer on Mac in 5 Minutes.”</span> October 25, 2023.
+<a href="https://bhanuprasanna527.github.io/posts/2023-10-25-Setup-Mac/">https://bhanuprasanna527.github.io/posts/2023-10-25-Setup-Mac/</a>.
+</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
