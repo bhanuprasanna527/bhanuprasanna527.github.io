@@ -139,3 +139,15 @@ Implemented Operations for Stack are:
 For Day 8 - I am going to do Queue Data Structures and start using NeetCode website to prepare DSA.
 
 I have completed Simple Queue using Linked List and Reverse a SLL using Iteration.
+
+## Day 9 - NeetCode
+
+From Day 9 onwards I will trying to complete NeetCode 150 problems and understand each solution and complexities.
+
+I have completed 3 problems.
+
+## Day 10 - NeetCode
+
+For Day 10 - NeetCode practice.
+
+I have completed 1 problem.
