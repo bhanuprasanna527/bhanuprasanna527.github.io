@@ -231,18 +231,46 @@
     "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nNeetCode 150\n\n\n\n\n\n\n\nNotes\n\n\nC++\n\n\nChallenge\n\n\n\n\nLearning by Solving NeetCode 150\n\n\n\n\n\n\nNov 4, 2023\n\n\nBhanu Prasanna Koppolu\n\n\n\n\n\n\n  \n\n\n\n\nC++ Notes\n\n\n\n\n\n\n\nNotes\n\n\nC++\n\n\nChallenge\n\n\n\n\nDistilled C++ Notes\n\n\n\n\n\n\nOct 25, 2023\n\n\nBhanu Prasanna Koppolu\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/2023-10-25-first-quarto-blog/index.html",
-    "href": "posts/2023-10-25-first-quarto-blog/index.html",
-    "title": "First Quarto Blog",
+    "objectID": "posts/2023-10-25-Setup-Mac/index.html",
+    "href": "posts/2023-10-25-Setup-Mac/index.html",
+    "title": "Setup TensorFlow, PyTorch, and Hugging Face Transformer on Mac in 5 Minutes",
     "section": "",
-    "text": "\\[c = a + b\\]"
+    "text": "Let’s prepare your Apple Silicon Mac, whether it’s an M1 or M2 variant, for machine learning and data science."
   },
   {
-    "objectID": "posts/2023-10-25-first-quarto-blog/index.html#this-is-my-first-blog",
-    "href": "posts/2023-10-25-first-quarto-blog/index.html#this-is-my-first-blog",
-    "title": "First Quarto Blog",
-    "section": "",
-    "text": "\\[c = a + b\\]"
+    "objectID": "posts/2023-10-25-Setup-Mac/index.html#who-will-benefit-from-this-blog-post",
+    "href": "posts/2023-10-25-Setup-Mac/index.html#who-will-benefit-from-this-blog-post",
+    "title": "Setup TensorFlow, PyTorch, and Hugging Face Transformer on Mac in 5 Minutes",
+    "section": "Who will benefit from this blog post?",
+    "text": "Who will benefit from this blog post?\nIf you have recently acquired an Apple Silicon Mac, specifically one of the M1 or M2 models, and you’re eager to embark on machine learning and data science endeavors, this post is tailored for you."
+  },
+  {
+    "objectID": "posts/2023-10-25-Setup-Mac/index.html#what-to-expect-from-this-post",
+    "href": "posts/2023-10-25-Setup-Mac/index.html#what-to-expect-from-this-post",
+    "title": "Setup TensorFlow, PyTorch, and Hugging Face Transformer on Mac in 5 Minutes",
+    "section": "What to expect from this post:",
+    "text": "What to expect from this post:\nThis post is designed to guide you through the process of installing essential machine learning and data science packages, including TensorFlow, PyTorch, Hugging Face Transformer, pandas, NumPy, Jupyter, matplotlib, and scikit-learn, on your Apple Silicon Mac. It also ensures that these packages run smoothly by providing sample code."
+  },
+  {
+    "objectID": "posts/2023-10-25-Setup-Mac/index.html#are-you-a-novice-or-an-expert",
+    "href": "posts/2023-10-25-Setup-Mac/index.html#are-you-a-novice-or-an-expert",
+    "title": "Setup TensorFlow, PyTorch, and Hugging Face Transformer on Mac in 5 Minutes",
+    "section": "Are you a novice or an expert?",
+    "text": "Are you a novice or an expert?\nIf you’re new to the setup of environments and software packages, consider watching the video version in conjunction with the comprehensive written instructions below.\nFor those experienced in setting up environments, the concise text-based instructions should suffice."
+  },
+  {
+    "objectID": "posts/2023-10-25-Setup-Mac/index.html#video-guide-available",
+    "href": "posts/2023-10-25-Setup-Mac/index.html#video-guide-available",
+    "title": "Setup TensorFlow, PyTorch, and Hugging Face Transformer on Mac in 5 Minutes",
+    "section": "Video guide available:",
+    "text": "Video guide available:\nYou can access a detailed step-by-step video guide of the content covered in this article on YouTube."
+  },
+  {
+    "objectID": "posts/2023-10-25-Setup-Mac/index.html#lets-start",
+    "href": "posts/2023-10-25-Setup-Mac/index.html#lets-start",
+    "title": "Setup TensorFlow, PyTorch, and Hugging Face Transformer on Mac in 5 Minutes",
+    "section": "Let’s Start 🏁",
+    "text": "Let’s Start 🏁\nI will detail each step so a beginner can also be transition their journey to data science smoothly.\n\n1 - Install Homebrew\nVisit - Homebrew\nCopy and Paste the command present on the website or use the below command in the Terminal:\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\n\n\n2 - Install Anaconda or MiniConda\nI prefer Anaconda and I will be using it for further process.\nVisit - Anaconda Downloads\nVisit - Installation Guide\nFor Command Line -\nbash ~/Downloads/Anaconda\\ 2023.09\\ MacOSX-arm64.sh\nSet Conda Base to Activate by default -\nconda config --set auto_activate_base True"
   },
   {
     "objectID": "projects/2023-10-25-kbp-nse/index.html",
@@ -299,62 +327,6 @@
     "title": "NeetCode 150",
     "section": "Two Sum - 1 - LeetCode - Easy - Array & Hashing",
     "text": "Two Sum - 1 - LeetCode - Easy - Array & Hashing\n\nApproach - 1\nThe general approach to this problem is Brute Force Approach.\nclass Solution {\npublic:\n    vector&lt;int&gt; twoSum(vector&lt;int&gt;& nums, int target) {\n        int l = nums.size();\n        \n        for (int i = 0; i &lt; l; i++) {\n            for (int j = 0; j &lt; l && i != j; j ++) {\n                if (nums[i] + nums[j] == target) {\n                    return {i, j};\n                }\n            }\n        }\n\n        return {};\n    }\n};\n\nOutput\nThe First Approach has Time Complexity of O(\\(N^{2}\\)) and Space Complexity of O(1).\nAccepted\n\n\n\nApproach - 2\nUsing unordered_map which has principles derived from Hash Map. So basic operations are O(1).\nclass Solution {\npublic:\n    vector&lt;int&gt; twoSum(vector&lt;int&gt;& nums, int target) {\n        unordered_map&lt;int, int&gt; um;\n\n        for (int i = 0; i &lt; nums.size(); i++) {\n            if (auto search = um.find(target - nums[i]); search != um.end()) {\n                return {search-&gt;second, i};\n            }\n\n            um[nums[i]] = i;\n        }\n\n        return {};\n    }\n};\n\nOutput\nThe Second Approach has Time Complexity of O(N) and Space Complexity of O(N).\nAccepted"
-  },
-  {
-    "objectID": "posts/2023-10-25-Setup-Mac/index.html",
-    "href": "posts/2023-10-25-Setup-Mac/index.html",
-    "title": "Setup TensorFlow, PyTorch, and Hugging Face Transformer on Mac in 5 Minutes",
-    "section": "",
-    "text": "Let’s prepare your Apple Silicon Mac, whether it’s an M1 or M2 variant, for machine learning and data science."
-  },
-  {
-    "objectID": "posts/2023-10-25-Setup-Mac/index.html#who-will-benefit-from-this-blog-post",
-    "href": "posts/2023-10-25-Setup-Mac/index.html#who-will-benefit-from-this-blog-post",
-    "title": "Setup TensorFlow, PyTorch, and Hugging Face Transformer on Mac in 5 Minutes",
-    "section": "Who will benefit from this blog post?",
-    "text": "Who will benefit from this blog post?\nIf you have recently acquired an Apple Silicon Mac, specifically one of the M1 or M2 models, and you’re eager to embark on machine learning and data science endeavors, this post is tailored for you."
-  },
-  {
-    "objectID": "posts/2023-10-25-Setup-Mac/index.html#what-to-expect-from-this-post",
-    "href": "posts/2023-10-25-Setup-Mac/index.html#what-to-expect-from-this-post",
-    "title": "Setup TensorFlow, PyTorch, and Hugging Face Transformer on Mac in 5 Minutes",
-    "section": "What to expect from this post:",
-    "text": "What to expect from this post:\nThis post is designed to guide you through the process of installing essential machine learning and data science packages, including TensorFlow, PyTorch, Hugging Face Transformer, pandas, NumPy, Jupyter, matplotlib, and scikit-learn, on your Apple Silicon Mac. It also ensures that these packages run smoothly by providing sample code."
-  },
-  {
-    "objectID": "posts/2023-10-25-Setup-Mac/index.html#are-you-a-novice-or-an-expert",
-    "href": "posts/2023-10-25-Setup-Mac/index.html#are-you-a-novice-or-an-expert",
-    "title": "Setup TensorFlow, PyTorch, and Hugging Face Transformer on Mac in 5 Minutes",
-    "section": "Are you a novice or an expert?",
-    "text": "Are you a novice or an expert?\nIf you’re new to the setup of environments and software packages, consider watching the video version in conjunction with the comprehensive written instructions below.\nFor those experienced in setting up environments, the concise text-based instructions should suffice."
-  },
-  {
-    "objectID": "posts/2023-10-25-Setup-Mac/index.html#video-guide-available",
-    "href": "posts/2023-10-25-Setup-Mac/index.html#video-guide-available",
-    "title": "Setup TensorFlow, PyTorch, and Hugging Face Transformer on Mac in 5 Minutes",
-    "section": "Video guide available:",
-    "text": "Video guide available:\nYou can access a detailed step-by-step video guide of the content covered in this article on YouTube."
-  },
-  {
-    "objectID": "posts/2023-10-25-Setup-Mac/index.html#lets-start",
-    "href": "posts/2023-10-25-Setup-Mac/index.html#lets-start",
-    "title": "Setup TensorFlow, PyTorch, and Hugging Face Transformer on Mac in 5 Minutes",
-    "section": "Let’s Start 🏁",
-    "text": "Let’s Start 🏁\nI will detail each step so a beginner can also be transition their journey to data science smoothly.\n\n1 - Install Homebrew\nVisit - Homebrew\nCopy and Paste the command present on the website or use the below command in the Terminal:\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\n\n\n2 - Install Anaconda or MiniConda\nI prefer Anaconda and I will be using it for further process.\nVisit - Anaconda Downloads\nVisit - Installation Guide\nFor Command Line -\nbash ~/Downloads/Anaconda\\ 2023.09\\ MacOSX-arm64.sh\nSet Conda Base to Activate by default -\nconda config --set auto_activate_base True"
-  },
-  {
-    "objectID": "posts/2023-10-25-Setup-Mac/index.html#install-homebrew",
-    "href": "posts/2023-10-25-Setup-Mac/index.html#install-homebrew",
-    "title": "Setup TensorFlow, PyTorch, and Hugging Face Transformer on Mac in 5 Minutes",
-    "section": "1 - Install Homebrew",
-    "text": "1 - Install Homebrew\nVisit - Homebrew\nCopy and Paste the command present on the website or use the below command in the Terminal:\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\""
-  },
-  {
-    "objectID": "posts/2023-10-25-Setup-Mac/index.html#install-anaconda-or-miniconda",
-    "href": "posts/2023-10-25-Setup-Mac/index.html#install-anaconda-or-miniconda",
-    "title": "Setup TensorFlow, PyTorch, and Hugging Face Transformer on Mac in 5 Minutes",
-    "section": "2 - Install Anaconda or MiniConda",
-    "text": "2 - Install Anaconda or MiniConda\nI prefer Anaconda and I will be using it for further process.\nVisit - Anaconda Downloads\nDownload the Command Line or Graphical Version.\nGraphical Version is easy to follow. But I used Command Line Version to install.\nVisit - Installation Guide\nIt has both Graphical and Command Line Version.\nFor Command Line -\nbash ~/Downloads/Anaconda\\ 2023.09\\ MacOSX-arm64.sh\nSet Conda Base to Activate by default -\nconda config --set auto_activate_base True"
   },
   {
     "objectID": "notes/2023-11-04-NeetCode_150/index.html#group-anagrams---49---leetcode---medium---array-hashing",
