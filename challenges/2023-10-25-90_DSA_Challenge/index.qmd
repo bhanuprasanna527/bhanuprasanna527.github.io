@@ -151,3 +151,9 @@ I have completed 3 problems.
 For Day 10 - NeetCode practice.
 
 I have completed 1 problem.
+
+## Day 11 - C++ Coding Ninjas
+
+I have joined the C++ coding ninjas bootcamp for DSA and will update each day about my journey. I have not been posting actively due to me moving to Germany to start my Masters.
+
+So from today everyday learning is possible and I hope I will learn C++ to it's fullest capability. Not within 90 days but throughout my journey.
