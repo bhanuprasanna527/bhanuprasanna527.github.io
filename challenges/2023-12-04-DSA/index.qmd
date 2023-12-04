@@ -1,0 +1,41 @@
+---
+title: "DSA"
+description: |
+  Let's Start
+author:
+  - name: Bhanu Prasanna Koppolu
+    url: https://bhanuprasanna527.github.io/
+    orcid: 0000-0001-6050-2414
+    affiliation: M.Sc. Data Science at TU Dortmund
+    # affiliation-url: https://www.tu-dortmund.de/en/
+date: 2023-12-04
+date-modified: last-modified
+# bibliography: references.bib
+citation: 
+  url: https://bhanuprasanna527.github.io/challenges/2023-12-04-DSA/
+categories: [Challenge, DSA, Code]
+image: 90 Days DSA Challenge.gif
+draft: true
+page-layout: full
+---
+
+## Hi there 👋, Let's Start 🧑‍💻
+
+### Short Intro 👌
+
+- My Name is Bhanu Prasanna, Started M.Sc. Data Science at TU Dortmund.
+<!-- - Want to become a <u>***Quant Developer***</u> -->
+
+That is all there is to know about me. <u>***Let's Start with the challenge***</u>.
+
+## DSA Challenge
+
+Why am I doing this? I have created a python library, learnt how to use Tensorflow and other ML Libraries. There was always a missing piece needed to be filled.
+
+The missing piece is <u>***DSA***</u>.
+
+## Shall we Start Now Already? 🤨
+
+From 4th December, 2023 the DSA will officially start.
+
+- Notes Available. <a href="https://bhanuprasanna527.github.io/notes/2023-10-25-C++/" target="blank">Click Here!</a>

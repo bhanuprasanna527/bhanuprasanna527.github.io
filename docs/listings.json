@@ -7,14 +7,11 @@
   },
   {
     "listing": "/challenges.html",
-    "items": [
-      "/challenges/2023-10-25-90_DSA_Challenge/index.html"
-    ]
+    "items": []
   },
   {
     "listing": "/notes.html",
     "items": [
-      "/notes/2023-11-04-NeetCode_150/index.html",
       "/notes/2023-10-25-C++/index.html"
     ]
   },
