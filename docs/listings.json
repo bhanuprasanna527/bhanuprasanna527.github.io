@@ -7,13 +7,13 @@
   },
   {
     "listing": "/notes.html",
-    "items": [
-      "/notes/2023-10-25-C++/index.html"
-    ]
+    "items": []
   },
   {
     "listing": "/challenges.html",
-    "items": []
+    "items": [
+      "/challenges/2023-12-04-DSA/index.html"
+    ]
   },
   {
     "listing": "/projects.html",

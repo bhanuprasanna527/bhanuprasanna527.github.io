@@ -15,7 +15,7 @@ citation:
   url: https://bhanuprasanna527.github.io/notes/2023-10-25-C++/
 categories: [Notes, C++, Challenge]
 image: cpp.gif
-draft: false
+draft: true
 page-layout: full
 format:
   html:

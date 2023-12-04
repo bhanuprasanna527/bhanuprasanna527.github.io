@@ -74,9 +74,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -196,7 +196,7 @@ cookieconsent.run({
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Challenge">Challenge <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Code">Code <span class="quarto-category-count">(1)</span></div><div class="category" data-category="DSA">DSA <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -209,13 +209,72 @@ cookieconsent.run({
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-author" data-direction="asc">
+          Author
+        </option>
+     </select>
+  </div>
     <div class="input-group input-group-sm quarto-listing-filter">
       <span class="input-group-text"><i class="bi bi-search"></i></span>
       <input type="text" class="search form-control" placeholder="Filter">
     </div>
 </div>
 <div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Challenge,DSA,Code" data-listing-date-sort="1701644400000" data-listing-file-modified-sort="1701687782539" data-listing-date-modified-sort="1701687782000" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="./challenges/2023-12-04-DSA/index.html"> <img src="./challenges/2023-12-04-DSA/90 Days DSA Challenge.gif" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./challenges/2023-12-04-DSA/index.html">
+<h3 class="no-anchor listing-title">
+DSA
+</h3>
+<div class="listing-subtitle">
 
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Challenge'); return false;">
+Challenge
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('DSA'); return false;">
+DSA
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Code'); return false;">
+Code
+</div>
+</div>
+<a href="./challenges/2023-12-04-DSA/index.html">
+<div class="listing-description">
+<p>Let’s Start</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./challenges/2023-12-04-DSA/index.html">
+<div class="listing-date">
+Dec 4, 2023
+</div>
+<div class="listing-author">
+Bhanu Prasanna Koppolu
+</div>
+</a>
+</div>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
