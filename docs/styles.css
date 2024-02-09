@@ -1,93 +1,112 @@
 /* css styles */
 /* League Spartan Google Fonts is used for this theme */
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-body, #quarto-appendix.default {
-    font-family: 'League Spartan';
-    background-color: #000;
-    color: #969696;
+body,
+#quarto-appendix.default {
+  font-family: "League Spartan";
+  background-color: #000;
+  color: #969696;
 }
 
 h2#toc-title {
-    font-size: x-large;
+  font-size: x-large;
 }
 
-h3.anchored, h3.no-anchor.listing-title {
-    font-size: calc(1.27rem + 0.24vw);
+h3.anchored,
+h3.no-anchor.listing-title {
+  font-size: calc(1.27rem + 0.24vw);
 }
 
 li {
-    font-size: 0.92rem;
+  font-size: 0.92rem;
 }
 
 div.sourceCode {
-    background-color: #000;
-    border: 1px solid #969696;
+  background-color: #000;
+  border: 1px solid #969696;
 }
 
-.navbar-dark {
-    font-size: larger;
-    border-bottom: 1px solid #969696;
+nav.navbar {
+  border-bottom: 1px solid #969696;
 }
 
 span.navbar-title {
-    font-size: larger;
-    color: #969696;
+  font-size: larger;
+  color: #969696;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-    font-size: large;
-    color: #969696;
+.nav-link {
+  font-size: large;
+  color: #969696;
 }
 
-.navbar #quarto-search.type-overlay .aa-Autocomplete svg.aa-SubmitIcon, h1.title, p.subtitle.lead, div.quarto-post a, #title-block-header.quarto-title-block.default .quarto-title-meta-contents a, pre.sourceCode, div.quarto-about-jolla .about-link, .aa-Autocomplete .aa-Form .aa-InputWrapperPrefix .aa-Label svg, .aa-Autocomplete .aa-Form .aa-InputWrapperPrefix .aa-LoadingIndicator svg, .aa-DetachedFormContainer .aa-Form .aa-InputWrapperPrefix .aa-Label svg, .aa-DetachedFormContainer .aa-Form .aa-InputWrapperPrefix .aa-LoadingIndicator, div.description, .listing-actions-group .form-select, .listing-actions-group .form-control {
-    color: #969696;
+.navbar #quarto-search.type-overlay .aa-Autocomplete svg.aa-SubmitIcon,
+h1.title,
+p.subtitle.lead,
+div.quarto-post a,
+#title-block-header.quarto-title-block.default .quarto-title-meta-contents a,
+pre.sourceCode,
+div.quarto-about-jolla .about-link,
+.aa-Autocomplete .aa-Form .aa-InputWrapperPrefix .aa-Label svg,
+.aa-Autocomplete .aa-Form .aa-InputWrapperPrefix .aa-LoadingIndicator svg,
+.aa-DetachedFormContainer .aa-Form .aa-InputWrapperPrefix .aa-Label svg,
+.aa-DetachedFormContainer .aa-Form .aa-InputWrapperPrefix .aa-LoadingIndicator,
+div.description,
+.listing-actions-group .form-select,
+.listing-actions-group .form-control {
+  color: #969696;
 }
 
-.aa-Autocomplete .aa-Form, .aa-DetachedFormContainer .aa-Form {
-    background-color: #222;
-    color: #969696;
+.aa-Autocomplete .aa-Form,
+.aa-DetachedFormContainer .aa-Form {
+  background-color: #222;
+  color: #969696;
 }
 
-.aa-Autocomplete .aa-Form .aa-InputWrapper .aa-Input, .aa-DetachedFormContainer .aa-Form .aa-InputWrapper .aa-Input {
-    border-left: 1px solid #969696;
-    color: #969696;
+.aa-Autocomplete .aa-Form .aa-InputWrapper .aa-Input,
+.aa-DetachedFormContainer .aa-Form .aa-InputWrapper .aa-Input {
+  border-left: 1px solid #969696;
+  color: #969696;
 }
 
-code, .code-with-filename .code-with-filename-file {
-    color: #969696;
+code,
+.code-with-filename .code-with-filename-file {
+  color: #969696;
 }
 
 div.nav-footer {
-    border-top: 1px solid #969696;
-    color: #969696;
-    font-size: larger;
-    display: flex;
-    align-items: center;
+  border-top: 1px solid #969696;
+  color: #969696;
+  font-size: larger;
+  display: flex;
+  align-items: center;
 }
 
-div.listing-actions-group, div.quarto-post.image-right {
-    padding-bottom: 27px;
+div.listing-actions-group,
+div.quarto-post.image-right {
+  padding-bottom: 27px;
 }
 
 /* Cookies */
 div.cc-nb-main-container {
-    background-color: #000;
+  background-color: #000;
 }
 
-p#cc-nb-title.cc-nb-title, p#cc-nb-text.cc-nb-text {
-    color: #969696;
+p#cc-nb-title.cc-nb-title,
+p#cc-nb-text.cc-nb-text {
+  color: #969696;
 }
 
 .termsfeed-com---palette-light .cc-nb-changep {
-    background-color: #969696;
-    color: #000;
+  background-color: #969696;
+  color: #000;
 }
 
 .termsfeed-com---palette-light .cc-nb-okagree {
-    color: #000;
+  color: #000;
 }
 
 .termsfeed-com---palette-light .cc-pc-head-lang select {
-    background-color: #fff;
+  background-color: #fff;
 }

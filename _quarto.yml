@@ -3,9 +3,9 @@ project:
   output-dir: docs
 
 website:
-  site-url: 'https://bhanuprasanna527.github.io'
-  site-path: '/'
-  google-analytics: 
+  site-url: "https://bhanuprasanna527.github.io"
+  site-path: "/"
+  google-analytics:
     tracking-id: "G-MBMMMZY5SV"
     anonymize-ip: true
     storage: cookies
@@ -16,7 +16,7 @@ website:
   # reader-mode: true
   # back-to-top-navigation: true
   page-footer:
-    background: black 
+    background: black
     left: Bhanu Prasanna
     right: This website is built by 👨🏻‍💻 using [Quarto](https://quarto.org/)
   navbar:
@@ -26,9 +26,6 @@ website:
         text: Home
       - href: about.qmd
         text: About
-      - posts.qmd
-      - notes.qmd
-      - projects.qmd
       - challenges.qmd
 
 format:

@@ -1,0 +1,41 @@
+---
+title: "Blind 75"
+description: |
+  Learning by Solving Blind 75
+author:
+  - name: Bhanu Prasanna Koppolu
+    url: https://bhanuprasanna527.github.io/
+    orcid: 0000-0001-6050-2414
+    affiliation: M.Sc. Data Science at TU Dortmund
+    # affiliation-url: https://www.tu-dortmund.de/en/
+date: 2024-02-09
+date-modified: last-modified
+# bibliography: references.bib
+citation: 
+  url: https://bhanuprasanna527.github.io/notes/2024-02-09-Blind_75/
+categories: [Blind75, NeetCode, LeetCode, Coding, Notes, C++, Challenge]
+image: cpp.gif
+draft: false
+page-layout: full
+format:
+  html:
+    page-layout: full
+    theme: darkly
+    code-fold: true
+    code-tools:
+      source: false
+      toggle: true
+    code-summary: "Show the code"
+    highlight-style: dracula
+    css: styles.css
+    toc: true
+  pdf:
+    pdf-engine: xelatex
+    toc: true
+    documentclass: scrreprt
+    colorlinks: true
+    cite-method: biblatex
+    fig-align: center
+---
+
+aldfladjf

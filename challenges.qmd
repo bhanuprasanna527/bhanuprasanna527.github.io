@@ -1,6 +1,5 @@
 ---
 title: "Challenges"
-subtitle: "No Risk, No Life"
 listing:
   contents: challenges
   sort: "date desc"
