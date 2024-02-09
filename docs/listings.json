@@ -6,8 +6,10 @@
     ]
   },
   {
-    "listing": "/notes.html",
-    "items": []
+    "listing": "/projects.html",
+    "items": [
+      "/projects/2023-10-25-kbp-nse/index.html"
+    ]
   },
   {
     "listing": "/challenges.html",
@@ -16,9 +18,9 @@
     ]
   },
   {
-    "listing": "/projects.html",
+    "listing": "/notes.html",
     "items": [
-      "/projects/2023-10-25-kbp-nse/index.html"
+      "/notes/Blind-75/index.html"
     ]
   }
 ]

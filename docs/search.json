@@ -7,46 +7,39 @@
     "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nSetup TensorFlow, PyTorch, and Hugging Face Transformer on Mac in 5 Minutes\n\n\n\n\n\n\n\nFirst\n\n\nBlog\n\n\nTest\n\n\n\n\nInstalling TensorFlow, PyTorch, and other Libraries on Mac\n\n\n\n\n\n\nOct 25, 2023\n\n\nBhanu Prasanna Koppolu\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Bhanu Prasanna",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "M.Sc. Data Science at TU Dortmund\n\n\n\nIt’s Black. 👁️👁️ are Safe"
+    "text": "Code\nimport numpy as np\nimport pandas as pd"
   },
   {
-    "objectID": "challenges/2023-12-04-DSA/index.html",
-    "href": "challenges/2023-12-04-DSA/index.html",
-    "title": "DSA",
+    "objectID": "about.html#this-is-a-python-test",
+    "href": "about.html#this-is-a-python-test",
+    "title": "About",
     "section": "",
-    "text": "My Name is Bhanu Prasanna, Started M.Sc. Data Science at TU Dortmund. \n\nThat is all there is to know about me. Let’s Start with the challenge."
+    "text": "Code\nimport numpy as np\nimport pandas as pd"
   },
   {
-    "objectID": "challenges/2023-12-04-DSA/index.html#hi-there-lets-start",
-    "href": "challenges/2023-12-04-DSA/index.html#hi-there-lets-start",
-    "title": "DSA",
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
     "section": "",
-    "text": "My Name is Bhanu Prasanna, Started M.Sc. Data Science at TU Dortmund. \n\nThat is all there is to know about me. Let’s Start with the challenge."
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nkbp-nse\n\n\n\n\n\n\n\nProjects\n\n\nPython\n\n\nFinance\n\n\n\n\nMy personal Stock Data Retriever Project kbp-nse.\n\n\n\n\n\n\nOct 25, 2023\n\n\nBhanu Prasanna Koppolu\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "challenges/2023-12-04-DSA/index.html#dsa-challenge",
-    "href": "challenges/2023-12-04-DSA/index.html#dsa-challenge",
-    "title": "DSA",
-    "section": "DSA Challenge",
-    "text": "DSA Challenge\nWhy am I doing this? I have created a python library, learnt how to use Tensorflow and other ML Libraries. There was always a missing piece needed to be filled.\nThe missing piece is DSA."
-  },
-  {
-    "objectID": "challenges/2023-12-04-DSA/index.html#shall-we-start-now-already",
-    "href": "challenges/2023-12-04-DSA/index.html#shall-we-start-now-already",
-    "title": "DSA",
-    "section": "Shall we Start Now Already? 🤨",
-    "text": "Shall we Start Now Already? 🤨\nFrom 4th December, 2023 the DSA will officially start.\n\nNotes Available. Click Here!"
-  },
-  {
-    "objectID": "projects/2023-10-25-kbp-nse/index.html",
-    "href": "projects/2023-10-25-kbp-nse/index.html",
-    "title": "kbp-nse",
+    "objectID": "challenges.html",
+    "href": "challenges.html",
+    "title": "Challenges",
     "section": "",
-    "text": "CitationBibTeX citation:@online{prasanna koppolu2023,\n  author = {Prasanna Koppolu, Bhanu},\n  title = {Kbp-Nse},\n  date = {2023-10-25},\n  url = {https://bhanuprasanna527.github.io/projects/2023-10-25-kbp-nse/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nPrasanna Koppolu, Bhanu. 2023. “Kbp-Nse.” October 25, 2023.\nhttps://bhanuprasanna527.github.io/projects/2023-10-25-kbp-nse/."
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nDSA\n\n\n\n\n\n\n\nChallenge\n\n\nDSA\n\n\nCode\n\n\n\n\nLet’s Start\n\n\n\n\n\n\nDec 4, 2023\n\n\nBhanu Prasanna Koppolu\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "notes.html",
+    "href": "notes.html",
+    "title": "Notes",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nBlind 75\n\n\n\n\n\n\n\nNotes\n\n\nC++\n\n\nChallenge\n\n\n\n\nLearning by Solving Blind 75\n\n\n\n\n\n\nNov 4, 2023\n\n\nBhanu Prasanna Koppolu\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/2023-10-25-Setup-Mac/index.html",
@@ -91,38 +84,80 @@
     "text": "Let’s Start 🏁\nI will detail each step so a beginner can also be transition their journey to data science smoothly.\n\n1 - Install Homebrew\nVisit - Homebrew\nCopy and Paste the command present on the website or use the below command in the Terminal:\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\n\n\n2 - Install Anaconda or MiniConda\nI prefer Anaconda and I will be using it for further process.\nVisit - Anaconda Downloads\nVisit - Installation Guide\nFor Command Line -\nbash ~/Downloads/Anaconda\\ 2023.09\\ MacOSX-arm64.sh\nSet Conda Base to Activate by default -\nconda config --set auto_activate_base True"
   },
   {
-    "objectID": "notes.html",
-    "href": "notes.html",
-    "title": "Notes",
+    "objectID": "projects/2023-10-25-kbp-nse/index.html",
+    "href": "projects/2023-10-25-kbp-nse/index.html",
+    "title": "kbp-nse",
     "section": "",
-    "text": "No matching items"
+    "text": "CitationBibTeX citation:@online{prasanna koppolu2023,\n  author = {Prasanna Koppolu, Bhanu},\n  title = {Kbp-Nse},\n  date = {2023-10-25},\n  url = {https://bhanuprasanna527.github.io/projects/2023-10-25-kbp-nse/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nPrasanna Koppolu, Bhanu. 2023. “Kbp-Nse.” October 25, 2023.\nhttps://bhanuprasanna527.github.io/projects/2023-10-25-kbp-nse/."
   },
   {
-    "objectID": "challenges.html",
-    "href": "challenges.html",
-    "title": "Challenges",
+    "objectID": "challenges/2023-12-04-DSA/index.html",
+    "href": "challenges/2023-12-04-DSA/index.html",
+    "title": "DSA",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nDSA\n\n\n\n\n\n\n\nChallenge\n\n\nDSA\n\n\nCode\n\n\n\n\nLet’s Start\n\n\n\n\n\n\nDec 4, 2023\n\n\nBhanu Prasanna Koppolu\n\n\n\n\n\n\nNo matching items"
+    "text": "My Name is Bhanu Prasanna, Started M.Sc. Data Science at TU Dortmund. \n\nThat is all there is to know about me. Let’s Start with the challenge."
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
+    "objectID": "challenges/2023-12-04-DSA/index.html#hi-there-lets-start",
+    "href": "challenges/2023-12-04-DSA/index.html#hi-there-lets-start",
+    "title": "DSA",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nkbp-nse\n\n\n\n\n\n\n\nProjects\n\n\nPython\n\n\nFinance\n\n\n\n\nMy personal Stock Data Retriever Project kbp-nse.\n\n\n\n\n\n\nOct 25, 2023\n\n\nBhanu Prasanna Koppolu\n\n\n\n\n\n\nNo matching items"
+    "text": "My Name is Bhanu Prasanna, Started M.Sc. Data Science at TU Dortmund. \n\nThat is all there is to know about me. Let’s Start with the challenge."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Code\nimport numpy as np\nimport pandas as pd"
+    "objectID": "challenges/2023-12-04-DSA/index.html#dsa-challenge",
+    "href": "challenges/2023-12-04-DSA/index.html#dsa-challenge",
+    "title": "DSA",
+    "section": "DSA Challenge",
+    "text": "DSA Challenge\nWhy am I doing this? I have created a python library, learnt how to use Tensorflow and other ML Libraries. There was always a missing piece needed to be filled.\nThe missing piece is DSA."
   },
   {
-    "objectID": "about.html#this-is-a-python-test",
-    "href": "about.html#this-is-a-python-test",
-    "title": "About",
+    "objectID": "challenges/2023-12-04-DSA/index.html#shall-we-start-now-already",
+    "href": "challenges/2023-12-04-DSA/index.html#shall-we-start-now-already",
+    "title": "DSA",
+    "section": "Shall we Start Now Already? 🤨",
+    "text": "Shall we Start Now Already? 🤨\nFrom 4th December, 2023 the DSA will officially start.\n\nNotes Available. Click Here!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bhanu Prasanna",
     "section": "",
-    "text": "Code\nimport numpy as np\nimport pandas as pd"
+    "text": "M.Sc. Data Science at TU Dortmund\n\n\n\nIt’s Black. 👁️👁️ are Safe"
+  },
+  {
+    "objectID": "notes/Blind-75/index.html",
+    "href": "notes/Blind-75/index.html",
+    "title": "Blind 75",
+    "section": "",
+    "text": "The first approach is the idea popped from my mind when I looked at the problem."
+  },
+  {
+    "objectID": "notes/Blind-75/index.html#contains-duplicate---217---leetcode---easy---array-hashing",
+    "href": "notes/Blind-75/index.html#contains-duplicate---217---leetcode---easy---array-hashing",
+    "title": "Blind 75",
+    "section": "Contains Duplicate - 217 - LeetCode - Easy - Array & Hashing",
+    "text": "Contains Duplicate - 217 - LeetCode - Easy - Array & Hashing\n\nApproach - 1\nThe First Approach that came to my mind was to write a Nested For Loop to check if it Contains Duplicate.\nclass Solution {\npublic:\n    bool containsDuplicate(vector&lt;int&gt;& nums) {\n        for (auto i = nums.begin(); i != nums.end(); i++) {\n            for (auto j = i + 1; j != nums.end(); j++) {\n                if (*i == *j) return true;\n            }\n        }\n\n        return false;\n    }\n};\n\nOutput\nThe First Approach has Time Complexity of O(\\(N^{2}\\)) and Space Complexity of O(1).\nTime Limit Exceeded\n70 / 75 testcases passed\n\n\n\nApproach - 2\nAnother Approach to this problem is using Sorting then Checking if it Contains Duplicate.\nclass Solution {\npublic:\n    bool containsDuplicate(vector&lt;int&gt;& nums) {\n        sort(nums.begin(), nums.end());\n\n        for (int i = 0; i &lt; nums.size() - 1; i++) {\n            if (nums[i] == nums[i+1]) {\n                return true;\n            }\n        }\n        return false;\n    }\n};\n\nOutput\nThe Second Approach has Time Complexity of O(N log(N)) and Space Complexity of O(1).\nAccepted\n\n\n\nApproach - 3\nUsing unordered_set to check if it Contains Duplicate. The Time Complexity for Basic operations in unordered_set is O(1) and for set it is O(log(N)).\nclass Solution {\npublic:\n    bool containsDuplicate(vector&lt;int&gt;& nums) {\n        unordered_set&lt;int&gt; us;\n\n        for (auto i = nums.begin(); i != nums.end(); i++) {\n            if (us.find(*i) != us.end()) {\n                return true;\n            }\n            us.insert(*i);\n        }\n\n        return false;\n    }\n};\n\nOutput\nThe Third Approach has Time Complexity of O(N) and Space Complexity of O(N). The optimal solution.\nAccepted"
+  },
+  {
+    "objectID": "notes/Blind-75/index.html#valid-anagram---242---leetcode---easy---array-hashing",
+    "href": "notes/Blind-75/index.html#valid-anagram---242---leetcode---easy---array-hashing",
+    "title": "Blind 75",
+    "section": "Valid Anagram - 242 - LeetCode - Easy - Array & Hashing",
+    "text": "Valid Anagram - 242 - LeetCode - Easy - Array & Hashing\n\nApproach - 1\nSort the characters of the string of t and s then check if both are same or not.\nclass Solution {\npublic:\n    bool isAnagram(string s, string t) {\n        sort(s.begin(), s.end());\n        sort(t.begin(), t.end());\n\n        if (s == t) {\n            return true;\n        }\n        return false;\n    }\n};\n\nOutput\nThe First Approach has Time Complexity of O(N log(N)) and Space Complexity of O(1).\nAccepted\n\n\n\nApproach - 2\nUsing unordered_map which has principles derived from Hash Map. So basic operations are O(1).\nclass Solution {\npublic:\n    bool isAnagram(string s, string t) {\n        \n        if (s.size() != t.size()) {\n            return false;\n        }\n\n        unordered_map&lt;char, int&gt; ums;\n        unordered_map&lt;char, int&gt; umt;\n\n        for (int i = 0; i &lt; s.size(); i++) {\n            ums[s[i]]++;\n            umt[t[i]]++;\n        }\n\n        for (int i = 0; i &lt; s.size(); i++) {\n            if (ums[s[i]] != umt[s[i]]) {\n                return false;\n            }\n        }\n\n        return true;\n    }\n};\n\nOutput\nThe Second Approach has Time Complexity of O(S + T) and Space Complexity of O(S + T).\nAccepted"
+  },
+  {
+    "objectID": "notes/Blind-75/index.html#two-sum---1---leetcode---easy---array-hashing",
+    "href": "notes/Blind-75/index.html#two-sum---1---leetcode---easy---array-hashing",
+    "title": "Blind 75",
+    "section": "Two Sum - 1 - LeetCode - Easy - Array & Hashing",
+    "text": "Two Sum - 1 - LeetCode - Easy - Array & Hashing\n\nApproach - 1\nThe general approach to this problem is Brute Force Approach.\nclass Solution {\npublic:\n    vector&lt;int&gt; twoSum(vector&lt;int&gt;& nums, int target) {\n        int l = nums.size();\n        \n        for (int i = 0; i &lt; l; i++) {\n            for (int j = 0; j &lt; l && i != j; j ++) {\n                if (nums[i] + nums[j] == target) {\n                    return {i, j};\n                }\n            }\n        }\n\n        return {};\n    }\n};\n\nOutput\nThe First Approach has Time Complexity of O(\\(N^{2}\\)) and Space Complexity of O(1).\nAccepted\n\n\n\nApproach - 2\nUsing unordered_map which has principles derived from Hash Map. So basic operations are O(1).\nclass Solution {\npublic:\n    vector&lt;int&gt; twoSum(vector&lt;int&gt;& nums, int target) {\n        unordered_map&lt;int, int&gt; um;\n\n        for (int i = 0; i &lt; nums.size(); i++) {\n            if (auto search = um.find(target - nums[i]); search != um.end()) {\n                return {search-&gt;second, i};\n            }\n\n            um[nums[i]] = i;\n        }\n\n        return {};\n    }\n};\n\nOutput\nThe Second Approach has Time Complexity of O(N) and Space Complexity of O(N).\nAccepted"
+  },
+  {
+    "objectID": "notes/Blind-75/index.html#group-anagrams---49---leetcode---medium---array-hashing",
+    "href": "notes/Blind-75/index.html#group-anagrams---49---leetcode---medium---array-hashing",
+    "title": "Blind 75",
+    "section": "Group Anagrams - 49 - LeetCode - Medium - Array & Hashing",
+    "text": "Group Anagrams - 49 - LeetCode - Medium - Array & Hashing\n\nApproach - 1\nSorting and Matching Strings.\nclass Solution {\npublic:\n    vector&lt;vector&lt;string&gt;&gt; groupAnagrams(vector&lt;string&gt;& strs) {\n        vector&lt;string&gt; st = strs;\n        vector&lt;vector&lt;string&gt;&gt; fs;\n        unordered_set&lt;int&gt; us;\n        \n        for (int i = 0; i &lt; st.size(); i++) {\n            sort(st[i].begin(), st[i].end());\n        }\n\n        for (int i = 0; i &lt; st.size(); i++) {\n            vector&lt;string&gt; vs;\n\n            for (int j = i; j &lt; st.size(); j++) {\n                if (us.find(j) == us.end()) {\n                    if (st[i] == st[j]) {\n                        vs.push_back(strs[j]);\n                        us.insert(j);\n                    }\n                }\n            }\n            if (vs.size() != 0) {\n                fs.push_back(vs);\n            }\n        }\n\n        return fs;\n    }\n};\n\nOutput\nThe First Approach has Time Complexity of O(mn log(n)) and Space Complexity of O(n).\nAccepted\n\n\n\nApproach - 2\nUsed Hash Map to reduce the Time Complexity.\nclass Solution {\npublic:\n    vector&lt;vector&lt;string&gt;&gt; groupAnagrams(vector&lt;string&gt;& strs) {\n        unordered_map&lt;string, vector&lt;string&gt;&gt; m;\n\n        for (int i = 0; i &lt; strs.size(); i++) {\n            string key = getkey(strs[i]);\n            m[key].push_back(strs[i]);\n        }\n\n        vector&lt;vector&lt;string&gt;&gt; fs;\n\n        for (auto i = m.begin(); i != m.end(); i++) {\n            fs.push_back(i-&gt;second);\n        }\n\n        return fs;\n    }\nprivate:\n    string getkey (string val) {\n        string s = \"\";\n        vector&lt;int&gt; c(26);\n\n        for (int i = 0; i &lt; val.size(); i++) {\n            c[val[i] - 'a'] += 1;\n        }\n\n        for (int i = 0; i &lt; 26; i++) {\n            s = s + to_string(c[i]) + '#';\n        }\n\n        return s;\n    }\n};\n\nOutput\nThe Second Approach has Time Complexity of O(mn) and Space Complexity of O(mn).\nAccepted"
   }
 ]
