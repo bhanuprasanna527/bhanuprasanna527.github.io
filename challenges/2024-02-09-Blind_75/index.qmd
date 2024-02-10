@@ -44,11 +44,13 @@ I want to improve my problem solving skills. I am starting with Blind 75.
 
 **Language Used - ** C++
 
-## 1 - Two Sum
+\pagebreak
+
+## 1 - Two Sum - <span style="color:#50c878">Easy</span>
 
 #### Notes
 
-The optimal solution uses a Unordered Map which is internally build using Hash Table concepts.
+The optimal solution uses a Unordered Map which is internally built using Hash Table concepts.
 
 Usage of Hash Table enables the least cost of operations like search, delete, and insert.
 
@@ -71,3 +73,120 @@ public:
     }
 };
 ```
+
+\pagebreak
+
+## 2 - Contains Duplicate - <span style="color:#50c878">Easy</span>
+
+#### Notes
+
+The optimal solution uses a Unordered Set which is internally built using Hash Table concepts.
+
+Usage of Hash Table enables the least cost of operations like search, delete, and insert.
+
+#### Program
+
+```cpp
+class Solution {
+public:
+    bool containsDuplicate(vector<int>& nums) {
+        unordered_set<int> us;
+
+        for (int i : nums) {
+            if (us.find(i) != us.end()) {
+                return true;
+            }
+            us.insert(i);
+        }
+
+        return false;
+    }
+};
+```
+
+\pagebreak
+
+## 3 - Valid Anagram - <span style="color:#50c878">Easy</span>
+
+#### Notes
+
+The optimal solution is to count the number of characters in each string for the 26 alphabets.
+
+#### Program
+
+```cpp
+class Solution {
+public:
+    bool isAnagram(string s, string t) {
+        if (s.size() != t.size()) {
+            return false;
+        }
+
+        int c1[26] = {0};
+        int c2[26] = {0};
+
+        for (int i = 0; i < s.size(); i++) {
+            c1[(s[i] - 97)]++;
+            c2[(t[i] - 97)]++;
+        }
+
+        for (int i = 0; i < 26; i++) {
+            if (c1[i] != c2[i]) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+};
+```
+
+\pagebreak
+
+## 4 - Group Anagrams - <span style="color:#FCB001">Medium</span>
+
+#### Notes
+
+The optimal solution uses the same 26 alphabet count method but additionally uses a map to store the same type anagrams.
+
+#### Program
+
+```cpp
+class Solution {
+private:
+    string getKey (string str) {
+        vector<int> v(26,0);
+
+        for (int i = 0; i < str.size(); i++) {
+            v[str[i] - 'a']++;
+        }
+
+        string s = "";
+
+        for (int i = 0; i < 26; i++) {
+            s += '#' + to_string(v[i]);
+        }
+
+        return s;
+    }
+public:
+    vector<vector<string>> groupAnagrams(vector<string>& strs) {
+        unordered_map<string, vector<string>> um;
+
+        for (int i = 0; i < strs.size(); i++) {
+            string k = getKey(strs[i]);
+            um[k].push_back(strs[i]);
+        }
+
+        vector<vector<string>> v;
+
+        for (auto i = um.begin(); i != um.end(); i++) {
+            v.push_back(i->second);
+        }
+
+        return v;
+    }
+};
+```
+
+\pagebreak

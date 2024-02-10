@@ -241,7 +241,10 @@ cookieconsent.run({
   <ul>
   <li><a href="#blind-75" id="toc-blind-75" class="nav-link active" data-scroll-target="#blind-75">Blind 75</a>
   <ul class="collapse">
-  <li><a href="#two-sum" id="toc-two-sum" class="nav-link" data-scroll-target="#two-sum">1 - Two Sum</a></li>
+  <li><a href="#two-sum---easy" id="toc-two-sum---easy" class="nav-link" data-scroll-target="#two-sum---easy">1 - Two Sum - <span style="color:#50c878">Easy</span></a></li>
+  <li><a href="#contains-duplicate---easy" id="toc-contains-duplicate---easy" class="nav-link" data-scroll-target="#contains-duplicate---easy">2 - Contains Duplicate - <span style="color:#50c878">Easy</span></a></li>
+  <li><a href="#valid-anagram---easy" id="toc-valid-anagram---easy" class="nav-link" data-scroll-target="#valid-anagram---easy">3 - Valid Anagram - <span style="color:#50c878">Easy</span></a></li>
+  <li><a href="#group-anagrams---medium" id="toc-group-anagrams---medium" class="nav-link" data-scroll-target="#group-anagrams---medium">4 - Group Anagrams - <span style="color:#FCB001">Medium</span></a></li>
   </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
@@ -257,11 +260,11 @@ cookieconsent.run({
 <h1>Blind 75</h1>
 <p>I want to improve my problem solving skills. I am starting with Blind 75.</p>
 <p><strong>Language Used - </strong> C++</p>
-<section id="two-sum" class="level2">
-<h2 class="anchored" data-anchor-id="two-sum">1 - Two Sum</h2>
+<section id="two-sum---easy" class="level2">
+<h2 class="anchored" data-anchor-id="two-sum---easy">1 - Two Sum - <span style="color:#50c878">Easy</span></h2>
 <section id="notes" class="level4">
 <h4 class="anchored" data-anchor-id="notes">Notes</h4>
-<p>The optimal solution uses a Unordered Map which is internally build using Hash Table concepts.</p>
+<p>The optimal solution uses a Unordered Map which is internally built using Hash Table concepts.</p>
 <p>Usage of Hash Table enables the least cost of operations like search, delete, and insert.</p>
 </section>
 <section id="program" class="level4">
@@ -281,6 +284,111 @@ cookieconsent.run({
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="op">{};</span></span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="contains-duplicate---easy" class="level2">
+<h2 class="anchored" data-anchor-id="contains-duplicate---easy">2 - Contains Duplicate - <span style="color:#50c878">Easy</span></h2>
+<section id="notes-1" class="level4">
+<h4 class="anchored" data-anchor-id="notes-1">Notes</h4>
+<p>The optimal solution uses a Unordered Set which is internally built using Hash Table concepts.</p>
+<p>Usage of Hash Table enables the least cost of operations like search, delete, and insert.</p>
+</section>
+<section id="program-1" class="level4">
+<h4 class="anchored" data-anchor-id="program-1">Program</h4>
+<div class="sourceCode" id="cb2"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Solution <span class="op">{</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span><span class="op">:</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">bool</span> containsDuplicate<span class="op">(</span>vector<span class="op">&lt;</span><span class="dt">int</span><span class="op">&gt;&amp;</span> nums<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>        unordered_set<span class="op">&lt;</span><span class="dt">int</span><span class="op">&gt;</span> us<span class="op">;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> i <span class="op">:</span> nums<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> <span class="op">(</span>us<span class="op">.</span>find<span class="op">(</span>i<span class="op">)</span> <span class="op">!=</span> us<span class="op">.</span>end<span class="op">())</span> <span class="op">{</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>                <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>            <span class="op">}</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>            us<span class="op">.</span>insert<span class="op">(</span>i<span class="op">);</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="valid-anagram---easy" class="level2">
+<h2 class="anchored" data-anchor-id="valid-anagram---easy">3 - Valid Anagram - <span style="color:#50c878">Easy</span></h2>
+<section id="notes-2" class="level4">
+<h4 class="anchored" data-anchor-id="notes-2">Notes</h4>
+<p>The optimal solution is to count the number of characters in each string for the 26 alphabets.</p>
+</section>
+<section id="program-2" class="level4">
+<h4 class="anchored" data-anchor-id="program-2">Program</h4>
+<div class="sourceCode" id="cb3"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Solution <span class="op">{</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span><span class="op">:</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">bool</span> isAnagram<span class="op">(</span>string s<span class="op">,</span> string t<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="op">(</span>s<span class="op">.</span>size<span class="op">()</span> <span class="op">!=</span> t<span class="op">.</span>size<span class="op">())</span> <span class="op">{</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>        <span class="dt">int</span> c1<span class="op">[</span><span class="dv">26</span><span class="op">]</span> <span class="op">=</span> <span class="op">{</span><span class="dv">0</span><span class="op">};</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>        <span class="dt">int</span> c2<span class="op">[</span><span class="dv">26</span><span class="op">]</span> <span class="op">=</span> <span class="op">{</span><span class="dv">0</span><span class="op">};</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> s<span class="op">.</span>size<span class="op">();</span> i<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>            c1<span class="op">[(</span>s<span class="op">[</span>i<span class="op">]</span> <span class="op">-</span> <span class="dv">97</span><span class="op">)]++;</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>            c2<span class="op">[(</span>t<span class="op">[</span>i<span class="op">]</span> <span class="op">-</span> <span class="dv">97</span><span class="op">)]++;</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> <span class="dv">26</span><span class="op">;</span> i<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> <span class="op">(</span>c1<span class="op">[</span>i<span class="op">]</span> <span class="op">!=</span> c2<span class="op">[</span>i<span class="op">])</span> <span class="op">{</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>                <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>            <span class="op">}</span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="group-anagrams---medium" class="level2">
+<h2 class="anchored" data-anchor-id="group-anagrams---medium">4 - Group Anagrams - <span style="color:#FCB001">Medium</span></h2>
+<section id="notes-3" class="level4">
+<h4 class="anchored" data-anchor-id="notes-3">Notes</h4>
+<p>The optimal solution uses the same 26 alphabet count method but additionally uses a map to store the same type anagrams.</p>
+</section>
+<section id="program-3" class="level4">
+<h4 class="anchored" data-anchor-id="program-3">Program</h4>
+<div class="sourceCode" id="cb4"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Solution <span class="op">{</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">private</span><span class="op">:</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    string getKey <span class="op">(</span>string str<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>        vector<span class="op">&lt;</span><span class="dt">int</span><span class="op">&gt;</span> v<span class="op">(</span><span class="dv">26</span><span class="op">,</span><span class="dv">0</span><span class="op">);</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> str<span class="op">.</span>size<span class="op">();</span> i<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>            v<span class="op">[</span>str<span class="op">[</span>i<span class="op">]</span> <span class="op">-</span> <span class="ch">'a'</span><span class="op">]++;</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>        string s <span class="op">=</span> <span class="st">""</span><span class="op">;</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> <span class="dv">26</span><span class="op">;</span> i<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>            s <span class="op">+=</span> <span class="ch">'#'</span> <span class="op">+</span> to_string<span class="op">(</span>v<span class="op">[</span>i<span class="op">]);</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> s<span class="op">;</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span><span class="op">:</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>    vector<span class="op">&lt;</span>vector<span class="op">&lt;</span>string<span class="op">&gt;&gt;</span> groupAnagrams<span class="op">(</span>vector<span class="op">&lt;</span>string<span class="op">&gt;&amp;</span> strs<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>        unordered_map<span class="op">&lt;</span>string<span class="op">,</span> vector<span class="op">&lt;</span>string<span class="op">&gt;&gt;</span> um<span class="op">;</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> strs<span class="op">.</span>size<span class="op">();</span> i<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>            string k <span class="op">=</span> getKey<span class="op">(</span>strs<span class="op">[</span>i<span class="op">]);</span></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>            um<span class="op">[</span>k<span class="op">].</span>push_back<span class="op">(</span>strs<span class="op">[</span>i<span class="op">]);</span></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>        vector<span class="op">&lt;</span>vector<span class="op">&lt;</span>string<span class="op">&gt;&gt;</span> v<span class="op">;</span></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> <span class="op">(</span><span class="kw">auto</span> i <span class="op">=</span> um<span class="op">.</span>begin<span class="op">();</span> i <span class="op">!=</span> um<span class="op">.</span>end<span class="op">();</span> i<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>            v<span class="op">.</span>push_back<span class="op">(</span>i<span class="op">-&gt;</span>second<span class="op">);</span></span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> v<span class="op">;</span></span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>
