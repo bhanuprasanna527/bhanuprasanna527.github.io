@@ -228,3 +228,34 @@ public:
     }
 };
 ```
+
+## 6 - Product of Array Except Itself - <span style="color:#FCB001">Medium</span>
+
+#### Notes
+
+The optimal solution is using a prefix and a postfix to parse through the array from both sides and multiplying.
+
+#### Program
+
+```cpp
+class Solution {
+public:
+    vector<int> productExceptSelf(vector<int>& nums) {
+        vector<int> result(nums.size(), 1);
+        int pre = 1;
+        int post = 1;
+
+        for (int i = 0; i < nums.size(); i++) {
+            result[i] = result[i] * pre;
+            pre = pre * nums[i];
+        }
+
+        for (int i = nums.size() - 1; i >= 0; i--) {
+            result[i] = result[i] * post;
+            post = post * nums[i];
+        }
+
+        return result;
+    }
+};
+```

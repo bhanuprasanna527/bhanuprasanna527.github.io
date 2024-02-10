@@ -246,6 +246,7 @@ cookieconsent.run({
   <li><a href="#valid-anagram---easy" id="toc-valid-anagram---easy" class="nav-link" data-scroll-target="#valid-anagram---easy">3 - Valid Anagram - <span style="color:#50c878">Easy</span></a></li>
   <li><a href="#group-anagrams---medium" id="toc-group-anagrams---medium" class="nav-link" data-scroll-target="#group-anagrams---medium">4 - Group Anagrams - <span style="color:#FCB001">Medium</span></a></li>
   <li><a href="#top-k-frequent-elements---medium" id="toc-top-k-frequent-elements---medium" class="nav-link" data-scroll-target="#top-k-frequent-elements---medium">5 - Top K Frequent Elements - <span style="color:#FCB001">Medium</span></a></li>
+  <li><a href="#product-of-array-except-itself---medium" id="toc-product-of-array-except-itself---medium" class="nav-link" data-scroll-target="#product-of-array-except-itself---medium">6 - Product of Array Except Itself - <span style="color:#FCB001">Medium</span></a></li>
   </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
@@ -427,6 +428,36 @@ cookieconsent.run({
 <span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="op">{};</span></span>
 <span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
 <span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="product-of-array-except-itself---medium" class="level2">
+<h2 class="anchored" data-anchor-id="product-of-array-except-itself---medium">6 - Product of Array Except Itself - <span style="color:#FCB001">Medium</span></h2>
+<section id="notes-5" class="level4">
+<h4 class="anchored" data-anchor-id="notes-5">Notes</h4>
+<p>The optimal solution is using a prefix and a postfix to parse through the array from both sides and multiplying.</p>
+</section>
+<section id="program-5" class="level4">
+<h4 class="anchored" data-anchor-id="program-5">Program</h4>
+<div class="sourceCode" id="cb6"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Solution <span class="op">{</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span><span class="op">:</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    vector<span class="op">&lt;</span><span class="dt">int</span><span class="op">&gt;</span> productExceptSelf<span class="op">(</span>vector<span class="op">&lt;</span><span class="dt">int</span><span class="op">&gt;&amp;</span> nums<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>        vector<span class="op">&lt;</span><span class="dt">int</span><span class="op">&gt;</span> result<span class="op">(</span>nums<span class="op">.</span>size<span class="op">(),</span> <span class="dv">1</span><span class="op">);</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>        <span class="dt">int</span> pre <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>        <span class="dt">int</span> post <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> nums<span class="op">.</span>size<span class="op">();</span> i<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>            result<span class="op">[</span>i<span class="op">]</span> <span class="op">=</span> result<span class="op">[</span>i<span class="op">]</span> <span class="op">*</span> pre<span class="op">;</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>            pre <span class="op">=</span> pre <span class="op">*</span> nums<span class="op">[</span>i<span class="op">];</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> i <span class="op">=</span> nums<span class="op">.</span>size<span class="op">()</span> <span class="op">-</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&gt;=</span> <span class="dv">0</span><span class="op">;</span> i<span class="op">--)</span> <span class="op">{</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>            result<span class="op">[</span>i<span class="op">]</span> <span class="op">=</span> result<span class="op">[</span>i<span class="op">]</span> <span class="op">*</span> post<span class="op">;</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>            post <span class="op">=</span> post <span class="op">*</span> nums<span class="op">[</span>i<span class="op">];</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> result<span class="op">;</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>
