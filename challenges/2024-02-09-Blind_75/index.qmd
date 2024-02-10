@@ -12,7 +12,7 @@ date: 2024-02-09
 date-modified: last-modified
 # bibliography: references.bib
 citation: 
-  url: https://bhanuprasanna527.github.io/notes/2024-02-09-Blind_75/
+  url: https://bhanuprasanna527.github.io/challenges/2024-02-09-Blind_75/
 categories: [Blind75, NeetCode, LeetCode, Coding, Notes, C++, Challenge]
 image: cpp.gif
 draft: false
@@ -38,4 +38,36 @@ format:
     fig-align: center
 ---
 
-aldfladjf
+# Blind 75
+
+I want to improve my problem solving skills. I am starting with Blind 75.
+
+**Language Used - ** C++
+
+## 1 - Two Sum
+
+#### Notes
+
+The optimal solution uses a Unordered Map which is internally build using Hash Table concepts.
+
+Usage of Hash Table enables the least cost of operations like search, delete, and insert.
+
+#### Program
+
+```cpp
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        unordered_map<int, int> s;
+
+        for (int i = 0; i < nums.size(); i++) {
+            int com = target - nums[i];
+            if (s.find(com) != s.end()) {
+                return {s[com], i};
+            }
+            s.insert({nums[i], i});
+        }
+        return {};
+    }
+};
+```

@@ -7,6 +7,20 @@
     "text": "About this site"
   },
   {
+    "objectID": "challenges/2024-02-09-Blind_75/index.html",
+    "href": "challenges/2024-02-09-Blind_75/index.html",
+    "title": "Blind 75",
+    "section": "",
+    "text": "I want to improve my problem solving skills. I am starting with Blind 75.\nLanguage Used -  C++\n\n\n\n\nThe optimal solution uses a Unordered Map which is internally build using Hash Table concepts.\nUsage of Hash Table enables the least cost of operations like search, delete, and insert.\n\n\n\nclass Solution {\npublic:\n    vector&lt;int&gt; twoSum(vector&lt;int&gt;& nums, int target) {\n        unordered_map&lt;int, int&gt; s;\n\n        for (int i = 0; i &lt; nums.size(); i++) {\n            int com = target - nums[i];\n            if (s.find(com) != s.end()) {\n                return {s[com], i};\n            }\n            s.insert({nums[i], i});\n        }\n        return {};\n    }\n};"
+  },
+  {
+    "objectID": "challenges/2024-02-09-Blind_75/index.html#two-sum",
+    "href": "challenges/2024-02-09-Blind_75/index.html#two-sum",
+    "title": "Blind 75",
+    "section": "",
+    "text": "The optimal solution uses a Unordered Map which is internally build using Hash Table concepts.\nUsage of Hash Table enables the least cost of operations like search, delete, and insert.\n\n\n\nclass Solution {\npublic:\n    vector&lt;int&gt; twoSum(vector&lt;int&gt;& nums, int target) {\n        unordered_map&lt;int, int&gt; s;\n\n        for (int i = 0; i &lt; nums.size(); i++) {\n            int com = target - nums[i];\n            if (s.find(com) != s.end()) {\n                return {s[com], i};\n            }\n            s.insert({nums[i], i});\n        }\n        return {};\n    }\n};"
+  },
+  {
     "objectID": "challenges.html",
     "href": "challenges.html",
     "title": "Challenges",
@@ -19,40 +33,5 @@
     "title": "Bhanu Prasanna",
     "section": "",
     "text": "M.Sc. Data Science at TU Dortmund\n\n\n\nIt’s Black. 👁️👁️ are Safe"
-  },
-  {
-    "objectID": "posts.html",
-    "href": "posts.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nFeb 9, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nBlind 75\n\n\n\n\n\n\nBlind75\n\n\nNeetCode\n\n\nLeetCode\n\n\nCoding\n\n\nNotes\n\n\nC++\n\n\nChallenge\n\n\n\nLearning by Solving Blind 75 \n\n\n\n\n\nFeb 9, 2024\n\n\nBhanu Prasanna Koppolu\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nFeb 6, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code."
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
-    "objectID": "posts/2024-02-09-Blind_75/index.html",
-    "href": "posts/2024-02-09-Blind_75/index.html",
-    "title": "Blind 75",
-    "section": "",
-    "text": "aldfladjf\n\n\n\nCitationBibTeX citation:@online{prasanna koppolu2024,\n  author = {Prasanna Koppolu, Bhanu},\n  title = {Blind 75},\n  date = {2024-02-09},\n  url = {https://bhanuprasanna527.github.io/notes/2024-02-09-Blind_75/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nPrasanna Koppolu, Bhanu. 2024. “Blind 75.” February 9,\n2024. https://bhanuprasanna527.github.io/notes/2024-02-09-Blind_75/."
-  },
-  {
-    "objectID": "challenges/2024-02-09-Blind_75/index.html",
-    "href": "challenges/2024-02-09-Blind_75/index.html",
-    "title": "Blind 75",
-    "section": "",
-    "text": "aldfladjf\n\n\n\nCitationBibTeX citation:@online{prasanna koppolu2024,\n  author = {Prasanna Koppolu, Bhanu},\n  title = {Blind 75},\n  date = {2024-02-09},\n  url = {https://bhanuprasanna527.github.io/notes/2024-02-09-Blind_75/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nPrasanna Koppolu, Bhanu. 2024. “Blind 75.” February 9,\n2024. https://bhanuprasanna527.github.io/notes/2024-02-09-Blind_75/."
   }
 ]
