@@ -190,3 +190,41 @@ public:
 ```
 
 \pagebreak
+
+## 5 - Top K Frequent Elements - <span style="color:#FCB001">Medium</span>
+
+#### Notes
+
+Usage of modified Bucket Sort approach which provides this optimal solution. This solution can also be done using Max Heap.
+
+#### Program
+
+```cpp
+class Solution {
+public:
+    vector<int> topKFrequent(vector<int>& nums, int k) {
+        unordered_map<int, int> um;
+        for (int i = 0; i < nums.size(); i++) {
+            um[nums[i]]++;
+        }
+
+        vector<vector<int>> v(nums.size() + 1);
+        for (auto it = um.begin(); it != um.end(); it++) {
+            v[it->second].push_back(it->first);
+        }
+
+        vector<int> result;
+
+        for (int i = nums.size(); i >= 0; i--) {
+            if (result.size() >= k) {
+                return result;
+            }
+            if (v[i].size() != 0) {
+                result.insert(result.end(), v[i].begin(), v[i].end());
+            }
+        }
+
+        return {};
+    }
+};
+```
