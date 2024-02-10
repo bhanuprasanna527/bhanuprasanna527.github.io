@@ -247,6 +247,7 @@ cookieconsent.run({
   <li><a href="#group-anagrams---medium" id="toc-group-anagrams---medium" class="nav-link" data-scroll-target="#group-anagrams---medium">4 - Group Anagrams - <span style="color:#FCB001">Medium</span></a></li>
   <li><a href="#top-k-frequent-elements---medium" id="toc-top-k-frequent-elements---medium" class="nav-link" data-scroll-target="#top-k-frequent-elements---medium">5 - Top K Frequent Elements - <span style="color:#FCB001">Medium</span></a></li>
   <li><a href="#product-of-array-except-itself---medium" id="toc-product-of-array-except-itself---medium" class="nav-link" data-scroll-target="#product-of-array-except-itself---medium">6 - Product of Array Except Itself - <span style="color:#FCB001">Medium</span></a></li>
+  <li><a href="#longest-consecutive-sequence---medium" id="toc-longest-consecutive-sequence---medium" class="nav-link" data-scroll-target="#longest-consecutive-sequence---medium">7 - Longest Consecutive Sequence - <span style="color:#FCB001">Medium</span></a></li>
   </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
@@ -458,6 +459,38 @@ cookieconsent.run({
 <span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> result<span class="op">;</span></span>
 <span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
 <span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="longest-consecutive-sequence---medium" class="level2">
+<h2 class="anchored" data-anchor-id="longest-consecutive-sequence---medium">7 - Longest Consecutive Sequence - <span style="color:#FCB001">Medium</span></h2>
+<section id="notes-6" class="level4">
+<h4 class="anchored" data-anchor-id="notes-6">Notes</h4>
+<p>The optimal solution makes use of Unordered Set which provides an efficient way to search consecutive elements to find the Longest Consecutive Sequence.</p>
+</section>
+<section id="program-6" class="level4">
+<h4 class="anchored" data-anchor-id="program-6">Program</h4>
+<div class="sourceCode" id="cb7"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Solution <span class="op">{</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span><span class="op">:</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> longestConsecutive<span class="op">(</span>vector<span class="op">&lt;</span><span class="dt">int</span><span class="op">&gt;&amp;</span> nums<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>        unordered_set<span class="op">&lt;</span><span class="dt">int</span><span class="op">&gt;</span> s<span class="op">;</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>        copy<span class="op">(</span>nums<span class="op">.</span>begin<span class="op">(),</span> nums<span class="op">.</span>end<span class="op">(),</span> inserter<span class="op">(</span>s<span class="op">,</span> s<span class="op">.</span>end<span class="op">()));</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>        <span class="dt">int</span> longest <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> nums<span class="op">.</span>size<span class="op">();</span> i<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>            <span class="dt">int</span> length <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> <span class="op">(</span>s<span class="op">.</span>find<span class="op">(</span>nums<span class="op">[</span>i<span class="op">]</span> <span class="op">-</span> <span class="dv">1</span><span class="op">)</span> <span class="op">==</span> s<span class="op">.</span>end<span class="op">())</span> <span class="op">{</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>                length<span class="op">++;</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>                <span class="cf">while</span> <span class="op">(</span>s<span class="op">.</span>find<span class="op">(</span>nums<span class="op">[</span>i<span class="op">]+</span>length<span class="op">)</span> <span class="op">!=</span> s<span class="op">.</span>end<span class="op">())</span> <span class="op">{</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>                    length<span class="op">++;</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>                <span class="op">}</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>                longest <span class="op">=</span> max<span class="op">(</span>length<span class="op">,</span> longest<span class="op">);</span></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>            <span class="op">}</span></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> longest<span class="op">;</span></span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>

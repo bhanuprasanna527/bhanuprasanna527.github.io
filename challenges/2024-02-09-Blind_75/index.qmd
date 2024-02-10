@@ -259,3 +259,38 @@ public:
     }
 };
 ```
+
+\pagebreak
+
+## 7 - Longest Consecutive Sequence - <span style="color:#FCB001">Medium</span>
+
+#### Notes
+
+The optimal solution makes use of Unordered Set which provides an efficient way to search consecutive elements to find the Longest Consecutive Sequence.
+
+#### Program
+
+```cpp
+class Solution {
+public:
+    int longestConsecutive(vector<int>& nums) {
+        unordered_set<int> s;
+        copy(nums.begin(), nums.end(), inserter(s, s.end()));
+        
+        int longest = 0;
+
+        for (int i = 0; i < nums.size(); i++) {
+            int length = 0;
+            if (s.find(nums[i] - 1) == s.end()) {
+                length++;
+                while (s.find(nums[i]+length) != s.end()) {
+                    length++;
+                }
+                longest = max(length, longest);
+            }
+        }
+
+        return longest;
+    }
+};
+```
