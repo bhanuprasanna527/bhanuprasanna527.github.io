@@ -224,7 +224,7 @@ cookieconsent.run({
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">February 10, 2024</p>
+        <p class="date-modified">February 11, 2024</p>
       </div>
     </div>
       
@@ -248,6 +248,8 @@ cookieconsent.run({
   <li><a href="#top-k-frequent-elements---medium" id="toc-top-k-frequent-elements---medium" class="nav-link" data-scroll-target="#top-k-frequent-elements---medium">5 - Top K Frequent Elements - <span style="color:#FCB001">Medium</span></a></li>
   <li><a href="#product-of-array-except-itself---medium" id="toc-product-of-array-except-itself---medium" class="nav-link" data-scroll-target="#product-of-array-except-itself---medium">6 - Product of Array Except Itself - <span style="color:#FCB001">Medium</span></a></li>
   <li><a href="#longest-consecutive-sequence---medium" id="toc-longest-consecutive-sequence---medium" class="nav-link" data-scroll-target="#longest-consecutive-sequence---medium">7 - Longest Consecutive Sequence - <span style="color:#FCB001">Medium</span></a></li>
+  <li><a href="#valid-palindrome---easy" id="toc-valid-palindrome---easy" class="nav-link" data-scroll-target="#valid-palindrome---easy">8 - Valid Palindrome - <span style="color:#50c878">Easy</span></a></li>
+  <li><a href="#two-sum-ii---input-array-is-sorted---medium" id="toc-two-sum-ii---input-array-is-sorted---medium" class="nav-link" data-scroll-target="#two-sum-ii---input-array-is-sorted---medium">9 - Two Sum II - Input Array Is Sorted - <span style="color:#FCB001">Medium</span></a></li>
   </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
@@ -491,6 +493,63 @@ cookieconsent.run({
 <span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> longest<span class="op">;</span></span>
 <span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
 <span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="valid-palindrome---easy" class="level2">
+<h2 class="anchored" data-anchor-id="valid-palindrome---easy">8 - Valid Palindrome - <span style="color:#50c878">Easy</span></h2>
+<section id="notes-7" class="level4">
+<h4 class="anchored" data-anchor-id="notes-7">Notes</h4>
+<p>This problem can be approached in multiple ways. Mine is one of them.</p>
+</section>
+<section id="program-7" class="level4">
+<h4 class="anchored" data-anchor-id="program-7">Program</h4>
+<div class="sourceCode" id="cb8"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Solution <span class="op">{</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span><span class="op">:</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">bool</span> isPalindrome<span class="op">(</span>string s<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>        string t <span class="op">=</span> <span class="st">""</span><span class="op">;</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> <span class="op">(</span><span class="kw">auto</span> i<span class="op">:</span>s<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> <span class="op">(</span>iswalnum<span class="op">(</span>i<span class="op">))</span> t <span class="op">+=</span> i<span class="op">;</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>        transform<span class="op">(</span>t<span class="op">.</span>begin<span class="op">(),</span> t<span class="op">.</span>end<span class="op">(),</span> t<span class="op">.</span>begin<span class="op">(),</span> <span class="op">::</span>tolower<span class="op">);</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>        s <span class="op">=</span> t<span class="op">;</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>        <span class="bu">std::</span>reverse<span class="op">(</span>s<span class="op">.</span>begin<span class="op">(),</span> s<span class="op">.</span>end<span class="op">());</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>        cout <span class="op">&lt;&lt;</span> s <span class="op">&lt;&lt;</span> endl <span class="op">&lt;&lt;</span> t <span class="op">&lt;&lt;</span> endl<span class="op">;</span></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="op">(</span>s <span class="op">==</span> t<span class="op">)</span> <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="two-sum-ii---input-array-is-sorted---medium" class="level2">
+<h2 class="anchored" data-anchor-id="two-sum-ii---input-array-is-sorted---medium">9 - Two Sum II - Input Array Is Sorted - <span style="color:#FCB001">Medium</span></h2>
+<section id="notes-8" class="level4">
+<h4 class="anchored" data-anchor-id="notes-8">Notes</h4>
+<p>The optimal solution is to use the Two Pointer approach. Where one pointer from index 0 and the other pointer at the last index of the array.</p>
+</section>
+<section id="program-8" class="level4">
+<h4 class="anchored" data-anchor-id="program-8">Program</h4>
+<div class="sourceCode" id="cb9"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Solution <span class="op">{</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span><span class="op">:</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    vector<span class="op">&lt;</span><span class="dt">int</span><span class="op">&gt;</span> twoSum<span class="op">(</span>vector<span class="op">&lt;</span><span class="dt">int</span><span class="op">&gt;&amp;</span> nums<span class="op">,</span> <span class="dt">int</span> target<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>        <span class="dt">int</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>        <span class="dt">int</span> j <span class="op">=</span> nums<span class="op">.</span>size<span class="op">()</span> <span class="op">-</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">while</span> <span class="op">(</span>i <span class="op">&lt;</span> j<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> <span class="op">(</span>nums<span class="op">[</span>i<span class="op">]</span> <span class="op">+</span> nums<span class="op">[</span>j<span class="op">]</span> <span class="op">&gt;</span> target<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>                j<span class="op">--;</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>            <span class="op">}</span> <span class="cf">else</span> <span class="cf">if</span> <span class="op">(</span>nums<span class="op">[</span>i<span class="op">]</span> <span class="op">+</span> nums<span class="op">[</span>j<span class="op">]</span> <span class="op">&lt;</span> target<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>                i<span class="op">++;</span></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>            <span class="op">}</span> <span class="cf">else</span> <span class="cf">if</span> <span class="op">(</span>nums<span class="op">[</span>i<span class="op">]</span> <span class="op">+</span> nums<span class="op">[</span>j<span class="op">]</span> <span class="op">==</span> target<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>                <span class="cf">return</span> <span class="op">{</span>i<span class="op">+</span><span class="dv">1</span><span class="op">,</span> j<span class="op">+</span><span class="dv">1</span><span class="op">};</span></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>            <span class="op">}</span></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="op">{};</span></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>
