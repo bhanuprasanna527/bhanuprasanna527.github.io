@@ -46,7 +46,7 @@ I want to improve my problem solving skills. I am starting with Blind 75.
 
 \pagebreak
 
-## 1 - Two Sum - <span style="color:#50c878">Easy</span>
+## Two Sum - <span style="color:#50c878">Easy</span>
 
 #### Notes
 
@@ -76,7 +76,7 @@ public:
 
 \pagebreak
 
-## 2 - Contains Duplicate - <span style="color:#50c878">Easy</span>
+## Contains Duplicate - <span style="color:#50c878">Easy</span>
 
 #### Notes
 
@@ -106,7 +106,7 @@ public:
 
 \pagebreak
 
-## 3 - Valid Anagram - <span style="color:#50c878">Easy</span>
+## Valid Anagram - <span style="color:#50c878">Easy</span>
 
 #### Notes
 
@@ -143,7 +143,7 @@ public:
 
 \pagebreak
 
-## 4 - Group Anagrams - <span style="color:#FCB001">Medium</span>
+## Group Anagrams - <span style="color:#FCB001">Medium</span>
 
 #### Notes
 
@@ -191,7 +191,7 @@ public:
 
 \pagebreak
 
-## 5 - Top K Frequent Elements - <span style="color:#FCB001">Medium</span>
+## Top K Frequent Elements - <span style="color:#FCB001">Medium</span>
 
 #### Notes
 
@@ -229,7 +229,7 @@ public:
 };
 ```
 
-## 6 - Product of Array Except Itself - <span style="color:#FCB001">Medium</span>
+## Product of Array Except Itself - <span style="color:#FCB001">Medium</span>
 
 #### Notes
 
@@ -262,7 +262,7 @@ public:
 
 \pagebreak
 
-## 7 - Longest Consecutive Sequence - <span style="color:#FCB001">Medium</span>
+## Longest Consecutive Sequence - <span style="color:#FCB001">Medium</span>
 
 #### Notes
 
@@ -295,7 +295,9 @@ public:
 };
 ```
 
-## 8 - Valid Palindrome - <span style="color:#50c878">Easy</span>
+\pagebreak
+
+## Valid Palindrome - <span style="color:#50c878">Easy</span>
 
 #### Notes
 
@@ -325,7 +327,9 @@ public:
 };
 ```
 
-## 9 - Two Sum II - Input Array Is Sorted - <span style="color:#FCB001">Medium</span>
+\pagebreak
+
+## Two Sum II - Input Array Is Sorted - <span style="color:#FCB001">Medium</span>
 
 #### Notes
 
@@ -354,7 +358,9 @@ public:
 };
 ```
 
-## 10 - Three Sum - <span style="color:#FCB001">Medium</span>
+\pagebreak
+
+## Three Sum - <span style="color:#FCB001">Medium</span>
 
 #### Notes
 
@@ -407,3 +413,48 @@ public:
     }
 };
 ```
+
+\pagebreak
+
+## Container With Most Water - <span style="color:#FCB001">Medium</span>
+
+#### Notes
+
+The optimal solution is by using the Two Pointer approach and calculating the max area.
+
+#### Program
+
+```cpp
+class Solution {
+public:
+    int maxArea(vector<int>& height) {
+        int i = 0;
+        int j = height.size() - 1;
+        int len = height.size() - 1;
+        int maxWater = INT_MIN;
+
+        while (i < j) {
+            int ar = min(height[i], height[j]) * len;
+            if (ar > maxWater) {
+                maxWater = ar;
+            }
+
+            if (height[i] > height[j]) {
+                j--;
+                len--;
+            } else if (height[i] < height[j]) {
+                i++;
+                len--;
+            } else {
+                i++;
+                j--;
+                len -= 2;
+            }
+        }
+
+        return maxWater;
+    }
+};
+```
+
+\pagebreak
