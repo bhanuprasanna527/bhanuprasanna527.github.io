@@ -252,6 +252,8 @@ cookieconsent.run({
   <li><a href="#two-sum-ii---input-array-is-sorted---medium" id="toc-two-sum-ii---input-array-is-sorted---medium" class="nav-link" data-scroll-target="#two-sum-ii---input-array-is-sorted---medium">Two Sum II - Input Array Is Sorted - <span style="color:#FCB001">Medium</span></a></li>
   <li><a href="#three-sum---medium" id="toc-three-sum---medium" class="nav-link" data-scroll-target="#three-sum---medium">Three Sum - <span style="color:#FCB001">Medium</span></a></li>
   <li><a href="#container-with-most-water---medium" id="toc-container-with-most-water---medium" class="nav-link" data-scroll-target="#container-with-most-water---medium">Container With Most Water - <span style="color:#FCB001">Medium</span></a></li>
+  <li><a href="#best-time-to-buy-and-sell-stock---easy" id="toc-best-time-to-buy-and-sell-stock---easy" class="nav-link" data-scroll-target="#best-time-to-buy-and-sell-stock---easy">Best Time to Buy and Sell Stock - <span style="color:#50c878">Easy</span></a></li>
+  <li><a href="#valid-parentheses---easy" id="toc-valid-parentheses---easy" class="nav-link" data-scroll-target="#valid-parentheses---easy">Valid Parentheses - <span style="color:#50c878">Easy</span></a></li>
   </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
@@ -645,6 +647,78 @@ cookieconsent.run({
 <span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> maxWater<span class="op">;</span></span>
 <span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
 <span id="cb11-30"><a href="#cb11-30" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="best-time-to-buy-and-sell-stock---easy" class="level2">
+<h2 class="anchored" data-anchor-id="best-time-to-buy-and-sell-stock---easy">Best Time to Buy and Sell Stock - <span style="color:#50c878">Easy</span></h2>
+<section id="notes-11" class="level4">
+<h4 class="anchored" data-anchor-id="notes-11">Notes</h4>
+<p>The optimal solution uses the Two Pointer approach. The first pointer points to the first day stock price and the second pointer points to the next day’s stock price.</p>
+</section>
+<section id="program-11" class="level4">
+<h4 class="anchored" data-anchor-id="program-11">Program</h4>
+<div class="sourceCode" id="cb12"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Solution <span class="op">{</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span><span class="op">:</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> maxProfit<span class="op">(</span>vector<span class="op">&lt;</span><span class="dt">int</span><span class="op">&gt;&amp;</span> prices<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>        <span class="dt">int</span> l <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>        <span class="dt">int</span> r <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>        <span class="dt">int</span> maxProfit <span class="op">=</span> INT_MIN<span class="op">;</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">while</span> <span class="op">(</span>r <span class="op">&lt;</span> prices<span class="op">.</span>size<span class="op">())</span> <span class="op">{</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> <span class="op">(</span>prices<span class="op">[</span>r<span class="op">]</span> <span class="op">-</span> prices<span class="op">[</span>l<span class="op">]</span> <span class="op">&gt;</span> maxProfit<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>                maxProfit <span class="op">=</span> prices<span class="op">[</span>r<span class="op">]</span> <span class="op">-</span> prices<span class="op">[</span>l<span class="op">];</span></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>            <span class="op">}</span></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> <span class="op">(</span>prices<span class="op">[</span>l<span class="op">]</span> <span class="op">&gt;</span> prices<span class="op">[</span>r<span class="op">])</span> <span class="op">{</span></span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>                l <span class="op">=</span> r<span class="op">;</span></span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>                r <span class="op">=</span> l <span class="op">+</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>            <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>                r <span class="op">=</span> r <span class="op">+</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>            <span class="op">}</span></span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="op">(</span>maxProfit <span class="op">&lt;</span> <span class="dv">0</span><span class="op">)</span> <span class="op">{</span></span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> maxProfit<span class="op">;</span></span>
+<span id="cb12-26"><a href="#cb12-26" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb12-27"><a href="#cb12-27" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="valid-parentheses---easy" class="level2">
+<h2 class="anchored" data-anchor-id="valid-parentheses---easy">Valid Parentheses - <span style="color:#50c878">Easy</span></h2>
+<section id="notes-12" class="level4">
+<h4 class="anchored" data-anchor-id="notes-12">Notes</h4>
+<p>The optimal solution is by using a Stack.</p>
+</section>
+<section id="program-12" class="level4">
+<h4 class="anchored" data-anchor-id="program-12">Program</h4>
+<div class="sourceCode" id="cb13"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Solution <span class="op">{</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span><span class="op">:</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">bool</span> isValid<span class="op">(</span>string s<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>        stack<span class="op">&lt;</span><span class="dt">char</span><span class="op">&gt;</span> st<span class="op">;</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>        unordered_map<span class="op">&lt;</span><span class="dt">char</span><span class="op">,</span> <span class="dt">char</span><span class="op">&gt;</span> um <span class="op">=</span> <span class="op">{</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>            <span class="op">{</span><span class="ch">')'</span><span class="op">,</span> <span class="ch">'('</span><span class="op">},</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>            <span class="op">{</span><span class="ch">']'</span><span class="op">,</span> <span class="ch">'['</span><span class="op">},</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>            <span class="op">{</span><span class="ch">'}'</span><span class="op">,</span> <span class="ch">'{'</span><span class="op">}</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>        <span class="op">};</span></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> s<span class="op">.</span>length<span class="op">();</span> i<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> <span class="op">(</span>um<span class="op">.</span>find<span class="op">(</span>s<span class="op">[</span>i<span class="op">])</span> <span class="op">!=</span> um<span class="op">.</span>end<span class="op">())</span> <span class="op">{</span></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> <span class="op">(</span>st<span class="op">.</span>empty<span class="op">()</span> <span class="op">||</span> st<span class="op">.</span>top<span class="op">()</span> <span class="op">!=</span> um<span class="op">[</span>s<span class="op">[</span>i<span class="op">]])</span> <span class="op">{</span></span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>                    <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>                <span class="op">}</span></span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>                st<span class="op">.</span>pop<span class="op">();</span></span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>            <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a>                st<span class="op">.</span>push<span class="op">(</span>s<span class="op">[</span>i<span class="op">]);</span></span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a>            <span class="op">}</span></span>
+<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> st<span class="op">.</span>empty<span class="op">();</span></span>
+<span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb13-25"><a href="#cb13-25" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>

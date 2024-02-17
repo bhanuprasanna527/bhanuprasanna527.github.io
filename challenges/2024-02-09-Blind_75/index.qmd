@@ -458,3 +458,79 @@ public:
 ```
 
 \pagebreak
+
+## Best Time to Buy and Sell Stock - <span style="color:#50c878">Easy</span>
+
+#### Notes
+
+The optimal solution uses the Two Pointer approach. The first pointer points to the first day stock price and the second pointer points to the next day's stock price.
+
+#### Program
+
+```cpp
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int l = 0;
+        int r = 1;
+        int maxProfit = INT_MIN;
+
+        while (r < prices.size()) {
+            if (prices[r] - prices[l] > maxProfit) {
+                maxProfit = prices[r] - prices[l];
+            }
+
+            if (prices[l] > prices[r]) {
+                l = r;
+                r = l + 1;
+            } else {
+                r = r + 1;
+            }
+        }
+
+        if (maxProfit < 0) {
+            return 0;
+        }
+
+        return maxProfit;
+    }
+};
+```
+
+\pagebreak
+
+## Valid Parentheses - <span style="color:#50c878">Easy</span>
+
+#### Notes
+
+The optimal solution is by using a Stack.
+
+#### Program
+
+```cpp
+class Solution {
+public:
+    bool isValid(string s) {
+        stack<char> st;
+        unordered_map<char, char> um = {
+            {')', '('},
+            {']', '['},
+            {'}', '{'}
+        };
+
+        for (int i = 0; i < s.length(); i++) {
+            if (um.find(s[i]) != um.end()) {
+                if (st.empty() || st.top() != um[s[i]]) {
+                    return false;
+                }
+
+                st.pop();
+            } else {
+                st.push(s[i]);
+            }
+        }
+
+        return st.empty();
+    }
+};
+```
